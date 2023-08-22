@@ -1,0 +1,249 @@
+.main-window{
+    background-color:#fcbd2c;
+  
+  }
+  
+  .logspot {
+    padding-top: 80px;
+    padding-bottom: 74px;
+    max-width: 1225px;
+    margin-right: auto; 
+    margin-left: auto;
+    display: block;
+  }
+  
+  .beaver-image {
+    max-width: 470px;
+    margin-right: auto; 
+    margin-left: auto;
+    display: block;
+  }
+  
+  /* MOVING EYES */
+  
+  .moving-eyes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 141px;
+    /* min-height: -10vh; */
+    grid-gap: 60px;
+    
+    
+  }
+  
+  .moving-eyes-container .eye {
+    position: relative;
+    width: 71px;
+    min-height: 71px;
+    display: block;
+    /* background: rgb(255, 255, 255); */
+background: red;
+    margin: 0 15px;
+    border-radius: 50%;
+  }
+  
+  .moving-eyes-container .eye::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  /* OUR PARTNERS WE ARE WORKING WITH */
+  
+  .company-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 72px;
+    background: #fffdf1;
+    border-bottom: solid #f8f0db 2px;
+  }
+  
+  .company-list {
+    display: inline-flex;
+    animation: slide 20s linear infinite;
+    grid-gap: 70px;
+    padding: 20px;
+    width: 100px;
+
+  }
+  
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0); /* Start and end with no translation */
+    }
+    12.5% {
+      transform: translateX(-100%); /* Transition to the left by the container width */
+    }
+    25% {
+      transform: translateX(-200%); /* Transition to the left by twice the container width */
+    }
+    37.5% {
+      transform: translateX(-300%); /* Transition to the left by three times the container width */
+    }
+    50% {
+      transform: translateX(-400%); /* Transition to the left by four times the container width */
+    }
+    62.5% {
+      transform: translateX(-300%); /* Transition back to the left by three times the container width */
+    }
+    75% {
+      transform: translateX(-200%); /* Transition back to the left by twice the container width */
+    }
+    87.5% {
+      transform: translateX(-100%); /* Transition back to the left by the container width */
+    }
+  }
+  
+  
+  .company {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  .company img {
+    max-width: 100%;
+    height: 80px;
+    
+  }
+  
+  
+  @keyframes slide {
+  
+    0% {
+      transform: translateX(100%); /* Move the container to the right of the viewport */
+    }
+    100% {
+      transform: translateX(-100%); /* Move the container to the left of the viewport */
+    }
+  }
+  
+  /* Define the rotation animation */
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /* Apply the rotation animation to the LogspotLogo image */
+  .rotating-logo {
+    animation: rotateAnimation 20s linear infinite; /* Rotate for 10 seconds linearly and repeat infinitely */
+  }
+  
+  
+  
+  /* INTRODUCTION TEXT */
+  
+  .introduction-container {
+    max-width: 100%;
+    height: 1067px;
+    background-color: #fffdf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 72px;
+  }
+  
+  .introduction-text-image {
+    max-width: 80%;
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  /* Define the font globally using @font-face */
+  /* @font-face {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-weight: bold;
+    font-style: normal;
+  } */
+  
+  /* Apply the font to specific elements */
+  .introduction-text {
+    font-size:x-large;
+    color: #000000;
+    text-align: center;
+    padding-top: 50px; /* Adjust as needed */
+    max-width: 1200px;
+    /* font-weight: bold; */
+  
+  }
+  
+  
+  
+  /* APPLICATION PROCESS */
+  
+  .application-container {
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position: relative;
+    bottom: 72px;
+    margin: 50px;
+    background-color:#fcbd2c;
+  
+   
+  }
+  
+  .application-process {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    font-size: small;
+  }
+  
+  .application-process-layout {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .application-process-steps {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  
+  .number-1-text, .number-2-text, .number-3-text, .number-4-text {
+    font-size: large;
+  }
+  
+  .sign-up-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  
+  
+  .application-inner-container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .beaver-sitting {
+    max-width: 100%;
+    width: 500px;
+    
+  }
+  

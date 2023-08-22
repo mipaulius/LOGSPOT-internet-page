@@ -1,0 +1,86 @@
+.header {
+    /* max-width: 1920px; */
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    background-color:#fcbd2c;
+    font-size: x-large;
+   
+}
+
+.header-toolbar {
+    padding: 30px;
+    color: black;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+  
+  .footer {
+    /* max-width: 1920px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .social-images {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-networks {
+    margin-bottom: 10px;
+  }
+  
+  .footer-4 {
+    text-align: start;
+  }
+  
+  .social-text {
+    margin-left: 8px; /* Adjust this value as needed */
+    vertical-align: middle;
+  }
+  
+  .social-list-item {
+    display: flex;
+    align-items: center; /* Vertically center items */
+  }
+  
+  .logspot-logo {
+    width: 190px; /* Adjust the width to your preference */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px;
+  }
+  
+  
+  
+  .sign-up-button {
+    width: 110px;
+    height: 50px;
+    background-size: cover;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+.sign-up-button:hover {
+  animation: hoverAnimation 2s steps(4) infinite;
+  
+}
+
+@keyframes hoverAnimation {
+  0% { background-image: url('../images/button-on-hover-frame-1.svg'); }
+  16.66% { background-image: url('../images/button-on-hover-frame-2.svg'); }
+  33.26% { background-image: url('../images/button-on-hover-frame-3.svg'); }
+  50% { background-image: url('../images/button-on-hover-frame-4.svg'); }
+  66.66% { background-image: url('../images/button-on-hover-frame-3.svg'); }
+  83.33% { background-image: url('../images/button-on-hover-frame-2.svg'); }
+  100% { background-image: url('../images/button-on-hover-frame-1.svg'); }
+}
+
