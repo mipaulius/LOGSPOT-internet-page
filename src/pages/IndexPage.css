@@ -57,95 +57,74 @@
   }
   
   /* OUR PARTNERS WE ARE WORKING WITH */
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
   
-  .company-container {
+  .logos {
     overflow: hidden;
-    width: 100%;
-    height: 100px;
-    background: #fffdf1;
+    padding: 22px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
     border-bottom: solid #f8f0db 2px;
 
   }
   
-  .company-list {
-    display: inline-flex;
-    animation: slide 15s linear infinite;
-    grid-gap: 70px;
-    padding: 20px;
-    width: 100px;
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
 
+  
+ /* Add these styles to your CSS file */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes slide {
-    0%, 100% {
-      transform: translateX(0); /* Start and end with no translation */
-    }
-    12.5% {
-      transform: translateX(-100%); /* Transition to the left by the container width */
-    }
-    25% {
-      transform: translateX(-200%); /* Transition to the left by twice the container width */
-    }
-    37.5% {
-      transform: translateX(-300%); /* Transition to the left by three times the container width */
-    }
-    50% {
-      transform: translateX(-400%); /* Transition to the left by four times the container width */
-    }
-    62.5% {
-      transform: translateX(-300%); /* Transition back to the left by three times the container width */
-    }
-    75% {
-      transform: translateX(-200%); /* Transition back to the left by twice the container width */
-    }
-    87.5% {
-      transform: translateX(-100%); /* Transition back to the left by the container width */
-    }
+  to {
+    transform: rotate(360deg);
   }
-  
-  
-  .company {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-  }
-  
-  .company img {
-    max-width: 100%;
-    height: 80px;
-    
-  }
-  
-  
-  @keyframes slide {
-  
-    0% {
-      transform: translateX(100%); /* Move the container to the right of the viewport */
-    }
-    100% {
-      transform: translateX(-100%); /* Move the container to the left of the viewport */
-    }
-  }
-  
-  /* Define the rotation animation */
-  @keyframes rotateAnimation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
-  }
-  
-  /* Apply the rotation animation to the LogspotLogo image */
-  .rotating-logo {
-    animation: rotateAnimation 20s linear infinite; /* Rotate for 10 seconds linearly and repeat infinitely */
-    height: 60px;
+}
 
-  }
-  
+.rotating-logo {
+  animation: rotate 5s linear infinite; /* Adjust the duration and animation properties as needed */
+}
   
   
   /* INTRODUCTION TEXT */
@@ -180,22 +159,18 @@
   
   .application-container {
     max-width: 100%;
-    height: 600px;
+    height: 800px;
     position: relative;
     display: grid;
     grid-template-columns: 40% 60%;
-    position: relative;
-    bottom: 72px;
-    margin: 50px;
-    background-color:#fcbd2c;
-  
-   
   }
   
-  .application-process {
+  .inner-container-left {
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
     font-size: small;
+    max-width: 100%;
+    height: 700px;
   }
   
   .application-process-layout {
@@ -222,18 +197,15 @@
     margin: 0;
   }
   
-  
-  
-  .application-inner-container-right {
+  .inner-container-right {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    max-width: 100%;
+    height: 700px;
   }
   
-  .beaver-sitting {
-    max-width: 100%;
+  .beaver-sitting-image {
     width: 500px;
     
   }
-  
