@@ -6,6 +6,7 @@ import CodeAcademyLogo from '../images/company-code-academy.png';
 import RhenusLogo from '../images/company-rhenus.png';
 import LitLogo from '../images/company-lit.png';
 import WerkLogo from '../images/company-werk&ik.png';
+import IntroductionContainer from '../images/introduction-text-image.svg';
 
 
 import './IndexPage.css';
@@ -45,6 +46,8 @@ const IndexPage = () => {
             <div className='eye'></div>
             <div className='eye'></div>
           </div>
+          </div>
+
 
           <div className='company-container'>
             <div className='company-list'>
@@ -54,7 +57,7 @@ const IndexPage = () => {
           alt="company logo"/>
           
           <img src={CodeAcademyLogo}
-          className='code-academy-logo'
+          className='company'
           alt="company logo"/>
           
           <img src={LogspotLogo}
@@ -62,7 +65,7 @@ const IndexPage = () => {
           alt="company logo"/>
           
           <img src={RhenusLogo}
-          className='logspot-logo'
+          className='company'
           alt="company logo"/>
           
           <img src={LogspotLogo}
@@ -70,25 +73,30 @@ const IndexPage = () => {
           alt="company logo"/>
           
           <img src={LitLogo}
-          className='lit-logo'
-          alt="company logo"/>
-          
-          <img src={WerkLogo}
-          className='werk-logo'
+          className='company'
           alt="company logo"/>
           
           <img src={LogspotLogo}
           className='rotating-logo'
           alt="company logo"/>
             
-
+          <img src={WerkLogo}
+          className='company'
+          alt="company logo"/>
 
             </div>
 
           </div>
 
+          <div className='introduction-container'>
+          <img src={IntroductionContainer} 
+          className='introduction-text-image' 
+          alt='introduction text about the company'/>
+          <div className='introduction-text'>Welcome to LOGSPOT, where the world of IT talents meets boundless opportunities! We constructs bridges between tech wizards and visionary companies, creating a dam of connections for mutual growth.</div>
+          </div>
 
-            </div>
+
+           
         </div>
     );
 };

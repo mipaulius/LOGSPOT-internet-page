@@ -1,10 +1,11 @@
 .main-window{
     background-color:#fcbd2c;
+    height: 825px;
   
   }
   
   .logspot {
-    padding-top: 80px;
+    padding-top: 77px;
     padding-bottom: 74px;
     max-width: 1225px;
     margin-right: auto; 
@@ -38,8 +39,7 @@
     width: 71px;
     min-height: 71px;
     display: block;
-    /* background: rgb(255, 255, 255); */
-background: red;
+    background: rgb(255, 255, 255);
     margin: 0 15px;
     border-radius: 50%;
   }
@@ -62,15 +62,14 @@ background: red;
     overflow: hidden;
     width: 100%;
     height: 100px;
-    position: relative;
-    bottom: 72px;
     background: #fffdf1;
     border-bottom: solid #f8f0db 2px;
+
   }
   
   .company-list {
     display: inline-flex;
-    animation: slide 20s linear infinite;
+    animation: slide 15s linear infinite;
     grid-gap: 70px;
     padding: 20px;
     width: 100px;
@@ -143,6 +142,8 @@ background: red;
   /* Apply the rotation animation to the LogspotLogo image */
   .rotating-logo {
     animation: rotateAnimation 20s linear infinite; /* Rotate for 10 seconds linearly and repeat infinitely */
+    height: 60px;
+
   }
   
   
@@ -157,8 +158,6 @@ background: red;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 72px;
   }
   
   .introduction-text-image {
@@ -166,22 +165,13 @@ background: red;
     margin: 0 auto; /* Center horizontally */
   }
   
-  /* Define the font globally using @font-face */
-  /* @font-face {
-    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-    font-weight: bold;
-    font-style: normal;
-  } */
   
-  /* Apply the font to specific elements */
   .introduction-text {
     font-size:x-large;
     color: #000000;
     text-align: center;
     padding-top: 50px; /* Adjust as needed */
-    max-width: 1200px;
-    /* font-weight: bold; */
-  
+    max-width: 1200px;  
   }
   
   
