@@ -130,35 +130,50 @@ const IndexPage = () => {
           <div className='introduction-text'>Welcome to LOGSPOT, where the world of IT talents meets boundless opportunities! We constructs bridges between tech wizards and visionary companies, creating a dam of connections for mutual growth.</div>
           </div>
 
-          {/* <div className='application-container'> */}
-
-
-            
- 
-
-  {/* <div className='inner-container-right'>
-    <img src={BeaverSitting} className='beaver-sitting-image' alt='Beaver sitting in front of the desk image' />
-  </div>
-</div> */}
 
 
 <div className='card-container'>
+<div className='header-card-container'>A Simple and Quick Sign Up Process!</div>
+
   <div className='sticky-card-container'>
     <div class='section'>
-      <div>hello world</div>
+      <div className='sticky-card-inner-container-1'>
+        <div className='sticky-card-inner-container-image'><img src={BeaverSitting} 
+          className='sticky-container-image' 
+          alt='sitting beaver in front of the desk'/></div>
+        <div className='sticky-card-inner-text'>
+          <p className='sticky-container-number'>#1. Create Your IT Identity</p>Welcome to our tech-tastic world! The first step to unleashing your IT brilliance is to create your very own digital identity. Think of it as a tech resume with a twist! Add your superpowers, skills, and achievements – our beaver scouts love digging through IT awesomeness!
+</div>
+      </div>
     </div>
 
     <div class='section'>
-    <div>hello world</div>
+      <div className='sticky-card-inner-container-2'>
+        <div className='sticky-card-inner-container-image'><img src={BeaverSitting} 
+          className='sticky-container-image' 
+          alt='sitting beaver in front of the desk'/></div>
+        <div className='sticky-card-inner-text'><p className='sticky-container-number'>#2. The Beaver Screening</p>Time to dive into the tech pond and show off your skills! Our beaver screening is no ordinary process – it's a fun tech challenge where you get to showcase your coding chops and IT know-how. Be ready to impress our beaver squad with your digital prowess!</div>
+      </div>
     </div>
 
     <div class='section'>
-    <div>hello world</div>
+      <div className='sticky-card-inner-container-3'>
+        <div className='sticky-card-inner-container-image'><img src={BeaverSitting} 
+          className='sticky-container-image' 
+          alt='sitting beaver in front of the desk'/></div>
+        <div className='sticky-card-inner-text'><p className='sticky-container-number'>#3. Shine in the Tech Pond</p>Once you've passed our screening, it's time to unleash your IT shine! We'll work our beaver magic and make you visible to the best tech companies out there. Prepare to be discovered by the finest in the tech forest – they'll be lining up to offer you opportunities!</div>
+      </div>
     </div>
 
     <div class='section'>
-    <div>hello world</div>
+      <div className='sticky-card-inner-container-4'>
+        <div className='sticky-card-inner-container-image'><img src={BeaverSitting} 
+          className='sticky-container-image' 
+          alt='sitting beaver in front of the desk'/></div>
+        <div className='sticky-card-inner-text'><p className='sticky-container-number'>#4. Welcome to the Tech Colony</p>Congratulations! You've made it through the tech wilderness and landed your dream IT job! Welcome to the exclusive tech colony, where IT geniuses like you thrive. Together, we'll build a digital future like no other!</div>
+      </div>
     </div>
+  
   </div>
 </div>
 

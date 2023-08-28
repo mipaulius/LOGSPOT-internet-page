@@ -152,51 +152,8 @@
     padding-top: 50px; /* Adjust as needed */
     max-width: 1200px;  
   }
-  
-  
-  
-  /* APPLICATION PROCESS */
-  
-  /* .application-container {
-    max-width: 100%;
-    height: 800px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-  
-  .inner-container-left {
-    display: grid;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
-    font-size: small;
-    max-width: 100%;
-    height: 700px;
-  }
-  
-  .application-process-layout {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    margin-bottom: 20px;
-    margin-top: 50px;
-  }
-  
-  .application-process-steps {
-    font-size: x-large;
-    font-weight: bolder;
-    margin-bottom: 10px;
-  }
-  
-  .number-1-text, .number-2-text, .number-3-text, .number-4-text {
-    font-size: large;
-  }
-  
-  .sign-up-process {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  } */
-  
+
+  /* Card Container */
   
   .card-container {
    position:relative;
@@ -207,43 +164,118 @@
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100vh;
-    background: green;
+    height: 100vh;   
+   
   }
 
   .sticky-card-container .section:nth-child(1){
-  background-color: red;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .sticky-card-inner-container-1{
+    max-width: 1200px;
+    height: 600px;
+    background-color: white;
+    /* background-color: #fcbd2c; */
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-size:x-large;
+
+  }
   }
   
   .sticky-card-container .section:nth-child(2){
-    background-color: yellow;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sticky-card-inner-container-2{
+    max-width: 1200px;
+    height: 600px;
+    background-color: white;
+    /* background-color: #fcbd2c; */
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-size:x-large;
 
-    }
-
-    .sticky-card-container .section:nth-child(3){
-      background-color: blue;
-  background-size: cover;
-
-      }
-
-      .sticky-card-container .section:nth-child(4){
-        background-color: orange;
-  background-size: cover;
-
-        }
-  
-
-  /* .inner-container-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: 700px;
   }
+  }
+
+ .sticky-card-container .section:nth-child(3){
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ .sticky-card-inner-container-3{
+   max-width: 1200px;
+   height: 600px;
+   background-color: white;
+   /* background-color: #fcbd2c; */
+   border-radius: 20px;
+   border: 1px solid;
+   padding: 10px;
+   box-shadow: 5px 10px;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-size:x-large;
+  }
+  }
+
+  .sticky-card-container .section:nth-child(4){
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .sticky-card-inner-container-4{
+      max-width: 1200px;
+      height: 600px;
+      background-color: white;
+      /* background-color: #fcbd2c; */
+      border-radius: 20px;
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 5px 10px;
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-size:x-large;
+      }
+      }
   
-  .beaver-sitting-image {
-    width: 500px;
-    
-  } */
+.header-card-container{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  position: relative;
+  bottom: -100px;
+
+}
+
+.sticky-container-image{
+  height: 400px;
+  padding: 10px;
+}
+
+.sticky-card-inner-text {
+  padding: 10px;
+}
+
+.sticky-container-number {
+  font-size: xx-large;
+  font-weight: bolder;
+
+}
+
