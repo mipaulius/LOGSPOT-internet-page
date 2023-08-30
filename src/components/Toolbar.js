@@ -24,7 +24,7 @@ const Toolbar = () => {
       <Link to="/home"><div className="header-toolbar">For Talents</div></Link>
       <Link to="/it-hiring"><div className="header-toolbar">For Employers</div></Link>
       <Link to="/about"><div className="header-toolbar">About</div></Link>
-      <Link to="/sign-up">
+      <Link to="/sign-up" className="sign-up-container">
         <img
           className="sign-up-button"
           src={isButtonPushed ? PushedButton : SignUpButton}

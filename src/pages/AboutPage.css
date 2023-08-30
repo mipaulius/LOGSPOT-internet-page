@@ -1,0 +1,25 @@
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.about-us-info {
+    flex: 2; /* Expand to fill available space */
+    margin-right: 10px;
+}
+
+.map-wrapper {
+    flex: 2; /* Expand to fill available space */
+    margin-left: 10px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p{
+    padding-bottom: 50px;
+}

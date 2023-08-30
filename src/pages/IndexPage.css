@@ -1,12 +1,12 @@
 .main-window{
     background-color:#fcbd2c;
-    height: 825px;
+    height: 827px;
   
   }
   
   .logspot {
     padding-top: 77px;
-    padding-bottom: 74px;
+    padding-bottom: 76px;
     max-width: 1225px;
     margin-right: auto; 
     margin-left: auto;
@@ -130,28 +130,33 @@
   /* INTRODUCTION TEXT */
   
   .introduction-container {
-    max-width: 100%;
+    max-width: 1440px;
     height: 1067px;
     background-color: #fffdf1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .introduction-text-image {
-    max-width: 80%;
-    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its parent's width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
   }
-  
   
   .introduction-text {
-    font-size:x-large;
+    font-size: x-large;
     color: #000000;
     text-align: center;
-    padding-top: 50px; /* Adjust as needed */
-    max-width: 1200px;  
+    padding-top: 20px; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
   }
+  
+  
 
   /* Card Container */
   
