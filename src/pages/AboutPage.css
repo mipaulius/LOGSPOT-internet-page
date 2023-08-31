@@ -7,19 +7,56 @@
 
 .about-us-info {
     flex: 2; /* Expand to fill available space */
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .map-wrapper {
     flex: 2; /* Expand to fill available space */
-    margin-left: 10px;
+    padding: 16px;
 }
 
-h1{
-    text-align: center;
-    padding-bottom: 20px;
+.top-text{
+    font-size: xxx-large;
+    text-align: left;
+    padding: 16px;
+    font-weight: bolder;
+    
 }
 
-p{
+.description-text{
     padding-bottom: 50px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size:x-large;
+    
+}
+/* 
+@import url('https://fonts.cdnfonts.com/css/g-guarantee');
+
+
+@font-face {
+    font-family: 'g Guarantee', sans-serif;
+} */
+
+.about-us-button {
+    background-color: #fcbd2c;
+    color: white;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border: 2px solid #fcbd2c;
+    text-decoration: none;
+    /* font-family: 'Arial'; */
+    font-size:x-large;
+    display: inline-block;
+    text-align: center;
+    width: 240px;
+    height: 60px;
+}
+
+.about-us-button:hover {
+    background-color: transparent;
+    color: #fcbd2c;
+    cursor: pointer;
 }

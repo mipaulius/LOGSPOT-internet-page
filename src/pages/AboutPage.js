@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Rammstein from '../images/rammstein.jpg';
 import './AboutPage.css';
 
 const AboutPage = () => {
@@ -7,55 +8,61 @@ const AboutPage = () => {
     );
 
     return (
-        <div className="about-us-container">
+        <div className="about-us-hero-container"> <div className="top-text"><p>LOGSPOT -</p> <p>tech ecosystem of tomorrow</p></div>
+        <div className="about-us-container"> 
             <div className="about-us-info">
-<h1>About Us - LOGSPOT</h1>
+
 
 <h3>Company Overview:</h3>
 
-<p>LOGSPOT is a forward-thinking recruitment company established in early 2019. Our journey began with a simple vision: to connect exceptional talent with promising opportunities.</p>
+<div className="description-text">Logspot is a forward-thinking IT recruitment company established by a visionary entrepreneur, Paulius Miliauskas in early 2019. Our main goal is to connect exceptional tech talents with promising opportunities.</div>
 
-<h3>Our Mission:</h3>
+{/* <h3>Our Mission:</h3>
 
-<p>At LOGSPOT, our mission is clear — we exist to empower individuals and organizations through the art of recruitment. We are committed to helping businesses thrive by finding them the perfect match in terms of talent, skills, and culture fit.</p>
+<div className="description-text">At LOGSPOT, our mission is clear — we exist to empower individuals and organizations through the art of recruitment. We are committed to helping businesses thrive by finding them the perfect match in terms of talent, skills, and culture fit.</div> */}
 
-<h3>Our Evolution:</h3>
+{/* <h3>Our Evolution:</h3>
 
-<p>Our founder, Paulius Miliauskas, an MBA graduate, embarked on this journey after returning from Holland. What started as a small venture soon evolved into something bigger. With a client base spanning logistics, construction, and transport companies, we laid the foundation for something special.</p>
+<div className="description-text">Company founder, Paulius Miliauskas, an MBA graduate, embarked on this journey after his studies. What started as a small venture soon evolved into something bigger. With a client base spanning logistics, construction, and transport companies, we laid the foundation for something special.</div> */}
 
-<h3>A Passion for Technology:</h3>
+{/* <h3>A Passion for Technology:</h3>
 
-<p>Driven by an unwavering passion for technology, we shifted our focus towards IT recruitment. In 2023, we rebranded LOGSPOT as an IT recruitment company. This transition wasn't just a name change; it marked our commitment to adapting to the ever-evolving tech landscape.</p>
+<div className="description-text">Driven by an unwavering passion for technology, we shifted our focus towards IT recruitment. This transition wasn't just a name change; it marked our commitment to adapting to the ever-evolving tech landscape.</div> */}
 
-<h3>Educational Journey:</h3>
+{/* <h3>Educational Journey:</h3>
 
-<p>In 2023, Paulius decided to take a bold step forward by enrolling in front-end development studies. This educational endeavor allowed him to gain valuable insights into different coding languages and programming fields. These experiences became instrumental in enhancing our recruitment process for IT specialists.</p>
+<div className="description-text">In 2023, Paulius decided to take a bold step forward by enrolling in front-end development studies. This educational endeavor allowed him to gain valuable insights into different coding languages and programming fields. These experiences became instrumental in enhancing our recruitment process for IT specialists.</div> */}
 
 <h3>Mentoring the Next Generation:</h3>
 
-<p>Not content with personal growth alone, Paulius also embarked on a journey with "Code Academy." Here, he completed his studies and now actively supports young programmers in finding rewarding careers. Our commitment to nurturing talent extends beyond recruitment; it's about shaping the future of the tech industry.</p>
+<div className="description-text">In 2023, Logspot embarked on a journey with "Code Academy". We actively supports young programmers in finding rewarding careers. Our commitment to nurturing talents extends beyond recruitment; it's about shaping the future of the tech industry.</div>
 
 <h3>Join Us:</h3>
 
-<p>At LOGSPOT, we understand that the right hire can transform a company. We're here to make that transformation happen. Join us on our journey as we continue to bridge the gap between talent and opportunity.
+<div className="description-text">Ready for some tech-tastic fun? LOGSPOT brings IT professionals and companies together for an epic tech revolution. Get ready to build a dam of career achievements!</div>
 
-Together, let's build a future where talent thrives, and companies flourish.</p>
+<button className="about-us-button">Contact us</button>
 
             </div>
-            <div className="map-wrapper"> <h1>Our Headquarters</h1>
-                <iframe
-                    title="Google Maps"
-                    src={mapSrc}
-                    width="100%"
-                    height="450"
-                    frameBorder="0"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
+            <div className="rammstein"><img src={Rammstein} 
+          className='rammstein-concert' 
+          alt='some random dude standing with a beer in a Rammstein concert'/></div>
             
-                ></iframe>
-            </div>
         </div>
+        <div className="map-wrapper"> <h1>Our Office</h1>
+        <iframe
+            title="Google Maps"
+            src={mapSrc}
+            width="100%"
+            height="450"
+            frameBorder="0"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+    
+        ></iframe>
+    </div>
+    </div>
     );
 };
 

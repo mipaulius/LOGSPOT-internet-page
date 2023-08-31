@@ -6,7 +6,7 @@ import './ForTalents.css';
 const ForTalentsPage = () => {
     return (
         <div>
-           <h1>For Talents</h1>
+           <h2>LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!"</h2>
 
            <div class="container">
       <div class="apply_box">
