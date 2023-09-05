@@ -5,7 +5,7 @@ import ForEmployersPage from "./pages/ForEmployersPage"
 import AboutPage from "./pages/AboutPage";
 import Toolbar from "./components/Toolbar";
 import IndexPage from "./pages/IndexPage";
-import SignUpPage from "./pages/SignUpPage";
+import SignUpPage from "./pages/ForTalentsPage";
 
 
 const App = () => {

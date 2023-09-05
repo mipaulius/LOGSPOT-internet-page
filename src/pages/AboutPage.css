@@ -26,7 +26,7 @@
 .description-text{
     padding-bottom: 50px;
     /* font-family: 'Montserrat', sans-serif; */
-    font-size:x-large;
+    font-size:large;
     
 }
 /* 
@@ -37,26 +37,3 @@
     font-family: 'g Guarantee', sans-serif;
 } */
 
-.about-us-button {
-    background-color: #fcbd2c;
-    color: white;
-    /* text-transform: uppercase; */
-    font-weight: 700;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    border: 2px solid #fcbd2c;
-    text-decoration: none;
-    /* font-family: 'Arial'; */
-    font-size:x-large;
-    display: inline-block;
-    text-align: center;
-    width: 240px;
-    height: 60px;
-}
-
-.about-us-button:hover {
-    background-color: transparent;
-    color: #fcbd2c;
-    cursor: pointer;
-}
