@@ -1,12 +1,22 @@
 import React from "react";
 import './ForTalents.css';
+import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
+
 
 
 
 const ForTalentsPage = () => {
     return (
-        <div>
-           <h2>LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!"</h2>
+        <div className="hero-container">
+          <div className="for-talent-page-header-container">
+          <div className="text-logo"><h1>Join Logspot </h1>
+          <img src={LogspotLogoNew} 
+          className='Logspot-Logo-New' 
+          alt='images with number'/>
+          </div>
+        
+           <div className="for-talent-text">LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!</div>
+           </div>
 
            <div class="container">
       <div class="apply_box">

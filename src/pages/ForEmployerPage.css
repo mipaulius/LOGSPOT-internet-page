@@ -1,0 +1,51 @@
+.for-employers-h1 {
+    padding-top: 55px;
+}
+
+.ForEmployerPageHeader{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+
+.ForEmployerPageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    padding-bottom: 20px;
+  }
+  
+  .ForEmployerPageForm label {
+    margin-bottom: 10px;
+  }
+  
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ForEmployerPageForm button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .for-employers-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .beaver-head {
+    max-width: 576px;
+    position: relative;
+    top: 4px;
+  }

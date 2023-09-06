@@ -1,27 +1,55 @@
-import React, { useState } from 'react';
-import ContactForm from "./ContactForm"; // Import your ContactForm component
+import React from 'react';
+import BeaverHead from '../images/beaver-head.png';
+import "./ForEmployerPage.css"; // Import the CSS file
+
 
 const ForEmployersPage = () => {
-    const [isFormOpen, setIsFormOpen] = useState(false);
-
-    // Function to open the contact form
-    const openForm = () => {
-        setIsFormOpen(true);
-    };
-
-    // Function to close the contact form
-    const closeForm = () => {
-        setIsFormOpen(false);
-    };
-    
     return (
-        <div>
-            <h1>For Employers</h1>
-            <button className="about-us-button" onClick={openForm}>
-                Contact us
-            </button>
-            {/* Render the ContactForm component conditionally */}
-            {isFormOpen && <ContactForm isOpen={isFormOpen} onClose={closeForm} />}
+        <div className='hero-container'>
+            <div>
+                <h1 className='for-employers-h1'>Grow your tech team with Logspot!</h1>
+                <div className='ForEmployerPageHeader'>Discover the power of Logspot's tech-savvy beavers, damming up the best IT talents for your company's growth and success.</div>
+                <div className='for-employers-page-layout'>
+                <div className="ForEmployerPageForm">
+                   
+                    <form>
+                        <label>
+                            First name:
+                            <input type="text" required />
+                        </label>
+                        <label>
+                            Second name:
+                            <input type="text" required />
+                        </label>
+                        <label>
+                            Company:
+                            <input type="text" required />
+                        </label>
+                        <label>
+                            Phone:
+                            <input type="tel" pattern="[0-9]*" required title="Numbers only" />
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" required title="Please include a '@' in the email address" />
+                        </label>
+                        <label>
+                            Message:
+                            <textarea rows="4" required title="Please fill out this field"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                    <p>We will contact you shortly</p>
+                </div>
+
+                <div className='BeaverHead'>
+                <img src={BeaverHead} 
+                className='beaver-head' 
+                alt='images with beaver head smiling'/>
+                </div>
+                </div>
+
+            </div>
         </div>
     );
 };

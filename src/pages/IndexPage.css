@@ -159,6 +159,33 @@
   
 
   /* Card Container */
+
+  .header-card-container{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: relative;
+    bottom: -160px;
+  
+  }
+
+  .sign-up-process{
+    max-width: 800px;
+  }
+
+  .number{
+    max-width: 60px;
+  }
+
+  .sticky-container-number {
+    font-size: xxx-large;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 16px;
+  }
   
   .card-container {
    position:relative;
@@ -180,7 +207,7 @@
   align-items: center;
   
   .sticky-card-inner-container-1{
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     background-color: white;
     /* background-color: #fcbd2c; */
@@ -189,9 +216,10 @@
     padding: 10px;
     box-shadow: 5px 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     align-content: center;
     font-size:x-large;
+    align-items: center;
 
   }
   }
@@ -202,7 +230,7 @@
   justify-content: center;
   align-items: center;
   .sticky-card-inner-container-2{
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
     background-color: white;
     /* background-color: #fcbd2c; */
@@ -211,9 +239,10 @@
     padding: 10px;
     box-shadow: 5px 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     align-content: center;
     font-size:x-large;
+    align-items: center;
 
   }
   }
@@ -224,7 +253,7 @@
  justify-content: center;
  align-items: center;
  .sticky-card-inner-container-3{
-   max-width: 1200px;
+   max-width: 1600px;
    height: 600px;
    background-color: white;
    /* background-color: #fcbd2c; */
@@ -233,9 +262,11 @@
    padding: 10px;
    box-shadow: 5px 10px;
    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     align-content: center;
     font-size:x-large;
+    align-items: center;
+
   }
   }
 
@@ -245,7 +276,7 @@
      justify-content: center;
      align-items: center;
      .sticky-card-inner-container-4{
-      max-width: 1200px;
+      max-width: 1600px;
       height: 600px;
       background-color: white;
       /* background-color: #fcbd2c; */
@@ -254,33 +285,26 @@
       padding: 10px;
       box-shadow: 5px 10px;
       display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     align-content: center;
     font-size:x-large;
-      }
-      }
-  
-.header-card-container{
-  text-align: center;
-  font-size: xx-large;
-  font-weight: bolder;
-  position: relative;
-  bottom: -100px;
+    align-items: center;
 
-}
+      }
+      }
+
 
 .sticky-container-image{
-  height: 400px;
+  max-width: 600px;
   padding: 10px;
+  /* align-items: center; */
+  /* align-content: center; */
+  /* align-self: center; */
+
 }
 
 .sticky-card-inner-text {
-  padding: 10px;
+  padding: 40px;
 }
 
-.sticky-container-number {
-  font-size: xx-large;
-  font-weight: bolder;
-
-}
 

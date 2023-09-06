@@ -4,11 +4,18 @@ body {
 
 }
 
+.hero-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .footer {
   /* max-width: 1920px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: auto;
+  background-color: #fcbd2c; 
+  padding-top: 50px;
 }
 
 .footer-1, .footer-2, .footer-3, .footer-4 {
