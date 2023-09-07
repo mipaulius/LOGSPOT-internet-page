@@ -54,9 +54,9 @@ const App = () => {
 
       <div className='footer-4'>
       <ul><h3 className='social-networks'>SOCIAL NETWORKS</h3>
-      <li className='social-list-item'><img className='social-images' src={require('./images/facebook.svg').default} alt="facebook icon" /> <span className='social-text'>FACEBOOK</span></li>
-      <li className='social-list-item'><img className='social-images' src={require('./images/linkedin.svg').default} alt="linkedin icon" /><span className='social-text'>LINKEDIN</span></li>
-      <li className='social-list-item'><img className='social-images' src={require('./images/twitter.svg').default} alt="twitter icon" /><span className='social-text'>TWITTER</span></li>
+      <li className='social-list-item'><img className='social-images' src={require('./images/facebook-NEW.svg').default} alt="facebook icon" /> <span className='social-text'>FACEBOOK</span></li>
+      <li className='social-list-item'><img className='social-images' src={require('./images/linkedin-NEW.svg').default} alt="linkedin icon" /><span className='social-text'>LINKEDIN</span></li>
+      <li className='social-list-item'><img className='social-images' src={require('./images/twitter-NEW.svg').default} alt="twitter icon" /><span className='social-text'>TWITTER</span></li>
 
       </ul>
       </div>

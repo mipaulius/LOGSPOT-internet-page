@@ -1,8 +1,7 @@
 .about-us-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 16px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-bottom: 150px;
 }
 
 .about-us-info {
@@ -12,23 +11,20 @@
 
 .map-wrapper {
     flex: 2; /* Expand to fill available space */
-    padding: 16px;
+    padding-bottom: 50px;
+    
 }
 
 .top-text{
     font-size: xxx-large;
     text-align: left;
-    padding: 16px;
     font-weight: bolder;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    justify-content: center;
     
 }
 
-.description-text{
-    padding-bottom: 50px;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-size:large;
-    
-}
 /* 
 @import url('https://fonts.cdnfonts.com/css/g-guarantee');
 
@@ -37,3 +33,63 @@
     font-family: 'g Guarantee', sans-serif;
 } */
 
+.rammstein {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Top row for the picture, bottom row for other content */
+    align-items: top;
+    justify-items: center; /* Center horizontally */
+}
+
+.my-picture {
+    max-width: 300px;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+    .contact-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: x-large;
+    }
+
+.Viber, .WhatsApp, .Email {
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.my-name-tag {
+    text-align: center;
+  }
+  
+  .my-name-tag b {
+    display: block; /* Display name on a separate line */
+    font-weight: bold;
+  }
+  
+  .my-name-tag p {
+    display: block; /* Display "CEO" on a separate line */
+    margin-top: 0; /* Remove default top margin for <p> */
+  }
+
+  .pointer {
+    max-width: 50px;
+  }
+
+  .about-us-pointers {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .description-text{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size:medium;
+    
+}
+
+.about-us-button-container {
+    display: grid;
+    justify-items: end;
+    
+}

@@ -46,6 +46,7 @@ li {
 .social-list-item {
   display: flex;
   align-items: center; /* Vertically center items */
+  padding: 5px;
 }
 
 h3 {

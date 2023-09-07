@@ -14,11 +14,11 @@ const ForEmployersPage = () => {
                    
                     <form>
                         <label>
-                            First name:
+                            First Name:
                             <input type="text" required />
                         </label>
                         <label>
-                            Second name:
+                            Second Name:
                             <input type="text" required />
                         </label>
                         <label>
@@ -37,9 +37,8 @@ const ForEmployersPage = () => {
                             Message:
                             <textarea rows="4" required title="Please fill out this field"></textarea>
                         </label>
-                        <button type="submit">Send</button>
+                        <button type="submit">Send us a message and we will contact you shortly</button>
                     </form>
-                    <p>We will contact you shortly</p>
                 </div>
 
                 <div className='BeaverHead'>

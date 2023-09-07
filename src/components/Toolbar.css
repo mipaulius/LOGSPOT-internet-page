@@ -21,8 +21,6 @@ a:-webkit-any-link {
 }
 
   
-  
-  
   .logspot-logo {
     width: 190px; /* Adjust the width to your preference */
     height: auto; /* Maintain aspect ratio */
@@ -34,30 +32,14 @@ a:-webkit-any-link {
     display: flex;
     align-content: center;
     justify-content: center;
+    max-width: 200px;
   }
 
 
-  .sign-up-button {
-    width: 170px;
+ .sign-up-button {
+    width: 160px;
     height: 100px;
     background-size: cover;
     cursor: pointer;
-    padding: 20px;
-
   }
-
-.sign-up-button:hover {
-  animation: hoverAnimation 2s steps(4) infinite;
-  
-}
-
-@keyframes hoverAnimation {
-  0% { background-image: url('../images/button-on-hover-frame-1.svg'); }
-  16.66% { background-image: url('../images/button-on-hover-frame-2.svg'); }
-  33.26% { background-image: url('../images/button-on-hover-frame-3.svg'); }
-  50% { background-image: url('../images/button-on-hover-frame-4.svg'); }
-  66.66% { background-image: url('../images/button-on-hover-frame-3.svg'); }
-  83.33% { background-image: url('../images/button-on-hover-frame-2.svg'); }
-  100% { background-image: url('../images/button-on-hover-frame-1.svg'); }
-}
 

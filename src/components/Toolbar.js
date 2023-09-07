@@ -2,11 +2,21 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './Toolbar.css';
 import SignUpButton from '../images/button.svg';
-import PushedButton from '../images/button-pushed.svg';
+import SignUpButtonBlack from '../images/button-orange.svg'; // Import the hover image
+import PushedButton from '../images/button-pushed-orange.svg';
 import LogspotLogo from '../images/logo.svg'
 
 const Toolbar = () => {
+  const [isHovered, setIsHovered] = useState(false);
   const [isButtonPushed, setIsButtonPushed] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   const handleMouseDown = () => {
     setIsButtonPushed(true);
@@ -27,8 +37,10 @@ const Toolbar = () => {
       <Link to="/sign-up" className="sign-up-container">
         <img
           className="sign-up-button"
-          src={isButtonPushed ? PushedButton : SignUpButton}
+          src={isButtonPushed ? PushedButton : (isHovered ? SignUpButtonBlack : SignUpButton)}
           alt="button for signing in"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
         />

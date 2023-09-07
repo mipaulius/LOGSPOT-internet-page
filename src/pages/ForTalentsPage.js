@@ -1,84 +1,148 @@
-import React from "react";
-import './ForTalents.css';
-import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
+import React, { useState } from 'react';
+import './ForTalents.css'; // Correct import statement
 
 
 
 
-const ForTalentsPage = () => {
-    return (
-        <div className="hero-container">
-          <div className="for-talent-page-header-container">
-          <div className="text-logo"><h1>Join Logspot </h1>
-          <img src={LogspotLogoNew} 
-          className='Logspot-Logo-New' 
-          alt='images with number'/>
-          </div>
-        
-           <div className="for-talent-text">LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!</div>
-           </div>
+function JobApplicationForm() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [photo, setPhoto] = useState(null);
+  const [dateOfBirth, setDateOfBirth] = useState('');
+  const [mobilePhone, setMobilePhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [city, setCity] = useState('');
+  const [remoteWork, setRemoteWork] = useState(false);
+  const [preferredPosition, setPreferredPosition] = useState([]);
+  const [programmingLanguages, setProgrammingLanguages] = useState('');
+  const [workExperience, setWorkExperience] = useState('');
+  const [education, setEducation] = useState('');
+  const [cvFile, setCvFile] = useState(null);
+  const [agreeToTerms, setAgreeToTerms] = useState(false);
+  const [subscribeToNewsletter, setSubscribeToNewsletter] = useState(false);
 
-           <div class="container">
-      <div class="apply_box">
-        <h1>
-          <a href="#first_name"
-            >Job Application <span class="title_small">(Web)</span></a
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    // You can access all the form data in the state variables
+  };
+
+  return (
+    <div className='hero-container'>
+      <h1 className='talents-header'>Join the LOGSPOT and set sail on a tech-tastic voyage!</h1>
+      <div className='job-application-container'>
+      <div className="job-application-form-container">
+
+      <form onSubmit={handleFormSubmit}>
+        <div>
+          <label htmlFor="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            required
+            pattern="[A-Za-z]+"
+          />
+        </div>
+        <div>
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            required
+            pattern="[A-Za-z]+"
+          />
+        </div>
+        <div>
+          <label htmlFor="photo">Your Photo:</label>
+          <input
+            type="file"
+            id="photo"
+            accept="image/*"
+            onChange={(e) => setPhoto(e.target.files[0])}
+            
+          />
+        </div>
+        <div>
+          <label htmlFor="dateOfBirth">Date of Birth:</label>
+          <input
+            type="date"
+            id="dateOfBirth"
+            value={dateOfBirth}
+            onChange={(e) => setDateOfBirth(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="mobilePhone">Mobile Phone:</label>
+          <input
+            type="tel"
+            id="mobilePhone"
+            value={mobilePhone}
+            onChange={(e) => setMobilePhone(e.target.value)}
+            required
+            pattern="[0-9]+"
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="city">Your City:</label>
+          <input
+            type="text"
+            id="city"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            required
+            pattern="[A-Za-z]+"
+          />
+        </div>
+        <div>
+          <label>Do you prefer to work remotely?</label>
+          <label>
+            <input
+              type="radio"
+              name="remoteWork"
+              value="yes"
+              checked={remoteWork === true}
+              onChange={() => setRemoteWork(true)}
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="remoteWork"
+              value="no"
+              checked={remoteWork === false}
+              onChange={() => setRemoteWork(false)}
+            />
+            No
+          </label>
+        </div>
+        <div>
+          <label htmlFor="preferredPosition">Preferred Job Position:</label>
+          <select
+            id="preferredPosition"
+            multiple
+            value={preferredPosition}
+            onChange={(e) =>
+              setPreferredPosition(Array.from(e.target.selectedOptions, (option) => option.value))
+            }
+            required
           >
-        </h1>
-        <form
-          action="https://formsubmit.co/info@logspot.lt"
-          class="form"
-          method="POST"
-        >
-          <div class="form_container">
-            <div class="form_control">
-              <label for="first_name">First name</label>
-              <input
-                id="first_name"
-                name="first_name"
-                placeholder="Enter your first name"
-                autocomplete="off"
-                required
-              />
-              <input type="hidden" name="_next" value="/freedom4/login2.html" />
-            </div>
-            <div class="form_control">
-              <label for="last_name">Last name</label>
-              <input
-                id="last_name"
-                name="last_name"
-                placeholder="Enter your Last name"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="email">Your Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your Email.."
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="phone">Your Phone No.</label>
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                placeholder="Enter your Mobile No."
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="job_rol">Your Job Rol</label>
-              <select name="job_rol" id="job_rol">
-
-              <option value="">Select an option</option>
+           
   <option value="Application_security_administrator">Application security administrator</option>
   <option value="Artificial_intelligence_security_specialist">Artificial intelligence security specialist</option>
   <option value="Back-end_developer">Back-end developer</option>
@@ -108,6 +172,7 @@ const ForTalentsPage = () => {
   <option value="Front-end_developer">Front-end developer</option>
   <option value="Full-stack_developer">Full-stack developer</option>
   <option value="Help_desk_support_specialist">Help desk support specialist</option>
+  <option value="HTML_CSS__developer">HTML/CSS developer</option>
   <option value="IT_coordinator">IT coordinator</option>
   <option value="IT_security_engineer">IT security engineer</option>
   <option value="IT_support_specialist">IT support specialist</option>
@@ -134,88 +199,78 @@ const ForTalentsPage = () => {
   <option value="UX_(user_experience)_designer">UX designer</option>
   <option value="Web_developer">Web developer</option>
   <option value="Wireless_network_engineer">Wireless network engineer</option>
-              </select>
-            </div>
-            <div class="form_control">
-              <label for="link">Your Portfolio link</label>
-              <input
-                type="link"
-                id="link"
-                name="link"
-                placeholder="Enter your Portfolio link.."
-                required
-              />
-            </div>
-            <div class="textarea_control">
-              <label for="address">What programming languages do you use?</label>
-              <textarea
-                type="text"
-                id="address"
-                name="address"
-                placeholder="Enter your programming languages."
-                autocomplete="off"
-                rows="4"
-                cols="50"
-              ></textarea>
-            </div>
-            <div class="form_control">
-              <label for="city">Your City</label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                placeholder="Enter your City (Town).."
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="pin">Pin Code</label>
-              <input
-                type="number"
-                id="pin"
-                name="pin"
-                placeholder="Enter your Pin Code.."
-                value="493662"
-                autocomplete="off"
-                readonly
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="date">Date</label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                value="2022-11-10"
-                required
-              />
-            </div>
-            <div class="form_control">
-              <label for="files">Upload your C.V.</label>
-              <input
-                id="files"
-                type="file"
-                name="file"
-                multiple="multiple"
-                accept="image/jpeg, image/png, image/jpg, image/svg"
-              />
-              <output id="result" />
-            </div>
-          </div>
-          <div class="button_container">
-            <button type="submit">Apply Now</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script src="/aplication-form/js/upload.js"></script>
 
+          </select>
         </div>
+        <div>
+          <label htmlFor="programmingLanguages">What programming languages do you use?</label>
+          <input
+            type="text"
+            id="programmingLanguages"
+            value={programmingLanguages}
+            onChange={(e) => setProgrammingLanguages(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="workExperience">What is your work experience?</label>
+          <input
+            type="text"
+            id="workExperience"
+            value={workExperience}
+            onChange={(e) => setWorkExperience(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="education">What is your education?</label>
+          <input
+            type="text"
+            id="education"
+            value={education}
+            onChange={(e) => setEducation(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="cvFile">Attach your CV or certificates:</label>
+          <input
+            type="file"
+            id="cvFile"
+            accept=".pdf,.doc,.docx"
+            onChange={(e) => setCvFile(e.target.files[0])}
+          />
+        </div>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={agreeToTerms}
+              onChange={() => setAgreeToTerms(!agreeToTerms)}
+              required
+            />
+            By signing up you agree to the Terms of Service and the Privacy Policy
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={subscribeToNewsletter}
+              onChange={() => setSubscribeToNewsletter(!subscribeToNewsletter)}
+            />
+            Yes, I want to subscribe to the Logspot newsletter and occasional marketing communications.
+          </label>
+        </div>
+        <button type="submit">Create an account</button>
+      </form>
+    </div>
 
-    );
+      <div className='talents-page-description'><p>LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!</p></div>
+    </div>
+    
+    </div>
+  );
+}
 
-};
-
-export default ForTalentsPage;
+export default JobApplicationForm;
