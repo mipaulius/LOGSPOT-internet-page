@@ -2,11 +2,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .talents-header {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text within the container */
+  padding-bottom: 50px;
 }
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.centered-content {
+  margin-top: 20px; /* Optional: Add some spacing between the header and the centered content */
+}
+
+.join-logspot-text {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+.LogspotLogoNew {
+  max-width: 50px;
+  padding-left: 5px;
+  }
 
 .job-application-form-container {
   max-width: 100%; /* Adjust the width as needed */
@@ -66,4 +92,6 @@
 .talents-page-description {
 display: flex;
 max-width: 100%;
+font-size: large;
 }
+

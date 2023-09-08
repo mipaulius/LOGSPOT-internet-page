@@ -16,13 +16,26 @@ padding-bottom: 150px;
 }
 
 .top-text{
-    font-size: xxx-large;
+    font-size: xx-large;
     text-align: left;
     font-weight: bolder;
-    padding-top: 60px;
-    padding-bottom: 80px;
     justify-content: center;
-    
+}
+
+.top-text-1 {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.top-text-2 {
+  padding-bottom: 30px;
+}
+
+.description-names {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* 
@@ -35,9 +48,10 @@ padding-bottom: 150px;
 
 .rammstein {
     display: grid;
-    grid-template-rows: auto 1fr; /* Top row for the picture, bottom row for other content */
+    grid-template-rows:auto;
     align-items: top;
     justify-items: center; /* Center horizontally */
+    padding-bottom: 100px;
 }
 
 .my-picture {
@@ -45,12 +59,26 @@ padding-bottom: 150px;
     border-radius: 50px;
     padding-bottom: 20px;
 }
-    .contact-details {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    font-size: x-large;
-    }
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Add margin for spacing between rows */
+}
+
+.contact-item img {
+  margin-right: 10px; /* Add margin for spacing between image and text */
+}
+
+/* Add any additional styling for your images and text as needed */
+
 
 .Viber, .WhatsApp, .Email {
     max-width: 50px;
@@ -79,7 +107,7 @@ padding-bottom: 150px;
     display: grid;
     grid-template-columns: 10% 90%;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .description-text{

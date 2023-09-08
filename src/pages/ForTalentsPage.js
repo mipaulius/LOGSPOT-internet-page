@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ForTalents.css'; // Correct import statement
-
+import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
 
 
 
@@ -29,9 +29,23 @@ function JobApplicationForm() {
 
   return (
     <div className='hero-container'>
-      <h1 className='talents-header'>Join the LOGSPOT and set sail on a tech-tastic voyage!</h1>
+    
       <div className='job-application-container'>
       <div className="job-application-form-container">
+      <div className='talents-header'>
+  <div className='header-content'>
+    <div className='join-logspot-text'>Join Logspot</div>
+    <img
+      src={LogspotLogoNew}
+      className='LogspotLogoNew'
+      alt='logo'
+    />
+  </div>
+  <div className='centered-content'>
+  Create your profile and let companies discover your skills and potential!
+  </div>
+</div>
+
 
       <form onSubmit={handleFormSubmit}>
         <div>

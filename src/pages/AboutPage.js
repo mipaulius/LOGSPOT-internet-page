@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm"; // Import your ContactForm component
 import WhatsApp from '../images/whatsapp-NEW.svg';
 import Viber from '../images/viber-NEW.svg';
 import Email from '../images/email-NEW.svg';
-import Pointer from '../images/pointer.svg';
+import Pointer from '../images/pointer-orange.svg';
 
 import './AboutPage.css';
 import './ContactForm.css';
@@ -30,10 +30,12 @@ const AboutPage = () => {
 
     return (
         <div className="hero-container">
+            
             <div className="top-text">
-                <p>LOGSPOT -</p>
-                <p>Your Bridge to IT Superstars</p>
+                <div className="top-text-1">LOGSPOT -</div>
+                <div className="top-text-2">Your Bridge to IT Superstars!</div>
             </div>
+
             <div className="about-us-container">
                 <div className="about-us-info">
 
@@ -44,7 +46,7 @@ const AboutPage = () => {
                         alt='Check marks'
                     />
                     <div>
-                    <h3>Company Overview:</h3>
+                    <div className="description-names">Company Overview:</div>
                     <div className="description-text">Logspot is IT focused job search portal that unites vacancies across Europe. Company is established by a visionary entrepreneur, Paulius Miliauskas in early 2019.</div>
                     </div></div>
 
@@ -56,7 +58,7 @@ const AboutPage = () => {
                         alt='Check marks'
                     />
                     <div>
-                    <h3>Our Mission:</h3>
+                    <div className="description-names">Our Mission:</div>
                     <div className="description-text">At LOGSPOT, we're on a mission to unite IT wizards and visionary companies. From coding to creativity, our beaver squad connects talent and opportunity in the tech forest</div>
                     </div></div>
 
@@ -67,7 +69,7 @@ const AboutPage = () => {
                         alt='Check marks'
                     />
                     <div>
-                    <h3>Mentoring the Next Generation:</h3>
+                    <div className="description-names">Mentoring the Next Generation:</div>
                     <div className="description-text">In 2023, Logspot embarked on a journey with "Code Academy". We actively supports young programmers in finding rewarding careers. Our commitment to nurturing talents extends beyond recruitment; it's about shaping the future of the tech industry.</div>
                     </div></div>
 
@@ -78,7 +80,7 @@ const AboutPage = () => {
                         alt='Check marks'
                     />
                     <div>
-                    <h3>Join Us</h3>
+                    <div className="description-names">Join Us</div>
                     <div className="description-text">Ready for some tech-tastic fun? LOGSPOT brings IT professionals and companies together for an epic tech revolution. Get ready to build a dam of career achievements!</div>
                     </div></div>
 
@@ -91,6 +93,7 @@ const AboutPage = () => {
                     {/* Render the ContactForm component conditionally */}
                     {isFormOpen && <ContactForm isOpen={isFormOpen} onClose={closeForm} />}
                 </div>
+
                 <div className="rammstein">
                     <img
                         src={Rammstein}
@@ -100,18 +103,24 @@ const AboutPage = () => {
                     />
                     <div className="my-name-tag"><b>Paulius Miliauskas</b><p>CEO</p></div>
                     
-                    <div className="contact-details"><img src={Email}
-                    className="Email"
-                    alt="Email"
-                    />info@logspot.lt</div>
-                    <div className="contact-details"><img src={WhatsApp}
-                    className="WhatsApp"
-                    alt="WhatsApp"
-                    />+37062215882</div>
-                    <div className="contact-details"><img src={Viber}
-                    className="Viber"
-                    alt="Viber"
-                    />+37062215882</div>
+                    <div className="contact-details">
+                        <div className="contact-item">
+                            <img src={Email} className="Email" alt="Email" />
+                            <p>info@logspot.lt</p>
+                        </div>
+
+                        <div className="contact-item">
+                            <img src={WhatsApp} className="WhatsApp" alt="WhatsApp" />
+                            <p>+37062215882</p>
+                        </div>
+
+                        <div className="contact-item">
+                            <img src={Viber} className="Viber" alt="Viber" />
+                            <p>+37062215882</p>
+                        </div>
+                    </div>
+
+
 
 
                 </div>
