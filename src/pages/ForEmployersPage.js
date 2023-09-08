@@ -12,33 +12,28 @@ const ForEmployersPage = () => {
                 <div className='for-employers-page-layout'>
                 <div className="ForEmployerPageForm">
                    
-                    <form>
-                        <label>
-                            First Name:
-                            <input type="text" required />
-                        </label>
-                        <label>
-                            Second Name:
-                            <input type="text" required />
-                        </label>
-                        <label>
-                            Company:
-                            <input type="text" required />
-                        </label>
-                        <label>
-                            Phone:
-                            <input type="tel" pattern="[0-9]*" required title="Numbers only" />
-                        </label>
-                        <label>
-                            Email:
-                            <input type="email" required title="Please include a '@' in the email address" />
-                        </label>
-                        <label>
-                            Message:
-                            <textarea rows="4" required title="Please fill out this field"></textarea>
-                        </label>
-                        <button type="submit">Send us a message and we will contact you shortly</button>
-                    </form>
+                  <form>
+  <label>
+    <input type="text" required placeholder="Enter your first name" />
+  </label>
+  <label>
+    <input type="text" required placeholder="Enter your second name" />
+  </label>
+  <label>
+    <input type="text" required placeholder="Enter your company name" />
+  </label>
+  <label>
+    <input type="tel" pattern="[0-9]*" required title="Numbers only" placeholder="Enter your phone number" />
+  </label>
+  <label>
+    <input type="email" required title="Please include a '@' in the email address" placeholder="Enter your email address" />
+  </label>
+  <label>
+    <textarea rows="4" required title="Please fill out this field" placeholder="Enter your message here"></textarea>
+  </label>
+  <button type="submit">Send us a message and we will contact you shortly</button>
+</form>
+
                 </div>
 
                 <div className='BeaverHead'>
@@ -49,6 +44,8 @@ const ForEmployersPage = () => {
                 </div>
 
             </div>
+
+            
         </div>
     );
 };

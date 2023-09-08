@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import './ForTalents.css'; // Correct import statement
 import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
+import Beaver45 from '../images/beaver45.svg';
+
+import './ForTalents.css'; // Correct import statement
+
+
 
 
 
@@ -30,7 +34,6 @@ function JobApplicationForm() {
   return (
     <div className='hero-container'>
     
-      <div className='job-application-container'>
       <div className="job-application-form-container">
       <div className='talents-header'>
   <div className='header-content'>
@@ -48,8 +51,7 @@ function JobApplicationForm() {
 
 
       <form onSubmit={handleFormSubmit}>
-        <div>
-          <label htmlFor="firstName">First Name:</label>
+      <div className="form-group">
           <input
             type="text"
             id="firstName"
@@ -57,10 +59,11 @@ function JobApplicationForm() {
             onChange={(e) => setFirstName(e.target.value)}
             required
             pattern="[A-Za-z]+"
+            placeholder="First Name"
           />
         </div>
-        <div>
-          <label htmlFor="lastName">Last Name:</label>
+        
+        <div className="form-group">
           <input
             type="text"
             id="lastName"
@@ -68,30 +71,22 @@ function JobApplicationForm() {
             onChange={(e) => setLastName(e.target.value)}
             required
             pattern="[A-Za-z]+"
+            placeholder="Last Name"
           />
         </div>
+        
         <div>
-          <label htmlFor="photo">Your Photo:</label>
-          <input
-            type="file"
-            id="photo"
-            accept="image/*"
-            onChange={(e) => setPhoto(e.target.files[0])}
-            
-          />
-        </div>
-        <div>
-          <label htmlFor="dateOfBirth">Date of Birth:</label>
-          <input
-            type="date"
-            id="dateOfBirth"
-            value={dateOfBirth}
-            onChange={(e) => setDateOfBirth(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="mobilePhone">Mobile Phone:</label>
+         <input
+           type="date"
+           id="dateOfBirth"
+           value={dateOfBirth}
+           onChange={(e) => setDateOfBirth(e.target.value)}
+           required
+         />
+         <span className="hint">Enter your date of birth (e.g., month/day/year/)</span>
+       </div>
+
+        <div className="form-group">
           <input
             type="tel"
             id="mobilePhone"
@@ -99,20 +94,20 @@ function JobApplicationForm() {
             onChange={(e) => setMobilePhone(e.target.value)}
             required
             pattern="[0-9]+"
+            placeholder="Mobile Phone"
           />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className="form-group">
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="E-mail"
           />
         </div>
-        <div>
-          <label htmlFor="city">Your City:</label>
+        <div className="form-group">
           <input
             type="text"
             id="city"
@@ -120,32 +115,42 @@ function JobApplicationForm() {
             onChange={(e) => setCity(e.target.value)}
             required
             pattern="[A-Za-z]+"
+            placeholder="Your City"
           />
         </div>
-        <div>
-          <label>Do you prefer to work remotely?</label>
-          <label>
-            <input
-              type="radio"
-              name="remoteWork"
-              value="yes"
-              checked={remoteWork === true}
-              onChange={() => setRemoteWork(true)}
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="remoteWork"
-              value="no"
-              checked={remoteWork === false}
-              onChange={() => setRemoteWork(false)}
-            />
-            No
-          </label>
+
+        <div className="form-group">
+          <input
+            type="text"
+            id="programmingLanguages"
+            value={programmingLanguages}
+            onChange={(e) => setProgrammingLanguages(e.target.value)}
+            required
+            placeholder="What programming languages do you use?"
+          />
         </div>
-        <div>
+        <div className="form-group">
+          <input
+            type="text"
+            id="workExperience"
+            value={workExperience}
+            onChange={(e) => setWorkExperience(e.target.value)}
+            required
+            placeholder="What is your work experience?"
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            id="education"
+            value={education}
+            onChange={(e) => setEducation(e.target.value)}
+            required
+            placeholder="What is your education?"
+          />
+        </div>
+        
+        <div className="form-group">
           <label htmlFor="preferredPosition">Preferred Job Position:</label>
           <select
             id="preferredPosition"
@@ -215,46 +220,44 @@ function JobApplicationForm() {
   <option value="Wireless_network_engineer">Wireless network engineer</option>
 
           </select>
+          <span className="hint">Hold Ctrl (or Cmd) to select multiple positions</span>
         </div>
-        <div>
-          <label htmlFor="programmingLanguages">What programming languages do you use?</label>
-          <input
-            type="text"
-            id="programmingLanguages"
-            value={programmingLanguages}
-            onChange={(e) => setProgrammingLanguages(e.target.value)}
-            required
-          />
+
+        <div className="form-group">
+          <label>Do you prefer to work remotely?</label>
+          <label>
+            <input
+              type="radio"
+              name="remoteWork"
+              value="yes"
+              checked={remoteWork === true}
+              onChange={() => setRemoteWork(true)}
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="remoteWork"
+              value="no"
+              checked={remoteWork === false}
+              onChange={() => setRemoteWork(false)}
+            />
+            No
+          </label>
         </div>
-        <div>
-          <label htmlFor="workExperience">What is your work experience?</label>
-          <input
-            type="text"
-            id="workExperience"
-            value={workExperience}
-            onChange={(e) => setWorkExperience(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="education">What is your education?</label>
-          <input
-            type="text"
-            id="education"
-            value={education}
-            onChange={(e) => setEducation(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="cvFile">Attach your CV or certificates:</label>
+
+        <div className="form-group">
+         <label htmlFor="cvFile">Attach your CV or certificates:</label>
           <input
             type="file"
             id="cvFile"
             accept=".pdf,.doc,.docx"
             onChange={(e) => setCvFile(e.target.files[0])}
           />
+          <span className="hint">Supported file formats: PDF, DOC, DOCX</span>
         </div>
+
         <div>
           <label>
             <input
@@ -266,23 +269,18 @@ function JobApplicationForm() {
             By signing up you agree to the Terms of Service and the Privacy Policy
           </label>
         </div>
-        <div>
-          <label>
-            <input
-              type="checkbox"
-              checked={subscribeToNewsletter}
-              onChange={() => setSubscribeToNewsletter(!subscribeToNewsletter)}
-            />
-            Yes, I want to subscribe to the Logspot newsletter and occasional marketing communications.
-          </label>
-        </div>
+
         <button type="submit">Create an account</button>
       </form>
     </div>
 
-      <div className='talents-page-description'><p>LOGSPOT's beaver brigade is on a mission to build the tech ecosystem of tomorrow. Let our team help you construct the perfect IT resume, and watch companies come knocking on your digital door!</p></div>
-    </div>
-    
+    <img
+      src={Beaver45}
+      className='beaver45'
+      alt='beaver watching from the side of the screen'
+    />
+
+
     </div>
   );
 }

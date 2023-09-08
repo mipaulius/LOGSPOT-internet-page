@@ -9,7 +9,7 @@
 }
 
 .header-toolbar {
-    padding: 38px;
+    padding: 10px;
     color: black;
 }
 
@@ -24,7 +24,7 @@ a:-webkit-any-link {
   .logspot-logo {
     width: 190px; /* Adjust the width to your preference */
     height: auto; /* Maintain aspect ratio */
-    padding: 27px;
+    padding: 15px;
 
   }
   
@@ -37,8 +37,8 @@ a:-webkit-any-link {
 
 
  .sign-up-button {
-    width: 160px;
-    height: 100px;
+    width: 140px;
+    height: 70px;
     background-size: cover;
     cursor: pointer;
   }

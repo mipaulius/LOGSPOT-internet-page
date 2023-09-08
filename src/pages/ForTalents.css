@@ -1,17 +1,10 @@
-.job-application-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
 .talents-header {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
   text-align: center; /* Center text within the container */
-  padding-bottom: 50px;
+  padding-bottom: 5 0px;
 }
 
 .header-content {
@@ -21,6 +14,7 @@
 
 .centered-content {
   margin-top: 20px; /* Optional: Add some spacing between the header and the centered content */
+  margin-bottom: 20px;
 }
 
 .join-logspot-text {
@@ -40,6 +34,9 @@
   background-color: #fffdf1; /* Background color for the form container */
   /* border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  max-width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;;
 }
 
 .job-application-form-container h1 {
@@ -75,6 +72,13 @@
   margin-right: 5px;
 }
 
+.hint {
+  font-size: 0.8em;
+  color: #888; /* Use a muted color for hints */
+  margin-left: 5px; /* Add some spacing between the input and the hint */
+}
+
+
 .job-application-form-container button {
   background-color: #007bff; /* Button background color */
   color: #fff;
@@ -93,5 +97,15 @@
 display: flex;
 max-width: 100%;
 font-size: large;
+}
+
+.beaver45 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* Optionally, you can specify width and height for the image */
+  width: 300px; /* Adjust as needed */
+  height: auto; /* This maintains the image's aspect ratio */
+  
 }
 

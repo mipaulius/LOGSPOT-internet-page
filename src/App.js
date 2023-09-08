@@ -54,10 +54,26 @@ const App = () => {
 
       <div className='footer-4'>
       <ul><h3 className='social-networks'>SOCIAL NETWORKS</h3>
-      <li className='social-list-item'><img className='social-images' src={require('./images/facebook-NEW.svg').default} alt="facebook icon" /> <span className='social-text'>FACEBOOK</span></li>
-      <li className='social-list-item'><img className='social-images' src={require('./images/linkedin-NEW.svg').default} alt="linkedin icon" /><span className='social-text'>LINKEDIN</span></li>
-      <li className='social-list-item'><img className='social-images' src={require('./images/twitter-NEW.svg').default} alt="twitter icon" /><span className='social-text'>TWITTER</span></li>
+        <div className='social-list-item'>
+        <img className='social-images' src={require('./images/facebook-NEW.svg').default} alt='facebook icon' />
+        <a href='https://www.facebook.com/logspot.lt' target='_blank' rel='noopener noreferrer'>
+        <span className='social-text'>FACEBOOK</span>
+        </a>
+        </div>
 
+        <div className='social-list-item'>
+        <img className='social-images' src={require('./images/linkedin-NEW.svg').default} alt='linkedin icon' />
+        <a href='https://www.linkedin.com/company/logspot/' target='_blank' rel='noopener noreferrer'>
+        <span className='social-text'>LINKEDIN</span>
+        </a>
+        </div>
+
+        <div className='social-list-item'>
+        <img className='social-images' src={require('./images/twitter-NEW.svg').default} alt='twitter icon' />
+        <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
+        <span className='social-text'>TWITTER</span>
+        </a>
+        </div>
       </ul>
       </div>
     
