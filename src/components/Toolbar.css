@@ -1,7 +1,7 @@
 .header {
     /* max-width: 1920px; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     background-color:#fcbd2c;
     font-size: x-large;

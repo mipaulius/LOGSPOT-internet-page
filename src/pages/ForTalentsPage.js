@@ -272,6 +272,11 @@ function JobApplicationForm() {
 
         <button type="submit">Create an account</button>
       </form>
+      <div className='login-talent-page'>
+  Already have an account? <a href='http://localhost:3000/login' className='blue-link'>Log in</a>
+</div>
+
+
     </div>
 
     <img

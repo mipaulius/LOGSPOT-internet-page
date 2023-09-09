@@ -1,0 +1,64 @@
+.login-h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.login-Header{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center horizontally */
+    /* height: 100vh;  */
+  }
+
+  .login-form form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center horizontally within the form */
+  }
+  
+  
+  .login-form label {
+    margin-bottom: 10px;
+  }
+  
+  .login-form input,
+  .login-form textarea {
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form button {
+    background-color: #007bff; /* Button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 306px;
+    margin-bottom: 20px;
+  }
+
+  .login-form button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+
+
+ .logger {
+    max-width: 447px;
+    display: flex;
+    margin:auto
+  }
+

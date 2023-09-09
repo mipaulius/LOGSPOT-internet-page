@@ -6,7 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import Toolbar from "./components/Toolbar";
 import IndexPage from "./pages/IndexPage";
 import SignUpPage from "./pages/ForTalentsPage";
-
+import LoginPage from "./pages/LoginPage";
 
 const App = () => {
 
@@ -24,6 +24,7 @@ const App = () => {
       <Route path="/home" element={<ForTalentsPage/>}></Route>
       <Route path="/it-hiring" element={<ForEmployersPage/>}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
+      <Route path="/login" element={<LoginPage/>}></Route>
       <Route path="/sign-Up" element={<SignUpPage/>}></Route>
 
     </Routes>
@@ -34,6 +35,7 @@ const App = () => {
       <ul><h3>LOGSPOT</h3>
         <li>FOR TALENTS</li>
         <li>FOR EMPLOYERS</li>
+        <li>LOGIN</li>
       </ul>
       </div>
 

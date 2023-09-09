@@ -109,3 +109,10 @@ font-size: large;
   
 }
 
+.blue-link {
+  color: blue !important;
+}
+
+.login-talent-page {
+  padding-top: 10px;
+}

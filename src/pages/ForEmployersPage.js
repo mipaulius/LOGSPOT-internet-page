@@ -12,27 +12,28 @@ const ForEmployersPage = () => {
                 <div className='for-employers-page-layout'>
                 <div className="ForEmployerPageForm">
                    
-                  <form>
+                <form action="/submit-form" method="POST">
   <label>
-    <input type="text" required placeholder="Enter your first name" />
+    <input type="text" name="firstName" required placeholder="Enter your first name" />
   </label>
   <label>
-    <input type="text" required placeholder="Enter your second name" />
+    <input type="text" name="secondName" required placeholder="Enter your second name" />
   </label>
   <label>
-    <input type="text" required placeholder="Enter your company name" />
+    <input type="text" name="companyName" required placeholder="Enter your company name" />
   </label>
   <label>
-    <input type="tel" pattern="[0-9]*" required title="Numbers only" placeholder="Enter your phone number" />
+    <input type="tel" name="phoneNumber" pattern="[0-9]*" required title="Numbers only" placeholder="Enter your phone number" />
   </label>
   <label>
-    <input type="email" required title="Please include a '@' in the email address" placeholder="Enter your email address" />
+    <input type="email" name="email" required title="Please include a '@' in the email address" placeholder="Enter your email address" />
   </label>
   <label>
-    <textarea rows="4" required title="Please fill out this field" placeholder="Enter your message here"></textarea>
+    <textarea name="message" rows="4" required title="Please fill out this field" placeholder="Enter your message here"></textarea>
   </label>
   <button type="submit">Send us a message and we will contact you shortly</button>
 </form>
+
 
                 </div>
 

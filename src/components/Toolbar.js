@@ -4,7 +4,7 @@ import './Toolbar.css';
 import SignUpButton from '../images/button.svg';
 import SignUpButtonBlack from '../images/button-orange.svg'; // Import the hover image
 import PushedButton from '../images/button-pushed-orange.svg';
-import LogspotLogo from '../images/logo.svg'
+import LogspotLogo from '../images/logo.svg';
 
 const Toolbar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -34,6 +34,7 @@ const Toolbar = () => {
       <Link to="/home"><div className="header-toolbar">For Talents</div></Link>
       <Link to="/it-hiring"><div className="header-toolbar">For Employers</div></Link>
       <Link to="/about"><div className="header-toolbar">About</div></Link>
+      <Link to="/login"><div className="login-toolbar">Login</div></Link>
       <Link to="/sign-up" className="sign-up-container">
         <img
           className="sign-up-button"
