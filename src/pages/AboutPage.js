@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Rammstein from '../images/paulius-foto-orange.jpg';
+import Rammstein from '../images/paulius-foto-orange.jpeg';
 import ContactForm from "./ContactForm"; // Import your ContactForm component
 import WhatsApp from '../images/whatsapp-NEW.svg';
 import Viber from '../images/viber-NEW.svg';
@@ -32,7 +32,7 @@ const AboutPage = () => {
         <div className="hero-container">
             
             <div className="top-text">
-                <div className="top-text-1">LOGSPOT -</div>
+                <div className="top-text-1">Logspot -</div>
                 <div className="top-text-2">Your Bridge to IT Superstars!</div>
             </div>
 

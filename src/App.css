@@ -46,6 +46,9 @@ h3 {
   width: 40px;
   height: 40px;
   padding-bottom: 5px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 10px;
   
 }
 
@@ -54,35 +57,28 @@ h3 {
   align-content: end;
   text-align: left;
   padding-bottom: 5px;
-
 }
 
-.social-networks {
+/* .social-networks {
   padding-bottom: 5px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-}
-
-
-
-
+} */
 
 a {
-  color: black !important;
-  
+  color: black !important;  
 }
 
-.social-text {
-  text-decoration: none; /* Remove the underline by default */
-  cursor: pointer; /* Change cursor to pointer */
-}
+/* .social-text {
+  text-decoration: none; 
+  cursor: pointer; 
+} */
 
-.social-text:hover {
-  text-decoration: underline; /* Add underline on hover */
-  cursor: pointer; /* Change cursor to pointer */
-
-}
+/* .social-text:hover {
+  text-decoration: underline;
+  cursor: pointer; 
+} */
 
 
 

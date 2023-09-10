@@ -266,7 +266,7 @@ function JobApplicationForm() {
               onChange={() => setAgreeToTerms(!agreeToTerms)}
               required
             />
-            By signing up you agree to the Terms of Service and the Privacy Policy
+            By signing up you agree to the Terms of Service and the <a href="http://localhost:3000/privacy-policy" className='blue-link'>Privacy Policy</a>
           </label>
         </div>
 
