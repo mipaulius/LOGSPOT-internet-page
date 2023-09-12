@@ -1,36 +1,37 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
+
 const port = process.env.PORT || 3001;
 
+// Middleware to parse JSON requests
 app.use(express.json());
 
-// Your existing route
+// Connect to MongoDB
+mongoose.connect('mongodb+srv://pauliusm:<logspot2019>@cluster0.7s2xjpy.mongodb.net/?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('MongoDB connected successfully');
+})
+.catch((error) => {
+  console.error('MongoDB connection error:', error);
+});
+
+// Define a simple route
 app.get('/', (req, res) => {
-  res.send('Hello from your Express.js server!');
+  res.send('Welcome to the server!');
 });
 
-// Route to handle form submission
-app.post('/submit-form', (req, res) => {
-  const formData = req.body;
-  
-  // Here, you can access the form data in the 'formData' variable.
-  // You can now implement code to send this data via email.
-
-  // Example code to send an email using nodemailer
-  // (Make sure to configure nodemailer with your email service)
-  // const transporter = nodemailer.createTransport({ /* ... */ });
-  // const mailOptions = { /* ... */ };
-  // transporter.sendMail(mailOptions, (error, info) => {
-  //   if (error) {
-  //     console.error('Error sending email:', error);
-  //     res.status(500).json({ error: 'An error occurred while sending the email.' });
-  //   } else {
-  //     console.log('Email sent:', info.response);
-  //     res.status(200).json({ message: 'Form submitted successfully!' });
-  //   }
-  // });
+// Define an API route
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the server!' });
 });
 
+// Define more routes as needed for your application
+
+// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

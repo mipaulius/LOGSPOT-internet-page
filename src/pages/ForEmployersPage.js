@@ -1,7 +1,16 @@
 import React from 'react';
-import BeaverHead from '../images/beaver-head.png';
+import BeaverHead from '../images/beaver-head.svg';
+import BeaverHeadHover from '../images/beaver-head-hover.svg';
+
 import "./ForEmployerPage.css"; // Import the CSS file
 
+const handleMouseEnter = (e) => {
+  e.currentTarget.src = BeaverHeadHover; // Change the image source on hover
+};
+
+const handleMouseLeave = (e) => {
+  e.currentTarget.src = BeaverHead; // Change the image source on mouse leave
+};
 
 const ForEmployersPage = () => {
     return (
@@ -40,7 +49,10 @@ const ForEmployersPage = () => {
                 <div className='BeaverHead'>
                 <img src={BeaverHead} 
                 className='beaver-head' 
-                alt='images with beaver head smiling'/>
+                alt='images with beaver head smiling'
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                />
                 </div>
                 </div>
 

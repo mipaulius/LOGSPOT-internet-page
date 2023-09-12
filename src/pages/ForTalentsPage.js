@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
 import Beaver45 from '../images/beaver45.svg';
+import Beaver45Hover from '../images/beaver45-hover.svg'
 
 import './ForTalents.css'; // Correct import statement
 
@@ -29,6 +30,14 @@ function JobApplicationForm() {
     e.preventDefault();
     // Handle form submission logic here
     // You can access all the form data in the state variables
+  };
+
+  const handleMouseEnter = (e) => {
+    e.currentTarget.src = Beaver45Hover; // Change the image source on hover
+  };
+
+  const handleMouseLeave = (e) => {
+    e.currentTarget.src = Beaver45; // Change the image source on mouse leave
   };
 
   return (
@@ -279,11 +288,15 @@ function JobApplicationForm() {
 
     </div>
 
-    <img
-      src={Beaver45}
-      className='beaver45'
-      alt='beaver watching from the side of the screen'
-    />
+    <div>
+        <img
+          src={Beaver45}
+          className='beaver45'
+          alt='beaver watching from the side of the screen'
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+      </div>
 
 
     </div>

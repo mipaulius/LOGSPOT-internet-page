@@ -9,6 +9,7 @@ import SignUpPage from "./pages/ForTalentsPage";
 import LoginPage from "./pages/LoginPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
+
 const App = () => {
 
   return (

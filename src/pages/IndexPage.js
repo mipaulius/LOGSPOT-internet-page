@@ -131,7 +131,8 @@ const IndexPage = () => {
              </div>
 
 
-          </div>
+          </div> 
+          {/* <div className='companies-who-choose-us'>Companies Who Choose Us!</div> */}
 
           <div className='introduction-container'>
           <img src={IntroductionContainer} 
