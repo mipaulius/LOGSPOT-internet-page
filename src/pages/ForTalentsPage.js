@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
+import Axios from 'axios'; // Import Axios
 import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
 import Beaver45 from '../images/beaver45.svg';
-import Beaver45Hover from '../images/beaver45-hover.svg'
+import Beaver45Hover from '../images/beaver45-hover.svg';
+import MotivatedBeaver from '../images/success-notification-image.png';
 
-import './ForTalents.css'; // Correct import statement
-
-
-
-
+import './ForTalents.css'; 
 
 function JobApplicationForm() {
   const [firstName, setFirstName] = useState('');
@@ -25,12 +23,71 @@ function JobApplicationForm() {
   const [cvFile, setCvFile] = useState(null);
   const [agreeToTerms, setAgreeToTerms] = useState(false);
   const [subscribeToNewsletter, setSubscribeToNewsletter] = useState(false);
+  const [showSuccessNotification, setShowSuccessNotification] = useState(false);
+  const [showErrorNotification, setShowErrorNotification] = useState(false);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    // You can access all the form data in the state variables
-  };
+    const formData = {
+      firstName,
+      lastName,
+      photo,
+      dateOfBirth,
+      mobilePhone,
+      email,
+      city,
+      remoteWork,
+      preferredPosition,
+      programmingLanguages,
+      workExperience,
+      education,
+      cvFile,
+      agreeToTerms,
+      subscribeToNewsletter,
+      showSuccessNotification,
+      showErrorNotification,
+
+      // .
+    };
+
+
+    Axios.post('http://localhost:3002/home', formData)
+    .then((response) => {
+      
+      console.log('Form submitted successfully', response.data);
+      setShowSuccessNotification(true);
+      alert('Form submitted successfully. We will get back to you soon! :)'); 
+     
+
+
+      {showSuccessNotification && (
+        <div className="success-notification">
+          {/* <p>Form submitted successfully! We will get back to you soon!</p> */}
+          <img
+            src={MotivatedBeaver}
+            className='success-notification-image' // Use a different class name here
+            alt='Success Image'
+          />
+        </div>
+      )}
+      
+    
+
+
+
+      // Clear form inputs after submission (optional)
+      setFirstName('');
+      setLastName('');
+      // ... clear other inputs ...
+    })
+    .catch((error) => {
+      // Handle any errors from the server
+      console.error('Error submitting form', error);
+      setShowErrorNotification(true);
+    });
+};
+
+
 
   const handleMouseEnter = (e) => {
     e.currentTarget.src = Beaver45Hover; // Change the image source on hover
@@ -281,6 +338,20 @@ function JobApplicationForm() {
 
         <button type="submit">Create an account</button>
       </form>
+
+      {showSuccessNotification && (
+          <div className="success-notification">
+            Form submitted successfully! {/* You can style this as a pop-up */}
+          </div>
+        )}
+
+        {showErrorNotification && (
+          <div className="error-notification">
+            Error submitting form. Please try again. {/* You can style this as a pop-up */}
+          </div>
+        )}
+      
+      
       <div className='login-talent-page'>
   Already have an account? <a href='http://localhost:3000/login' className='blue-link'>Log in</a>
 </div>
