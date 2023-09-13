@@ -25,22 +25,21 @@ class ForEmployersPage extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
-
-    // Collect form data from state
     const formData = this.state;
-
-    // Send the form data to the server
+  
     Axios.post('http://localhost:3001/it-hiring', formData)
-  .then((response) => {
-    // Handle a successful response from the server
-    console.log('Form submitted successfully', response.data);
-  })
-  .catch((error) => {
-    // Handle any errors from the server
-    console.error('Error submitting form', error);
-  });
-
+      .then((response) => {
+        // Handle a successful response from the server
+        console.log('Form submitted successfully', response.data);
+        alert('Form submitted successfully'); // Display a popup message
+      })
+      .catch((error) => {
+        // Handle any errors from the server
+        console.error('Error submitting form', error);
+        alert('Error submitting form'); // Display a popup message for errors
+      });
   };
+  
 
   handleMouseEnter = (e) => {
     e.currentTarget.src = BeaverHeadHover; // Change the image source on hover
