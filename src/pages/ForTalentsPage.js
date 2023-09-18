@@ -25,9 +25,54 @@ function JobApplicationForm() {
   const [subscribeToNewsletter, setSubscribeToNewsletter] = useState(false);
   const [showSuccessNotification, setShowSuccessNotification] = useState(false);
   const [showErrorNotification, setShowErrorNotification] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(''); // Added this line for error message
+
+  
+  const handleDateOfBirthChange = (e) => {
+    const enteredDate = new Date(e.target.value);
+    const currentDate = new Date();
+    const age = currentDate.getFullYear() - enteredDate.getFullYear();
+  
+    // Check if the age is less than 16
+    if (age < 16) {
+      setErrorMessage('You must be at least 16 years old to apply.');
+      // Prevent form submission here by returning or other means.
+    } else {
+      // Age is valid, clear any previous error message
+      setErrorMessage('');
+      setDateOfBirth(e.target.value);
+    }
+  };
+  
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      // Check if there's an error message (i.e., age is below 16)
+      if (errorMessage) {
+        // Handle the error, e.g., display a message to the user
+        alert(errorMessage);
+      } else {
+        // Age is valid, proceed with form submission
+        // ... your form submission logic ...
+      }
+    };
+
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    // Check if there's an error message (i.e., age is below 16)
+  if (errorMessage) {
+    // Handle the error, e.g., display a message to the user
+    alert(errorMessage);
+    return; // Prevent form submission
+  } else {
+    // Age is valid, proceed with form submission
+    // ... your form submission logic ...
+  }
+
     const formData = {
       firstName,
       lastName,
@@ -142,13 +187,16 @@ function JobApplicationForm() {
         </div>
         
         <div>
-         <input
-           type="date"
-           id="dateOfBirth"
-           value={dateOfBirth}
-           onChange={(e) => setDateOfBirth(e.target.value)}
-           required
-         />
+        <input
+            type="date"
+            id="dateOfBirth"
+            value={dateOfBirth}
+            onChange={(e) => {
+              handleDateOfBirthChange(e);
+              setDateOfBirth(e.target.value);
+           }}
+            required
+          />
          <span className="hint">Enter your date of birth (e.g., month/day/year/)</span>
        </div>
 
@@ -373,5 +421,6 @@ function JobApplicationForm() {
     </div>
   );
 }
+
 
 export default JobApplicationForm;

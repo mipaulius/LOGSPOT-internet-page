@@ -16,6 +16,9 @@ body {
   background-color: #fcbd2c; 
   padding-top: 10px;
   
+  
+
+  
 }
 
 .footer-1, .footer-2, .footer-3, .footer-4 {
@@ -24,12 +27,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 li {
   list-style-type: none;
-  padding-bottom: 15px
+  padding-bottom: 15px;
   /* max-width: 400px; */
+ 
+
 }
 
 ul {
@@ -68,10 +74,12 @@ h3 {
 
 a {
   color: black !important;  
+  text-decoration: none; 
 }
 
 /* .social-text {
   text-decoration: none; 
+  text-decoration: underline;
   cursor: pointer; 
 } */
 
