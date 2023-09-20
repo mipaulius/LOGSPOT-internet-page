@@ -2,3 +2,33 @@
     max-width: 1440;
     margin: 5px;
 }
+
+.privacy-policy-headline {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/* Responsive design max-width: 430px */
+
+@media (max-width: 430px) {
+    .privacy-policy-headline
+    {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    }
+
+@media (max-width: 430px) {
+       .privacy-policy-container
+      {
+          margin: 0;
+      }
+       }
+
+@media (max-width: 430px) {
+        .privacy-policy-h2-style
+       {
+        font-size: large;
+        font-weight: bolder;
+       }
+        }

@@ -103,9 +103,9 @@ font-size: large;
   position: fixed;
   bottom: 0;
   right: 0;
-  /* Optionally, you can specify width and height for the image */
-  width: 300px; /* Adjust as needed */
-  height: auto; /* This maintains the image's aspect ratio */
+  width: 300px;
+  height: auto;
+  z-index: 1;
   
 }
 
@@ -124,3 +124,37 @@ font-size: large;
   border-radius: 5px;
   text-align: center;
 } */
+
+/* Responsive design max-width: 1212px */
+
+@media (max-width: 1100px) {
+  .beaver45 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+  }
+}
+
+/* Responsive design max-width: 1015px */
+
+@media (max-width: 900px) {
+  .beaver45 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 900px) {
+.job-application-form-container form {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+}

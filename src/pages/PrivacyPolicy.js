@@ -6,13 +6,13 @@ const ForEmployersPage = () => {
     return (
         <div className='hero-container'>
             <div className='privacy-policy-container'>
-            <h1>MB LOGSPOT KLIENTŲ PRIVATUMO POLTIKA</h1>
+            <div className='privacy-policy-headline'>MB LOGSPOT KLIENTŲ PRIVATUMO POLTIKA</div>
 
 <p>Tvarkydami Jūsų asmens duomenis mes laikomės Bendrojo asmens duomenų apsaugos reglamento (toliau – BDAR), Lietuvos Respublikos asmens duomenų teisinės apsaugos įstatymo, taip pat kituose teisės aktuose nustatytų asmens duomenų tvarkymo reikalavimų.</p>
 
 <p>Mes esame MB LOGSPOT, įmonės kodas 305026678, adresas Vytauto g. 48BLT-68296 Marijampolė, el. pastas info@logspot.lt, duomenų apsaugos pareigūnas Paulius Liškauskas, MB LEGITA (įk. 303031477, el. paštas paulius@legita.lt).</p>
 
-<h2>KAIP MES RENKAME JŪSŲ ASMENS DUOMENIS?</h2>
+<h2 className='privacy-policy-h2-style'>KAIP MES RENKAME JŪSŲ ASMENS DUOMENIS?</h2>
 <p>1.1. Mes tvarkome Jūsų asmens duomenis gautus šiais būdais:</p>
 
 <p>a) Kai Jūs juos pateikiate mums. Jūs pateikiate mums savo asmens duomenis kai atsiunčiate mums savo CV, motyvacinius laiškus, kandidatuojate į mūsų darbo skelbimus darbo paieškos portaluose, registruojatės mūsų interneto svetainėse, bendraujate su mumis telefonu, el. paštu ar susitikimų metu, atsakinėjate į mūsų pateiktus klausimynus, atliekate užduotis ar testus, susisiekiate su mumis per socialinius tinklus (pvz., Facebook, Linkedin). Jums susisiekus su mumis raštu ar el. paštu, mes išsaugosime susirašinėjimo duomenis.</p>
@@ -23,7 +23,7 @@ const ForEmployersPage = () => {
 
 <p>1.2. Mes galime apjungti iš Jūsų gautus asmens duomenis su duomenimis, mūsų pačių surinktais iš kitų viešų ar prieinamų šaltinių. Pavyzdžiui, Jūsų pateiktus asmens duomenis mes galime sujungti su duomenimis, gautais naudojant interneto svetainių slapukus, duomenimis, surinktais Jums teikiant mūsų paslaugas, ar su iš trečiųjų asmenų teisėtai gautais duomenimis. Įgyvendindamas savo teises, Jūs visuomet galėsite reikalauti ištaisyti klaidingus asmens duomenis.</p>
 
-<h2>KOKIAIS TIKSLAIS MES TVARKOME JŪSŲ ASMENS DUOMENIS?</h2>
+<h2 className='privacy-policy-h2-style'>KOKIAIS TIKSLAIS MES TVARKOME JŪSŲ ASMENS DUOMENIS?</h2>
 <p>2.1.  Jūsų asmens duomenis mes tvarkome šiais tikslais:</p>
 
 <p>a) Paslaugų teikimo tikslu. Mes tvarkome Jūsų asmens duomenis siekdami teikti mūsų paslaugas Jums ir kitiems asmenims: surasti atitinkančius mūsų klientų poreikius kandidatus bei juos atrinkti, įvertinti, ar kandidatai tinka siūlomam darbui, ir pristatyti kandidatus darbdaviams arba įdarbinti juos savo įmonėje.</p>
@@ -68,7 +68,7 @@ const ForEmployersPage = () => {
 
 <p>2.3. Jokiais kitais su aukščiau išvardintais nesuderinamais tikslais Jūsų asmens duomenų mes netvarkome.</p>
 
-<h2>KAIP MES NAUDOJAME SLAPUKUS?</h2>
+<h2 className='privacy-policy-h2-style'>KAIP MES NAUDOJAME SLAPUKUS?</h2>
 <p>3.1. Mes renkame informaciją apie Jus naudodami slapukus (angl. cookies) ir panašias technologijas. Slapukai yra maži failai, kurie laikinai įrašomi į Jūsų įrenginio standųjį diską ir leidžia atpažinti Jus per kitus vizitus interneto svetainėse, išsaugoti asmens naršymo istoriją, parinktis, pritaikyti turinį, pagreitina interneto svetainėse vykdomas paieškas, sukuria patogią ir draugišką interneto svetainių aplinką, pateikia ją efektyviau ir patikimiau. Slapukai – įprasta naršymo tinklalapiuose praktika, kuri palengvina naudojimąsi tinklalapiu.</p>
 
 <p>3.2. Slapukais mes galime rinkti šią informaciją: interneto adresas (IP), naudojamas įrenginys, naudojama internetinė naršyklė, apsilankymų skaičius, peržiūrėti mūsų interneto svetainės puslapiai, laikas, praleistas interneto svetainėje, interneto svetainės, kuriose lankėtės prieš patekdami į mūsų svetainę.</p>
@@ -113,7 +113,7 @@ const ForEmployersPage = () => {
 
 <p>3.9. Visą informaciją, kurią Jūs pateiksite socialinės žiniasklaidos priemonėmis (įskaitant pranešimus, laukelių „Like“ ir „Follow“ naudojimą, bei kitą komunikaciją), kontroliuoja socialinių tinklų valdytojai. Rekomenduojame perskaityti socialinių tinklų valdytojų privatumo pranešimus ir tiesiogiai susisiekti su jais dėl Jūsų asmens duomenų naudojimo. Daugiau apie socialinių tinklų valdytojų privatumo politikas galima sužinoti čia: https://wwww.facebook.com/policy.php (Facebook); https://www.linkedin.com/legal/privacy-policy (LinkedIn).</p>
 
-<h2>KAM MES TEIKIAME JŪSŲ ASMENS DUOMENIS?</h2>
+<h2 className='privacy-policy-h2-style'>KAM MES TEIKIAME JŪSŲ ASMENS DUOMENIS?</h2>
 <p>4.1. Mes garantuojame, kad Jūsų asmens duomenys nebus parduodami, teikiami ar kitaip be teisėto pagrindo perduodami tretiesiems asmenims, taip pat naudojami kitiems tikslams, nei jie buvo surinkti. Mes neperduosime Jūsų asmens duomenų niekaip kitaip, kaip tik vadovaudamiesi šia Privatumo politika ir teisės aktais. Tačiau mes pasiliekame teisę pateikti informaciją apie Jus, jei privalėtumėme tai padaryti įstatymų numatyta tvarka arba jei to mūsų pareikalautų teisėtai veikiančios institucijos ar baudžiamąjį persekiojimą vykdančios institucijos.</p>
 
 <p>4.2. Mes galime perduoti Jūsų asmens duomenis įmonėms padedančioms mums vykdyti veiklą (partneriams, klientams, tiekėjams). Iš tokių partnerių mes reikalaujame, kad Jūsų duomenys būtų tvarkomi tik pagal mūsų duotus nurodymus ir galiojančius Jūsų duomenų apsaugą užtikrinančiais teisės aktais. Su šiais asmenimis mes sudarome sutartis, kurios įpareigoja šalis griežtai laikytis asmens duomenų apsaugos reikalavimų.</p>
@@ -122,24 +122,24 @@ const ForEmployersPage = () => {
 
 <p>4.4. Neišsamus sąrašas asmenų ir jų kategorijų, kuriems mes perduodame Jūsų asmens duomenis pateiktas šių Privatumo politikos 2.1 punkte atskirai kiekvienam asmens duomenų naudojimo tikslui.</p>
 
-<h2>KIEK LAIKO MES SAUGOME JŪSŲ ASMENS DUOMENIS?</h2>
+<h2 className='privacy-policy-h2-style'>KIEK LAIKO MES SAUGOME JŪSŲ ASMENS DUOMENIS?</h2>
 <p>5.1. Mes saugome Jūsų asmens duomenis ne ilgiau, negu to reikalauja duomenų tvarkymo tikslai ar numato teisės aktai, jeigu juose yra nustatytas ilgesnis duomenų saugojimo terminas.</p>
 
 <p>5.2. Mes siekiame nesaugoti pasenusių, neaktualių asmens duomenų, todėl juos atnaujinus (pvz., paskyroje patikslinus, pakeitus informaciją ar pan.) yra saugoma tik aktuali informacija. Istorinė informacija yra saugoma, jei tai reikalinga teisės aktų nustatyta tvarka arba mūsų veiklai vykdyti.</p>
 
 <p>5.3. Privatumo politikos 2.1 punkte atskirai kiekvienam asmens duomenų naudojimo tikslui nurodyti Jūsų asmens duomenų saugojimo terminai.</p>
 
-<h2>KAIP MES SAUGOME JŪSŲ ASMENS DUOMENIS?</h2>
+<h2 className='privacy-policy-h2-style'>KAIP MES SAUGOME JŪSŲ ASMENS DUOMENIS?</h2>
 <p>6.1. Duomenys, kuriuos renkame iš Jūsų, bus Europos Sąjungos teritorijoje, bet gali būti perduoti ar saugomi ir už ES ribų. Juos taip pat gali tvarkyti mūsų ar mūsų tiekėjų personalas, dirbantis už ES ribų. Perduodami Jūsų duomenis už ES ribų atliksime visus reikiamus veiksmus, kad užtikrintume, jog Jūsų duomenys yra tvarkomi saugiai ir laikantis šios privatumo politikos.</p>
 
 <p>6.2. Deja, informacijos perdavimas internetu nėra visiškai saugus. Nors mes labai stengiamės apsaugoti Jūsų asmens duomenis, negalime užtikrinti duomenų saugumo, kai Jūs perduodate duomenis į interneto svetaines – Jūs prisiimate su duomenų perdavimu į interneto svetaines susijusią riziką. Kai gausime Jūsų duomenis, taikysime griežtas procedūras ir saugumo priemones, kad Jūsų duomenys būtų apsaugoti nuo neteisėtos prieigos.</p>
 
 <p>6.3. Jei susiklostytų mažai tikėtinos aplinkybės ir mes sužinotume, apie Jūsų asmens duomenų saugumo pažeidimą, kuris gali kelti didelę grėsmę Jūsų teisėms ar laisvėms, nedelsdami Jus informuosime vos tik apie tai sužinoję ir nustatę, prie kokios informacijos buvo gauta prieiga.</p>
 
-<h2>IŠORINĖS SVETAINĖS</h2>
+<h2 className='privacy-policy-h2-style'>IŠORINĖS SVETAINĖS</h2>
 <p>7.1. Interneto svetainėse gali būti pateikta nuorodų į išorines svetaines – mūsų verslo partnerių svetaines ar svetaines, kuriose reklamuojamos mūsų paslaugos. Sekdami pagal tokias nuorodas į kurią nors iš svetainių, atkreipkite dėmesį į tai, kad šios svetainės ir per jas pasiekiamos paslaugos turi savo atskiras privatumo politikas ir mes neprisiimame atsakomybės ar įsipareigojimų už šias politikas ar už šiose svetainėse ar teikiant paslaugas renkamus asmens duomenis, pavyzdžiui, kontaktinius ar vietos duomenis. Peržiūrėkite šias politikas prieš pateikdami asmens duomenis šiose svetainėse ar naudodamiesi bet kokiomis paslaugomis.</p>
 
-<h2>KOKIAS TEISES JŪS TURITE?</h2>
+<h2 className='privacy-policy-h2-style'>KOKIAS TEISES JŪS TURITE?</h2>
 <p>8.1. Tvarkant asmens duomenis, mes užtikriname Jūsų teises pagal BDAR bei Lietuvos Respublikos asmens duomenų teisinės apsaugos įstatymą. Kaip asmens duomenų subjektas Jūs turite šias teises:</p>
 
 <p>a) žinoti (būti informuotas) apie savo asmens duomenų tvarkymą;</p>
@@ -184,17 +184,17 @@ const ForEmployersPage = () => {
 
 <p>8.7. Nesutikdami su mūsų veiksmais ar atsakymu į Jūsų kreipimąsi, Jūs mūsų veiksmus ir sprendimus galite skųsti kompetentingai valstybinei institucijai.</p>
 
-<h2>KUR JŪS GALITE KREIPTIS?</h2>KUR JŪS GALITE KREIPTIS?
+<h2 className='privacy-policy-h2-style'>KUR JŪS GALITE KREIPTIS?</h2>KUR JŪS GALITE KREIPTIS?
 <p>9.1. Daugiau informacijos visais šioje Privatumo politiko aptariamais klausimais Jums pateiks: MB LOGSPOT el. paštu info@logspot.lt</p>
 
 <p>9.2. Jei norite pateikti skundą dėl mūsų atlikto duomenų tvarkymo, pateikite jį raštu, nurodydami kuo daugiau informacijos, pasinaudodami šios politikos pabaigoje pateiktais kontaktiniais duomenimis. Mes bendradarbiausime su jumis ir stengsimės nedelsiant išspręsti visus klausimus.</p>
 
 <p>9.3. Jei manote, kad vadovaujantis BDAR Jūsų teisės buvo pažeistos, galite pateikti skundą mūsų priežiūros institucijai – Valstybinei duomenų apsaugos inspekcijai, nors, visų pirma, stengsimės išspręsti visus ginčus kartu su Jumis.</p>
 
-<h2>KAIP BUS KEIČIAMA ŠI PRIVATUMO POLITIKA?</h2>
+<h2 className='privacy-policy-h2-style'>KAIP BUS KEIČIAMA ŠI PRIVATUMO POLITIKA?</h2>
 <p>10.1. Visi mūsų Privatumo politikos pokyčiai bus skelbiami interneto svetainėse. Esant poreikiui, Jums apie juos pranešime. Naujos Privatumo politikos sąlygos taip pat gali būti pateiktos interneto svetainėse ir Jums gali reikėti jas perskaityti ir su jomis sutikti tam, kad galėtumėte toliau naudotis interneto svetainėmis ir (ar) mūsų paslaugomis.</p>
 
-<h2>PRIEDAI</h2>
+<h2 className='privacy-policy-h2-style'>PRIEDAI</h2>
 <p>1 Priedas. Prašymo įgyvendinti duomenų subjekto teisę (-es) rekomenduojama forma</p>
 
             </div>

@@ -35,17 +35,6 @@ class ForEmployersPage extends Component {
         console.log('Form submitted successfully', response.data);
         alert('Form submitted successfully. We will get back to you soon! :)'); // Display a popup message
       })
-
-
-
-
-
-
-      // .catch((error) => {
-      //   // Handle any errors from the server
-      //   console.error('Error submitting form', error);
-      //   alert('Error submitting form'); // Display a popup message for errors
-      // });
   };
   
 

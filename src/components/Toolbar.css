@@ -1,68 +1,34 @@
-/* .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    background-color:#fcbd2c;
-    font-size: x-large;
-    margin: auto;
-}
-
-.header-toolbar {
-    padding: 10px;
-    color: black;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-    margin: auto;
-}
-
-  
-  .logspot-logo {
-    width: 190px;
-    height: auto; 
-    padding: 15px;
-
-  }
-  
-  .sign-up-container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    max-width: 200px;
-  }
-
-
- .sign-up-button {
-    width: 140px;
-    height: 70px;
-    background-size: cover;
-    cursor: pointer;
-  } */
-
-  .sign-up-button {
-    width: 120px;
-    height: auto;
-    background-size: cover;
-    cursor: pointer;
-  }
-
-
-.header {
+.sign-up-container {
   display: flex;
-  align-items: center;
-  background-color:#fcbd2c;
-  padding: 5px; 
-  height: 65px
-  /* margin: auto; */
+  align-content: center;
+  justify-content: center;
+
+ }
+
+.sign-up-button {
+  width: 100px;
+  height: auto;
+  background-size: cover;
+  cursor: pointer;
+  padding: 10px;
+
 }
 
 .logspot-logo {
   width: 150px;
   height: auto; 
   padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color:#fcbd2c;
+  /* background-color: #FFFDF1; */
+
+  padding: 5px; 
+  height: 77px
+  /* margin: auto; */
 }
 
 .menu-icon {
@@ -76,6 +42,7 @@ a:-webkit-any-link {
   height: 3px;
   background-color: white;
   margin: 3px 0;
+  
 }
 
 .menu-icon.open .menu-line:nth-child(1) {
@@ -97,6 +64,8 @@ a:-webkit-any-link {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
   background-color:#fcbd2c;
+  /* background-color: #FFFDF1; */
+
   font-size: medium;
   font-weight:540;
   margin: auto;
@@ -111,7 +80,8 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   background-color: #fcbd2c;
-  /* font-size: x-large; */
+  /* background-color: #FFFDF1; */
+
   text-decoration: none;
   
 }
@@ -133,8 +103,9 @@ a:-webkit-any-link {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 20px;
+    right: 20px;
     max-width: 200px;
+    border: 1px solid #000
   }
 
   .menu-dropdown.open {
@@ -148,7 +119,9 @@ a:-webkit-any-link {
   }
 
   .menu-icon-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 29fr 1fr;
+    padding-right: 10px;
 
   }
 

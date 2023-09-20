@@ -45,11 +45,11 @@ const ForEmployersPage = () => {
                 </div>
 
 
-                <div className='Logger-container'>
+                
                 <img src={Logger} 
                 className='logger' 
                 alt='beaver cutting trees'/>
-                </div>
+               
                 </div>
 
             </div>

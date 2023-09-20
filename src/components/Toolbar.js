@@ -40,14 +40,15 @@ const Header = () => {
     <div className="header">
       
       <div className="menu-icon-container" onClick={toggleMenu}>
+      <div className="logspot-logo-new">
+        <img src={LogspotLogoNew} alt="company logo" />
+      </div>
   <div className={`menu-icon ${menuOpen ? 'open' : ''}`}>
     <div className="menu-line"></div>
     <div className="menu-line"></div>
     <div className="menu-line"></div>
   </div>
-      <div className="logspot-logo-new">
-        <img src={LogspotLogoNew} alt="company logo" />
-      </div>
+      
 </div>
 
 
@@ -65,7 +66,7 @@ const Header = () => {
           For Talents
         </Link>
         <Link to="/it-hiring" className="header-toolbar" onClick={toggleMenu}>
-          For Employers
+          Hirring
         </Link>
         <Link to="/about" className="header-toolbar" onClick={toggleMenu}>
           About

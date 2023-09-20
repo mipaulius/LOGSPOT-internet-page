@@ -1,12 +1,10 @@
 .about-us-container {
 display: grid;
 grid-template-columns: 1fr 1fr;
-padding-bottom: 150px;
 }
 
 .about-us-info {
     flex: 2; /* Expand to fill available space */
-    margin-right: 50px;
 }
 
 .map-wrapper {
@@ -20,45 +18,39 @@ padding-bottom: 150px;
     text-align: left;
     font-weight: bolder;
     justify-content: center;
+    
 }
 
 .top-text-1 {
-  padding-bottom: 10px;
-  padding-top: 30px;
   font-size: xxx-large;
+  padding: 10px;
+  padding-top: 30px;
 }
 
 .top-text-2 {
-  padding-bottom: 30px;
+  padding: 10px;
+
 }
 
 .description-names {
   font-size: large;
   font-weight: bold;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 5px;
+  
 }
 
-/* 
-@import url('https://fonts.cdnfonts.com/css/g-guarantee');
-
-
-@font-face {
-    font-family: 'g Guarantee', sans-serif;
-} */
 
 .rammstein {
     display: grid;
     grid-template-rows:auto;
     align-items: top;
     justify-items: center; /* Center horizontally */
-    padding-bottom: 100px;
 }
 
 .my-picture {
     max-width: 300px;
     border-radius: 50px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .contact-details {
@@ -106,19 +98,68 @@ padding-bottom: 150px;
 
   .about-us-pointers {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 15% 85%;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 10px;
   }
 
   .description-text{
     /* font-family: 'Montserrat', sans-serif; */
     font-size:medium;
+    padding-left: 5px;
     
 }
 
 .about-us-button-container {
     display: grid;
     justify-items: end;
+}
+
+.map-wrapper {
+  padding: 10px;
+}
+
+
+/* Responsive design max-width: 1000px */
+
+@media (max-width: 1000px) {
+  .about-us-container {
+    display: block;
+  }
+  }
+
+  @media (max-width: 1000px) {
+  .about-us-button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+}
+
+@media (max-width: 1000px) {
+  .my-picture {
+    max-width: 200px;
+    border-radius: 50px;
+    padding: 20px;
+}
+}
+
+@media (max-width: 1000px) {
+  .top-text-1 {
+    font-size: xx-large;
+    padding: 10px;
+    padding-top: 30px;
+    margin:auto;
+    text-align: center;
+}
+}
+
+@media (max-width: 1000px) {
+  .top-text-2 {
+    padding: 10px;
+    font-size: x-large;
+    margin:auto;
+    text-align: center;
     
+}
 }

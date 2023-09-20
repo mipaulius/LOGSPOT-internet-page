@@ -1,11 +1,10 @@
 .for-employers-h1 {
-    padding-top: 30px;
+    padding: 20px;
     text-align: center;
 }
 
 .ForEmployerPageHeader{
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding: 30px;
     text-align: center;
 
 }
@@ -13,10 +12,12 @@
 .ForEmployerPageForm {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 606px;
-    padding-bottom: 30px;
+    padding: 30px;
   }
+
+ 
   
   .ForEmployerPageForm label {
     margin-bottom: 10px;
@@ -41,10 +42,12 @@
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
+    
+
   }
 
   .ForEmployerPageForm button:hover {
-    background-color: #0056b3; /* Button background color on hover */
+    background-color: #0056b3; 
   }
 
   .for-employers-page-layout {
@@ -53,9 +56,261 @@
     align-items: end;
   }
 
+
   .beaver-head {
     max-width: 500px;
     display: flex;
-    margin:auto
+    margin:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
   }
 
+/* Responsive design max-width: 1200px */
+
+
+@media (max-width: 1200px) {
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea
+  {
+    max-width: 500px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ForEmployerPageForm 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto; 
+    padding: 20px;
+
+  }
+}
+
+/* Responsive design max-width: 1024px */
+
+@media (max-width: 1024px) {
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea
+  {
+    max-width: 400px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ForEmployerPageForm 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto; 
+    padding: 20px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+.beaver-head {
+  max-width: 400px;
+  display: flex;
+  margin:auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+}
+
+/* Responsive design max-width: 859px */
+
+@media (max-width: 859px) {
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea
+  {
+    max-width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 859px) {
+  .ForEmployerPageForm 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto; 
+    padding: 20px;
+
+  }
+}
+
+@media (max-width: 859px) {
+.beaver-head {
+  max-width: 400px;
+  display: flex;
+  margin:auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+}
+
+@media (max-width: 859px) {
+  .for-employers-h1 {
+    padding: 20px;
+    text-align: center;
+    font-size:x-large;
+  }
+  }
+
+  @media (max-width: 859px) {
+  .ForEmployerPageHeader {
+    padding: 11px;
+    text-align: center;
+}
+}
+
+
+/* Responsive design max-width: 600px */
+
+@media (max-width: 600px) {
+.ForEmployerPageForm input,
+.ForEmployerPageForm textarea
+{
+  max-width: 400px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+}
+
+@media (max-width: 600px) {
+.ForEmployerPageForm 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto; 
+  padding: 20px;
+
+}
+}
+
+@media (max-width: 600px) {
+.for-employers-page-layout {
+  display: block;
+  align-items: center;
+}
+}
+
+
+@media (max-width: 600px) {
+.for-employers-h1 {
+  padding: 5px;
+  text-align: center;
+  font-size:x-large;
+}
+}
+
+/* Responsive design max-width: 430px */
+
+@media (max-width: 430px) {
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea
+  {
+    max-width: 300px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  
+  }
+  }
+  
+  @media (max-width: 430px) {
+  .ForEmployerPageForm 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto; 
+    padding: 20px;
+  
+  }
+  }
+  
+  @media (max-width: 430px) {
+  .for-employers-page-layout {
+    display: block;
+    align-items: center;
+  }
+  }
+
+/* Responsive design max-width: 340px */
+
+@media (max-width: 340px) {
+  .ForEmployerPageForm input,
+  .ForEmployerPageForm textarea
+  {
+    max-width: 250px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  
+  }
+  }
+  
+  @media (max-width: 340px) {
+  .ForEmployerPageForm 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    margin: auto; 
+    padding: 10px;
+  
+  }
+  }
+  
+  @media (max-width: 340px) {
+  .for-employers-page-layout {
+    display: block;
+    align-items: center;
+  }
+  }
+
+  @media (max-width: 340px) {
+    .for-employers-h1 {
+      padding: 5px;
+      text-align: center;
+      font-size:large;
+    }
+    }
