@@ -4,6 +4,20 @@ body {
 
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #fcbd2c;
+  padding: 5px;
+  height: 77px;
+  border-bottom: 3px solid #000;
+}
+
+/* Hide border if the body has a specific class */
+.no-border .header {
+  border-bottom: none;
+}
+
 .hero-container {
   max-width: 1440px;
   margin: auto;
@@ -12,7 +26,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: #fcbd2c;
+  /* background-color: #fcbd2c; */
   /* background-color: #FFFDF1; */
 
   padding-top: 10px;

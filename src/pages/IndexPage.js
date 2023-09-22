@@ -16,11 +16,16 @@ import First from '../images/1.svg';
 import Second from '../images/2.svg';
 import Third from '../images/3.svg';
 import Four from '../images/4.svg';
+import JoinLogspot from '../images/join-logspot.svg';
+import ItRecruitment from '../images/it-recruitment.svg';
 
-
+import LogspotLogoBlack from '../images/logspot-black.svg';
 
 
 import './IndexPage.css';
+
+
+
 
 document.querySelector('body').addEventListener('mousemove', eyeball);
 
@@ -141,10 +146,162 @@ const IndexPage = () => {
           <div className='introduction-text'>Welcome to LOGSPOT, where the world of IT talents meets boundless opportunities! We constructs bridges between tech wizards and visionary companies, creating a dam of connections for mutual growth.</div>
           </div>
 
+<div className='stripes-container'>
+          <div className='stripe1'>
+            <div className='stripe1-slide'>
+                <img src={LogspotLogoBlack}
+                className='rotating-logo-black'
+                alt="company logo"/>
+          
+                 <img src={JoinLogspot}
+                 className='company'
+                 alt="company logo"/>
+          
+                 <img src={LogspotLogoBlack}
+                 className='rotating-logo-black'
+                 alt="company logo"/>
+           
+                  <img src={JoinLogspot}
+                  className='company'
+                  alt="company logo"/>
+                  
+                  <img src={LogspotLogoBlack}
+                  className='rotating-logo-black'
+                  alt="company logo"/>
+            
+                   <img src={JoinLogspot}
+                   className='company'
+                   alt="company logo"/>
+
+                   <img src={LogspotLogoBlack}
+                   className='rotating-logo-black'
+                   alt="company logo"/>
+             
+                    <img src={JoinLogspot}
+                    className='company'
+                    alt="company logo"/>
+                 
+             </div>
+             <div className='stripe1-slide'>
+                <img src={LogspotLogoBlack}
+                className='rotating-logo-black'
+                alt="company logo"/>
+          
+                 <img src={JoinLogspot}
+                 className='company'
+                 alt="company logo"/>
+          
+                 <img src={LogspotLogoBlack}
+                 className='rotating-logo-black'
+                 alt="company logo"/>
+           
+                  <img src={JoinLogspot}
+                  className='company'
+                  alt="company logo"/>
+                  
+                  <img src={LogspotLogoBlack}
+                  className='rotating-logo-black'
+                  alt="company logo"/>
+            
+                   <img src={JoinLogspot}
+                   className='company'
+                   alt="company logo"/>
+
+                   <img src={LogspotLogoBlack}
+                   className='rotating-logo-black'
+                   alt="company logo"/>
+             
+                    <img src={JoinLogspot}
+                    className='company'
+                    alt="company logo"/>
+                 
+             </div>
+
+            
+             </div>
+
+             <div className='stripe2'>
+            <div className='stripe2-slide'>
+                <img src={LogspotLogoBlack}
+                className='rotating-logo-black'
+                alt="company logo"/>
+          
+                 <img src={ItRecruitment}
+                 className='company'
+                 alt="company logo"/>
+          
+                 <img src={LogspotLogoBlack}
+                 className='rotating-logo-black'
+                 alt="company logo"/>
+           
+                  <img src={ItRecruitment}
+                  className='company'
+                  alt="company logo"/>
+                  
+                  <img src={LogspotLogoBlack}
+                  className='rotating-logo-black'
+                  alt="company logo"/>
+            
+                   <img src={ItRecruitment}
+                   className='company'
+                   alt="company logo"/>
+
+                   <img src={LogspotLogoBlack}
+                   className='rotating-logo-black'
+                   alt="company logo"/>
+             
+                    <img src={ItRecruitment}
+                    className='company'
+                    alt="company logo"/>
+                 
+             </div>
+             <div className='stripe2-slide'>
+                <img src={LogspotLogoBlack}
+                className='rotating-logo-black'
+                alt="company logo"/>
+          
+                 <img src={ItRecruitment}
+                 className='company'
+                 alt="company logo"/>
+          
+                 <img src={LogspotLogoBlack}
+                 className='rotating-logo-black'
+                 alt="company logo"/>
+           
+                  <img src={ItRecruitment}
+                  className='company'
+                  alt="company logo"/>
+                  
+                  <img src={LogspotLogoBlack}
+                  className='rotating-logo-black'
+                  alt="company logo"/>
+            
+                   <img src={ItRecruitment}
+                   className='company'
+                   alt="company logo"/>
+
+                   <img src={LogspotLogoBlack}
+                   className='rotating-logo-black'
+                   alt="company logo"/>
+             
+                    <img src={ItRecruitment}
+                    className='company'
+                    alt="company logo"/>
+                 
+             </div>
+
+            
+             </div>
+             </div>
+
+
+
+
           <div className='header-card-container'>
-          <img src={SignUpProcess} 
+          <div className='header-card-container-image'><img src={SignUpProcess} 
           className='sign-up-process' 
-          alt='images with "sign up" text'/>
+          alt='images with "sign up" text'/></div>
+          <div className='header-card-container-text'>Join the LOGSPOT beaver crew and set sail on a tech-tastic voyage! We connect IT enthusiasts with companies that see their potential. Together, we build the future of tech!</div>
 
 
 </div>

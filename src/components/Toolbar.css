@@ -20,21 +20,35 @@
   padding: 10px;
 }
 
-.header {
+.header-toolbar, .login-toolbar {
+  font-size: large;
+  font-weight:600;
+
+}
+
+/* .header {
   display: flex;
   align-items: center;
-  background-color:#fcbd2c;
-  /* background-color: #FFFDF1; */
-
-  padding: 5px; 
-  height: 77px
-  /* margin: auto; */
+  background-color: #fcbd2c;
+  padding: 5px;
+  height: 77px;
+  border-bottom: 1px solid #000;
 }
+
+.no-border .header {
+  border-bottom: none;
+} */
+
+.header.no-border {
+  border-bottom: none;
+}
+
 
 .menu-icon {
   display: none; 
   flex-direction: column;
   cursor: pointer;
+  z-index: 2;
 }
 
 .menu-line {
@@ -43,18 +57,6 @@
   background-color: white;
   margin: 3px 0;
   
-}
-
-.menu-icon.open .menu-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-icon.open .menu-line:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-icon.open .menu-line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -5px);
 }
 
 /* Dropdown menu styles */
@@ -87,52 +89,66 @@
 }
 
 
+
 @media (max-width: 771px) {
+
+.header-toolbar, .login-toolbar {
+  font-size: x-large;
+}
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
   }
 
   .menu-icon {
     display: flex;
+    padding-right: 20px;
+    padding-top: 10px;
   }
 
   .menu-dropdown {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    max-width: 200px;
-    border: 1px solid #000
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto; 
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
   }
 
   .menu-dropdown.open {
     display: flex;
+    flex: 1;
+    height: auto;
+    transform: translateY(0); 
+
   }
 
   .logspot-logo-new {
-    width: 120px; 
+    width: 150px;
     height: auto; 
-    padding-left: 10px;
+    padding: 10px;
   }
 
   .menu-icon-container {
     display: grid;
     grid-template-columns: 29fr 1fr;
-    padding-right: 10px;
+   
+
 
   }
 
-  .logspot-logo {
-    background-image: url('../images/logo-new.svg');
-    background-size: cover; /* Adjust based on your design */
-    background-repeat: no-repeat; /* Adjust based on your design */
-    width: 100px; /* Adjust based on your design */
-    height: 100px; /* Adjust based on your design */
-  }
+ 
 }
-
-
 

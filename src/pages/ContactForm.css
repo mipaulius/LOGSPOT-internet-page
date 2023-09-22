@@ -82,7 +82,9 @@
 
   .about-us-button {
     background-color: #fcbd2c;
-    color: white;
+    color: black;
+    /* color: white; */
+
     font-weight: 700;
     border-radius: 20px;
     padding: 10px 20px;
@@ -94,12 +96,14 @@
     text-align: center;
     width: 240px;
     height: 60px;
-
-    
+    border: solid 2px black;  
+    box-shadow: 2px 7px  black;
 }
 
 .about-us-button:hover {
     background-color: transparent;
-    color: #fcbd2c;
+    /* color: #fcbd2c; */
+    color: black;
     cursor: pointer;
+    background-color: white;
 }

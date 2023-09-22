@@ -103,7 +103,7 @@ font-size: large;
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 300px;
+  width: 170px;
   height: auto;
   z-index: 1;
   
@@ -132,20 +132,20 @@ font-size: large;
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 200px;
+    width: 150px;
     height: auto;
     z-index: 1;
   }
 }
 
-/* Responsive design max-width: 1015px */
+/* Responsive design max-width: 900px */
 
 @media (max-width: 900px) {
   .beaver45 {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 150px;
+    width: 50px;
     height: auto;
     z-index: 1;
   }

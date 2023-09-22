@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import Rammstein from '../images/paulius-foto-orange.jpeg';
+import Rammstein from '../images/paulius-foto-round.png';
 import ContactForm from "./ContactForm"; // Import your ContactForm component
 import WhatsApp from '../images/whatsapp-NEW.svg';
 import Viber from '../images/viber-NEW.svg';
 import Email from '../images/email-NEW.svg';
 import Pointer from '../images/pointer-orange.svg';
-
+import LogspotName from '../images/LOGSPOT-WORD.svg';
+import OurOffice from '../images/our-office.svg'
 import './AboutPage.css';
 import './ContactForm.css';
 
@@ -31,13 +32,24 @@ const AboutPage = () => {
     return (
         <div className="hero-container">
             
-            <div className="top-text">
-                <div className="top-text-1">Logspot -</div>
-                <div className="top-text-2">Your Bridge to IT Superstars!</div>
-            </div>
+            
 
             <div className="about-us-container">
+                
                 <div className="about-us-info">
+
+                <div className="top-text">
+                <div className="top-text-1">
+
+                <img
+                        src={LogspotName}
+                        className='logspot-name'
+                        alt='Check marks'
+                    />
+
+                </div>
+                <div className="top-text-2">Your Bridge to IT Superstars!</div>
+            </div>
 
                     <div className="about-us-pointers">
                     <img
@@ -101,22 +113,24 @@ const AboutPage = () => {
                         alt='some random dude standing with a beer in a Rammstein concert'
                        
                     />
-                    <div className="my-name-tag"><b>Paulius Miliauskas</b><p>CEO</p></div>
+                    <div className="my-name-tag">Paulius Miliauskas</div>
+                    <div className="my-position-tag">CEO</div>
+
                     
                     <div className="contact-details">
                         <div className="contact-item">
                             <img src={Email} className="Email" alt="Email" />
-                            <p>info@logspot.lt</p>
+                            <div className="contact-item-text">info@logspot.lt</div>
                         </div>
 
                         <div className="contact-item">
                             <img src={WhatsApp} className="WhatsApp" alt="WhatsApp" />
-                            <p>+37062215882</p>
+                            <div className="contact-item-text">+37062215882</div>
                         </div>
 
                         <div className="contact-item">
                             <img src={Viber} className="Viber" alt="Viber" />
-                            <p>+37062215882</p>
+                            <div className="contact-item-text">+37062215882</div>
                         </div>
                     </div>
 
@@ -126,7 +140,16 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="map-wrapper">
-                <h1>Our Office</h1>
+                <div className="our-office">
+
+                <img
+                        src={OurOffice}
+                        className='our-office-pic'
+                        alt='some random dude standing with a beer in a Rammstein concert'
+                       
+                    />
+
+                </div>
                 <iframe
                     title="Google Maps"
                     src={mapSrc}
