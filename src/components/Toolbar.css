@@ -1,3 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  /* background-color: #fcbd2c; */
+  background-color: #FFFDF1;
+  padding: 5px;
+  height: 77px;
+  border-bottom: solid #f8f0db 2px;
+}
+
 .sign-up-container {
   display: flex;
   align-content: center;
@@ -21,27 +31,13 @@
 }
 
 .header-toolbar, .login-toolbar {
-  font-size: large;
-  font-weight:600;
+  font-size: x-large;
+  /* font-weight:bolder; */
 
 }
 
-/* .header {
-  display: flex;
-  align-items: center;
-  background-color: #fcbd2c;
-  padding: 5px;
-  height: 77px;
-  border-bottom: 1px solid #000;
-}
 
-.no-border .header {
-  border-bottom: none;
-} */
 
-.header.no-border {
-  border-bottom: none;
-}
 
 
 .menu-icon {
@@ -54,7 +50,7 @@
 .menu-line {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #422513;
   margin: 3px 0;
   
 }
@@ -65,32 +61,30 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
-  background-color:#fcbd2c;
-  /* background-color: #FFFDF1; */
-
+  /* background-color:#fcbd2c; */
+  background-color: #FFFDF1;
   font-size: medium;
-  font-weight:540;
+  /* font-weight:540; */
   margin: auto;
   width: 1840px;
 }
 
 .menu-dropdown a {
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fcbd2c;
-  /* background-color: #FFFDF1; */
-
+  /* background-color: #fcbd2c; */
+  background-color: #FFFDF1;
   text-decoration: none;
   
 }
 
 
 
-@media (max-width: 771px) {
+@media (max-width: 900px) {
 
 .header-toolbar, .login-toolbar {
   font-size: x-large;

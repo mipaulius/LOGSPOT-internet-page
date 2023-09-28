@@ -1,22 +1,16 @@
 body {
   background-color: #FFFDF1;
-  font-family: 'Montserrat', sans-serif;
-
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Padauk', sans-serif;
+                                                                                                          
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #fcbd2c;
-  padding: 5px;
-  height: 77px;
-  border-bottom: 3px solid #000;
-}
+@import url('https://fonts.cdnfonts.com/css/padauk-2');
 
 /* Hide border if the body has a specific class */
-.no-border .header {
+/* .no-border .header {
   border-bottom: none;
-}
+} */
 
 .hero-container {
   max-width: 1440px;

@@ -42,18 +42,20 @@
   
   /* Style for the submit button */
   .modal-content form button {
-    background-color: #007BFF;
+    background-color: #fcbd2c;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border: rgb(195, 183, 183) solid 1px;
+
   }
   
   /* Hover effect for the submit button */
   .modal-content form button:hover {
-    background-color: #0056b3;
+    background-color: #e5ac28; 
   }
 
   /* Style for the close button */

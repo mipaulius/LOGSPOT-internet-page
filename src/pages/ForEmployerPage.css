@@ -14,46 +14,52 @@
     flex-direction: column;
     align-items: center;
     max-width: 606px;
-    padding: 30px;
+    padding: 20px;
+  
+
   }
 
  
   
   .ForEmployerPageForm label {
     margin-bottom: 10px;
+   
+
   }
   
   .ForEmployerPageForm input,
   .ForEmployerPageForm textarea {
     width: 600px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 4px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
   .ForEmployerPageForm button {
-    background-color: #007bff; /* Button background color */
+    background-color: #fcbd2c;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
+    border: rgb(195, 183, 183) solid 1px;
     
 
   }
 
   .ForEmployerPageForm button:hover {
-    background-color: #0056b3; 
+    background-color: #e5ac28; 
   }
 
   .for-employers-page-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: end;
+    align-items: center;
+    padding: 20px;
   }
 
 
@@ -63,7 +69,7 @@
     margin:auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 
   }
 
@@ -75,15 +81,11 @@
   .ForEmployerPageForm textarea
   {
     max-width: 500px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 4px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+   
   }
-}
 
-@media (max-width: 1200px) {
+
+
   .ForEmployerPageForm 
   {
     display: flex;
@@ -103,15 +105,9 @@
   .ForEmployerPageForm textarea
   {
     max-width: 400px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 4px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-}
 
-@media (max-width: 1024px) {
+  }
+
   .ForEmployerPageForm 
   {
     display: flex;
@@ -124,7 +120,6 @@
   }
 }
 
-@media (max-width: 1024px) {
 .beaver-head {
   max-width: 400px;
   display: flex;
@@ -132,12 +127,19 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-}
+
 }
 
 /* Responsive design max-width: 859px */
 
 @media (max-width: 859px) {
+
+  .ForEmployerPageForm button {
+    padding: 8px 20px;
+
+  }
+
+
   .ForEmployerPageForm input,
   .ForEmployerPageForm textarea
   {
@@ -147,10 +149,10 @@
     margin: 4px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+  
 }
 
-@media (max-width: 859px) {
+
   .ForEmployerPageForm 
   {
     display: flex;
@@ -161,9 +163,9 @@
     padding: 20px;
 
   }
-}
 
-@media (max-width: 859px) {
+
+
 .beaver-head {
   max-width: 400px;
   display: flex;
@@ -171,18 +173,17 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-}
+
 }
 
-@media (max-width: 859px) {
   .for-employers-h1 {
     padding: 20px;
     text-align: center;
     font-size:x-large;
-  }
+  
   }
 
-  @media (max-width: 859px) {
+
   .ForEmployerPageHeader {
     padding: 11px;
     text-align: center;
@@ -192,21 +193,15 @@
 
 /* Responsive design max-width: 600px */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 .ForEmployerPageForm input,
 .ForEmployerPageForm textarea
 {
   max-width: 400px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 4px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 
 }
-}
 
-@media (max-width: 600px) {
+
 .ForEmployerPageForm 
 {
   display: flex;
@@ -217,17 +212,15 @@
   padding: 20px;
 
 }
-}
 
-@media (max-width: 600px) {
+
 .for-employers-page-layout {
   display: block;
   align-items: center;
-}
+
 }
 
 
-@media (max-width: 600px) {
 .for-employers-h1 {
   padding: 5px;
   text-align: center;
@@ -247,24 +240,20 @@
       margin: 4px 0;
       border: 1px solid #ccc;
       border-radius: 4px;
-  
-  }
   }
   
-  @media (max-width: 430px) {
-  .ForEmployerPageForm 
-  {
+
+  .ForEmployerPageForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
     margin: auto; 
     padding: 20px;
-  
-  }
   }
   
-  @media (max-width: 430px) {
+  
+
   .for-employers-page-layout {
     display: block;
     align-items: center;
@@ -283,11 +272,9 @@
       margin: 4px 0;
       border: 1px solid #ccc;
       border-radius: 4px;
-  
-  }
   }
   
-  @media (max-width: 340px) {
+  
   .ForEmployerPageForm 
   {
     display: flex;
@@ -296,18 +283,14 @@
     max-width: 250px;
     margin: auto; 
     padding: 10px;
-  
-  }
   }
   
-  @media (max-width: 340px) {
+  
   .for-employers-page-layout {
     display: block;
     align-items: center;
   }
-  }
-
-  @media (max-width: 340px) {
+  
     .for-employers-h1 {
       padding: 5px;
       text-align: center;

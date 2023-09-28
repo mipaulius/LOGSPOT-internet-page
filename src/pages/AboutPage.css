@@ -43,7 +43,7 @@ grid-template-columns: 1.1fr 2fr;
     display: grid;
     grid-template-rows: 4fr 0.5fr 0.5fr 4fr;
     align-items: top;
-    justify-items: center; /* Center horizontally */
+    justify-items: center;
 }
 
 .my-picture {
@@ -144,27 +144,41 @@ grid-template-columns: 1.1fr 2fr;
 
 /* Responsive design max-width: 1000px */
 
+
 @media (max-width: 1000px) {
   .about-us-container {
     display: block;
   }
+  .our-office-pic {
+    max-width: 250px;
   }
 
-  @media (max-width: 1000px) {
+  .contact-item img {
+    max-width: 50px;
+  }
+
+  .map-wrapper {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.logspot-name {
+  max-width: 250px;
+}
+
+
   .about-us-button-container {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
 }
-}
 
-@media (max-width: 1000px) {
+
   .my-picture {
     max-width: 300px;
 }
-}
 
-@media (max-width: 1000px) {
+
   .top-text-1 {
     font-size: xx-large;
     padding: 10px;
@@ -172,9 +186,8 @@ grid-template-columns: 1.1fr 2fr;
     margin:auto;
     text-align: center;
 }
-}
 
-@media (max-width: 1000px) {
+
   .top-text-2 {
     padding: 10px;
     font-size: x-large;
@@ -182,15 +195,35 @@ grid-template-columns: 1.1fr 2fr;
     text-align: center;
     
 }
-}
-
-@media (max-width: 1000px) {
 
 .rammstein {
   display: grid;
-  grid-template-rows: 60% 10% 30%;
+  grid-template-rows: 4fr 0.5fr 0.5fr 4fr;
   align-items: top;
   justify-items: center;
-  padding-bottom: 10px;
   }
+
+
+.my-name-tag {
+  font-size: x-large;
+  padding-top: 10px;
 }
+}
+
+
+@media (max-width: 400px) {
+  .my-picture {
+    max-width: 250px;
+}
+
+.my-position-tag {
+  font-size: large;
+  text-align: center;
+}
+
+.about-us-button {
+  width: 200px;
+  height: 50px;
+  
+}
+  }

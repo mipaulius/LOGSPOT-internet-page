@@ -1,5 +1,7 @@
 import React from 'react';
-import Logspot from '../images/logspot-recruitment.svg';
+// import Logspot from '../images/logspot-recruitment.svg';
+import Logspot from '../images/logspot-recruitment.png';
+
 import BeaverImage from '../images/beaver-is-watching.svg';
 import LogspotLogo from '../images/company-logspot.svg';
 import CodeAcademyLogo from '../images/company-code-academy.png';
@@ -7,6 +9,7 @@ import RhenusLogo from '../images/company-rhenus.png';
 import LitLogo from '../images/company-lit.png';
 import WerkLogo from '../images/company-werk&ik.png';
 import IntroductionContainer from '../images/introduction-text-image.svg';
+import IntroductionContainerMobile from '../images/introduction-text-image-mobile.svg';
 import ItIdentity from '../images/It-identity.svg';
 import BeaverScreening from '../images/Beaver-screening.svg';
 import ShineInTechPond from '../images/Shine-in-tech-pond.svg';
@@ -48,13 +51,15 @@ const IndexPage = () => {
     return (
         <div>
             <div className='main-window'>
-
-            <img
+              <div className='company-logo-container'>
+              <img
           src={Logspot}
           className='logspot'
           alt="company logo"/>
+              </div>
 
-            <img
+              <div className='beaver-image-container'>
+              <img
           src={BeaverImage}
           className='beaver-image'
           alt="beaver image with moving eyes"/>
@@ -63,7 +68,9 @@ const IndexPage = () => {
             <div className='eye'></div>
             <div className='eye'></div>
           </div>
-          </div>
+          </div>     
+              </div>
+           
 
 
           <div className='logos'>

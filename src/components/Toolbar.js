@@ -63,10 +63,10 @@ const Header = () => {
           For Talents
         </Link>
         <Link to="/it-hiring" className="header-toolbar" onClick={handleMenuLinkClick}>
-          Hiring
+          For Employer
         </Link>
         <Link to="/about" className="header-toolbar" onClick={handleMenuLinkClick}>
-          About
+          About Us
         </Link>
         <Link to="/login" className="login-toolbar" onClick={handleMenuLinkClick}>
           Login

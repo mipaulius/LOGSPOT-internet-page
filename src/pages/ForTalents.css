@@ -80,17 +80,19 @@
 
 
 .job-application-form-container button {
-  background-color: #007bff; /* Button background color */
+  background-color: #fcbd2c;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border: rgb(195, 183, 183) solid 1px;
+
 }
 
 .job-application-form-container button:hover {
-  background-color: #0056b3; /* Button background color on hover */
+  background-color: #e5ac28; 
 }
 
 .talents-page-description {
