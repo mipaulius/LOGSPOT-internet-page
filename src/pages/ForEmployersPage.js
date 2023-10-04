@@ -121,7 +121,7 @@ class ForEmployersPage extends Component {
                     placeholder='Enter your message here'
                   ></textarea>
                 </label>
-                <button type='submit'>Send us a message and we will contact you shortly</button>
+                <button type='submit'>Send us a message!</button>
               </form>
             </div>
 

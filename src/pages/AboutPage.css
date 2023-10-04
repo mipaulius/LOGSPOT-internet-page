@@ -3,6 +3,26 @@ display: grid;
 grid-template-columns: 1.1fr 2fr;
 }
 
+.logspot-name {
+  max-width: 425px;
+  display: flex;
+  align-content: center;
+  margin:auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+}
+
+.top-text-2 {
+  font-size: xx-large;
+  margin:auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
 .about-us-info {
     flex: 2; /* Expand to fill available space */
 }
@@ -10,21 +30,18 @@ grid-template-columns: 1.1fr 2fr;
 .map-wrapper {
     flex: 2; /* Expand to fill available space */
     padding-bottom: 50px;
-    
 }
 
 .top-text{
     font-weight: bolder;
     font-size: 35px;
     padding-bottom: 40px;
-    padding-top: 50px;
-
-    
+    padding-top: 50px;    
 }
 
-.top-text-1 {
+/* .top-text-1 {
   max-width: 500px;
-}
+} */
 
 /* .top-text-2 {
   padding: 10px;
@@ -162,9 +179,7 @@ grid-template-columns: 1.1fr 2fr;
     padding-bottom: 40px;
 }
 
-.logspot-name {
-  max-width: 250px;
-}
+
 
 
   .about-us-button-container {
@@ -179,22 +194,6 @@ grid-template-columns: 1.1fr 2fr;
 }
 
 
-  .top-text-1 {
-    font-size: xx-large;
-    padding: 10px;
-    padding-top: 30px;
-    margin:auto;
-    text-align: center;
-}
-
-
-  .top-text-2 {
-    padding: 10px;
-    font-size: x-large;
-    margin:auto;
-    text-align: center;
-    
-}
 
 .rammstein {
   display: grid;
@@ -210,6 +209,21 @@ grid-template-columns: 1.1fr 2fr;
 }
 }
 
+@media (max-width: 500px) {
+  .top-text-2 {
+    font-size: 21px;
+    margin:auto;
+    text-align: center;
+  }
+
+  .logspot-name {
+    max-width: 280px;
+    display: flex;
+  align-content: center;
+  margin:auto;
+  }
+  }
+
 
 @media (max-width: 400px) {
   .my-picture {
@@ -224,6 +238,19 @@ grid-template-columns: 1.1fr 2fr;
 .about-us-button {
   width: 200px;
   height: 50px;
-  
 }
+
+.top-text-2 {
+  font-size: 19px;
+  margin:auto;
+  text-align: center;
+}
+
+.logspot-name {
+  max-width: 260px;
+  display: flex;
+align-content: center;
+margin:auto;
+}
+
   }

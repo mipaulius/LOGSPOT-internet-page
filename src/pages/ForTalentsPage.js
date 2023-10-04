@@ -384,7 +384,7 @@ function JobApplicationForm() {
           </label>
         </div>
 
-        <button type="submit">Create an account</button>
+        <button type="submit">Create an account!</button>
       </form>
 
       {showSuccessNotification && (

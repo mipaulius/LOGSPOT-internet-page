@@ -5,7 +5,7 @@ import WhatsApp from '../images/whatsapp-NEW.svg';
 import Viber from '../images/viber-NEW.svg';
 import Email from '../images/email-NEW.svg';
 import Pointer from '../images/pointer-orange.svg';
-import LogspotName from '../images/LOGSPOT-WORD.svg';
+import LogspotName from '../images/logspot-recruitment.png';
 import OurOffice from '../images/our-office.svg'
 import './AboutPage.css';
 import './ContactForm.css';
@@ -71,7 +71,7 @@ const AboutPage = () => {
                     />
                     <div>
                     <div className="description-names">Our Mission:</div>
-                    <div className="description-text">At LOGSPOT, we're on a mission to unite IT wizards and visionary companies. From coding to creativity, our beaver squad connects talent and opportunity in the tech forest</div>
+                    <div className="description-text">At Logspot, we're on a mission to unite IT wizards and visionary companies. From coding to creativity, our beaver squad connects talent and opportunity in the tech forest</div>
                     </div></div>
 
                     <div className="about-us-pointers">
@@ -81,7 +81,7 @@ const AboutPage = () => {
                         alt='Check marks'
                     />
                     <div>
-                    <div className="description-names">Mentoring the Next Generation:</div>
+                    <div className="description-names">Code Coaching:</div>
                     <div className="description-text">In 2023, Logspot embarked on a journey with "Code Academy". We actively supports young programmers in finding rewarding careers. Our commitment to nurturing talents extends beyond recruitment; it's about shaping the future of the tech industry.</div>
                     </div></div>
 
@@ -93,7 +93,7 @@ const AboutPage = () => {
                     />
                     <div>
                     <div className="description-names">Join Us</div>
-                    <div className="description-text">Ready for some tech-tastic fun? LOGSPOT brings IT professionals and companies together for an epic tech revolution. Get ready to build a dam of career achievements!</div>
+                    <div className="description-text">Ready for some tech-tastic fun? Logspot brings IT professionals and companies together for an epic tech revolution. Get ready to build a dam of career achievements!</div>
                     </div></div>
 
                     {/* Move the button outside of the App div */}

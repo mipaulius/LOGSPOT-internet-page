@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import './Toolbar.css';
-import SignUpButton from '../images/button.svg';
+import SignUpButton from '../images/button-orange2.svg';
 import SignUpButtonBlack from '../images/button-orange.svg';
 import PushedButton from '../images/button-pushed-orange.svg';
 import LogspotLogo from '../images/logo.svg';
@@ -63,7 +63,7 @@ const Header = () => {
           For Talents
         </Link>
         <Link to="/it-hiring" className="header-toolbar" onClick={handleMenuLinkClick}>
-          For Employer
+          For Employers
         </Link>
         <Link to="/about" className="header-toolbar" onClick={handleMenuLinkClick}>
           About Us

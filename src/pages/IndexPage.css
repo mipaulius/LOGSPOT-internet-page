@@ -310,8 +310,6 @@
     margin: auto;
     font-size: xx-large;
     font-weight: bolder;
-    /* position: relative; */
-    /* bottom: -160px; */
     padding-top: 100px;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -325,9 +323,6 @@
     font-weight: 100;
   }
 
-  .header-card-container-image {
-
-  }
 
   .sign-up-process{
     max-width: 550px;
@@ -335,6 +330,7 @@
 
   .number{
     max-width: 60px;
+    padding-right: 10px;
   }
 
   .sticky-container-number {
@@ -345,8 +341,6 @@
     text-align: left;
     align-items: center;
     padding-bottom: 16px;
-        padding-left: 20px;
-    padding-right: 20px;
   }
   
   .card-container {
@@ -365,36 +359,21 @@
    
   }
 
-  .sticky-card-container .section:nth-child(1){
+  .sticky-card-container .section:nth-child(1),
+  .sticky-card-container .section:nth-child(2),
+  .sticky-card-container .section:nth-child(3),
+  .sticky-card-container .section:nth-child(4)
+  {
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   
-  .sticky-card-inner-container-1{
-    max-width: 1600px;
-    height: 600px;
-    background-color: white;
-    /* background-color: #fcbd2c; */
-    border-radius: 20px;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-content: center;
-    font-size:x-large;
-    align-items: center;
-
-  }
-  }
-  
-  .sticky-card-container .section:nth-child(2){
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .sticky-card-inner-container-2{
+  .sticky-card-inner-container-1,
+  .sticky-card-inner-container-2,
+  .sticky-card-inner-container-3,
+  .sticky-card-inner-container-4
+  {
     max-width: 1600px;
     height: 600px;
     background-color: white;
@@ -411,52 +390,7 @@
 
   }
   }
-
- .sticky-card-container .section:nth-child(3){
- background-size: cover;
- display: flex;
- justify-content: center;
- align-items: center;
- .sticky-card-inner-container-3{
-   max-width: 1600px;
-   height: 600px;
-   background-color: white;
-   /* background-color: #fcbd2c; */
-   border-radius: 20px;
-   border: 1px solid;
-   padding: 10px;
-   box-shadow: 5px 10px;
-   display: grid;
-    grid-template-columns: 40% 60%;
-    align-content: center;
-    font-size:x-large;
-    align-items: center;
-
-  }
-  }
-
-  .sticky-card-container .section:nth-child(4){
-     background-size: cover;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     .sticky-card-inner-container-4{
-      max-width: 1600px;
-      height: 600px;
-      background-color: white;
-      /* background-color: #fcbd2c; */
-      border-radius: 20px;
-      border: 1px solid;
-      padding: 10px;
-      box-shadow: 5px 10px;
-      display: grid;
-    grid-template-columns: 60% 40%;
-    align-content: center;
-    font-size:x-large;
-    align-items: center;
-
-      }
-      }
+  
 
 
 .sticky-container-image{
@@ -469,14 +403,10 @@
 }
 
 .sticky-card-inner-text {
-  padding: 40px;
+  padding: 10px;
 }
 
-.companies-who-choose-us {
-  font-size: large;
-  text-align: center;
-  padding-top: 5px;
-}
+
 
 @media (max-width: 1300px) {
   .logspot {
@@ -494,12 +424,11 @@
     height: 773px;
   }
 
-  .introduction-container {
-    height: 900px;
-  
-  }
+
+
 
   }
+  
   
   @media (max-width: 1100px) {
     .logspot {
@@ -517,23 +446,34 @@
       height: 709px;
     }
   
-    .introduction-container {
-      height: 800px;
-    
-    }
   
     .introduction-container {
-      height: 1400px;
+      padding-top: 20px;
+      height: fit-content;
     
     }
 
     .introduction-text-image {
-      content: url('../images/introduction-text-image-mobile.svg');
+      content: url('../images/introduction-text-image-mobile.png');
       max-width: 100%;
       height: auto;
-  
-      margin: 0 auto;
+      margin: auto;
+      margin-top: 0;
     }
+
+    .header-card-container {
+      max-width: 1440px;
+      padding-top: 0px;
+  }
+
+  .sticky-container-number {
+    grid-template-columns: 10% 90%;
+    font-size: xx-large;
+}
+
+/* .number {
+  max-width: 60px;
+} */
 
     }
     
@@ -552,8 +492,50 @@
       .main-window{
         height: 645px;
       }
+
+      
     
+      .sticky-card-container .section:nth-child(1),
+      .sticky-card-container .section:nth-child(2),
+      .sticky-card-container .section:nth-child(3),
+      .sticky-card-container .section:nth-child(4){
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .sticky-card-inner-container-1,
+        .sticky-card-inner-container-2,
+        .sticky-card-inner-container-3,
+        .sticky-card-inner-container-4{
+          max-width: 1600px;
+          height: 650px;
+          display: block;
+          align-content: center;
+          font-size:x-large;
+          align-items: center;
+      
+        }
+        }
     
+        .sticky-container-image {
+          max-width: 400px;
+          padding: 0;    
+      }
+
+      .sticky-card-inner-container-image {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+      }
+
+      .sticky-container-number {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        font-size: xx-large;
+    }
+
       }
 
       @media (max-width: 690px) {
@@ -572,10 +554,7 @@
           height: 614px;
         }
       
-        .introduction-container {
-          height: 600px;
-        
-        }
+  
 
         .stripe1 {
           overflow: hidden;
@@ -620,10 +599,7 @@
             height: 521px;
           }
         
-          .introduction-container {
-            height: 600px;
-          
-          }
+     
 
           .beaver-image {
             max-width: 370px;
@@ -666,12 +642,26 @@
             border-radius: 50%;
           }
           
+          .sticky-container-number {
+            padding: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: x-large;
+
+        }
+
+        .number {
+          max-width: 40px;
+        }
         
+        .sticky-card-inner-text-container {
+          font-size: large;
+        }
           }
 
           @media (max-width: 480px) {
             .logspot {
-              padding-top: 103px;
+              padding-top: 101px;
               padding-bottom: 103px;
               width: 300px;
               padding-left: 5px;
@@ -684,10 +674,7 @@
               height: 481px;
             }
           
-            .introduction-container {
-              height: 600px;
-            
-            }
+        
   
             .beaver-image {
               max-width: 300px;
@@ -729,5 +716,54 @@
               border-radius: 50%;
             }
             
-          
+            .introduction-text {
+              font-size: large;
+              padding-top: 60px;
+              max-width: 100%;
             }
+
+            .sticky-container-image {
+              max-width: 290px;
+              padding: 0;
+              padding-top: 20px;
+          }
+
+          .sticky-container-number {
+            padding: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: large;
+
+        }
+
+        .number {
+          max-width: 30px;
+        }
+        
+        .sticky-card-inner-text-container {
+          font-size: medium;
+        }
+
+        .sticky-card-container .section:nth-child(1),
+        .sticky-card-container .section:nth-child(2),
+        .sticky-card-container .section:nth-child(3),
+        .sticky-card-container .section:nth-child(4){
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .sticky-card-inner-container-1,
+          .sticky-card-inner-container-2,
+          .sticky-card-inner-container-3,
+          .sticky-card-inner-container-4{
+            max-width: 1600px;
+            height: 550px;
+            display: block;
+            align-content: center;
+            font-size:x-large;
+            align-items: center;
+        
+          }
+          }
+          }
