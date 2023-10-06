@@ -7,7 +7,7 @@ const ForEmployersPage = () => {
     return (
         <div className='hero-container'>
             <div>
-                <h1 className='login-h1'>Log in to Logspot!</h1>
+                <div className='login-h1'>Log in to Logspot!</div>
                 <div className='login-Header'>Job offers not only for loggers!</div>
                 <div className='login-layout'>
                 <div className="login-form">

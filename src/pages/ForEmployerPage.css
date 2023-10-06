@@ -1,10 +1,15 @@
 .for-employers-h1 {
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
 }
 
 .ForEmployerPageHeader{
-    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
     text-align: center;
 
 }
@@ -86,8 +91,7 @@
 
 
 
-  .ForEmployerPageForm 
-  {
+  .ForEmployerPageForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,15 +181,12 @@
 }
 
   .for-employers-h1 {
-    padding: 20px;
-    text-align: center;
     font-size:x-large;
   
   }
 
 
   .ForEmployerPageHeader {
-    padding: 11px;
     text-align: center;
 }
 }
@@ -221,11 +222,7 @@
 }
 
 
-.for-employers-h1 {
-  padding: 5px;
-  text-align: center;
-  font-size:x-large;
-}
+
 }
 
 /* Responsive design max-width: 430px */
@@ -291,9 +288,4 @@
     align-items: center;
   }
   
-    .for-employers-h1 {
-      padding: 5px;
-      text-align: center;
-      font-size:large;
-    }
     }

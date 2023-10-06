@@ -20,15 +20,13 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* background-color: #fcbd2c; */
-  /* background-color: #FFFDF1; */
-
   padding-top: 10px;
   position: relative;
   width: 100%;
   bottom: 0;
   z-index: 2;
-  /* border-top: 1px solid #000; */
+  border-top: solid #f8f0db 2px;
+  
 }
 
 
@@ -42,7 +40,7 @@ body {
   /* align-items: flex-start; */
   font-size: medium;
   padding-left: 5px;
-  
+  text-align: left;
 }
 
 li {
@@ -116,5 +114,12 @@ a {
 
   .footer-1, .footer-2, .footer-3, .footer-4 {
     font-size: small;
+}
+}
+
+@media (max-width: 480px) {
+
+.footer-1, .footer-2, .footer-3, .footer-4 {
+  padding-left: 15px;
 }
 }

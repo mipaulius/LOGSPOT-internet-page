@@ -110,6 +110,7 @@
   .logos-slide {
     display: inline-block;
     animation: 15s slide infinite linear;
+    margin-top: 5px;
   }
   
   .logos-slide img {
@@ -455,7 +456,7 @@
 
     .introduction-text-image {
       content: url('../images/introduction-text-image-mobile.png');
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
       margin: auto;
       margin-top: 0;
@@ -469,6 +470,7 @@
   .sticky-container-number {
     grid-template-columns: 10% 90%;
     font-size: xx-large;
+    
 }
 
 /* .number {
@@ -534,6 +536,7 @@
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
         font-size: xx-large;
+        
     }
 
       }
@@ -553,8 +556,6 @@
         .main-window{
           height: 614px;
         }
-      
-  
 
         .stripe1 {
           overflow: hidden;
@@ -563,7 +564,7 @@
           white-space: nowrap;
           position: relative;
           bottom: -145px;
-          transform: rotate(-15deg) scaleX(1.1); /* Apply the rotation here */
+          transform: rotate(-15deg) scaleX(1.15); /* Apply the rotation here */
           border: solid black 2px;
         }
 
@@ -573,12 +574,14 @@
           background: #fcbd2c;
           white-space: nowrap;
           position: relative;
-          bottom: -76px;
-          transform: rotate(15deg) scaleX(1.1); /* Apply the rotation here */
+          bottom: -71px;
+          transform: rotate(15deg) scaleX(1.15); /* Apply the rotation here */
           border: solid black 2px;
         }
 
-      
+        .stripes-container {
+          height: 390px;
+        }
 
 
         }
@@ -657,12 +660,14 @@
         .sticky-card-inner-text-container {
           font-size: large;
         }
+
+        
           }
 
           @media (max-width: 480px) {
             .logspot {
-              padding-top: 101px;
-              padding-bottom: 103px;
+              padding-top: 115px;
+              padding-bottom: 115px;
               width: 300px;
               padding-left: 5px;
               padding-right: 5px;
@@ -671,7 +676,7 @@
             }
           
             .main-window{
-              height: 481px;
+              height: 507px;
             }
           
         
@@ -725,7 +730,7 @@
             .sticky-container-image {
               max-width: 290px;
               padding: 0;
-              padding-top: 20px;
+              /* padding-top: 20px; */
           }
 
           .sticky-container-number {
@@ -733,7 +738,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             font-size: large;
-
+            justify-content: left;
         }
 
         .number {
@@ -758,7 +763,7 @@
           .sticky-card-inner-container-3,
           .sticky-card-inner-container-4{
             max-width: 1600px;
-            height: 550px;
+            height: 500px;
             display: block;
             align-content: center;
             font-size:x-large;
@@ -766,4 +771,45 @@
         
           }
           }
+
+          .stripes-container {
+            height: 290px;
           }
+
+          .header-card-container {
+            max-width: 1440px;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 200px;
+          }
+
+          .header-card-container-text {
+           font-size: large;
+       }
+
+          .logos {
+            padding: 10px 0;
+          }
+   
+          .logos-slide img {
+             height: 30px;
+             margin: 0 20px;
+             margin-top: 5px;
+          }
+             }
+
+             @media (max-width: 324px) {
+              .sticky-card-container .section {
+                position: sticky;
+                top: 0;
+                width: 100%;
+                height: 70vh;
+            }
+
+            .sticky-container-image {
+              max-width: 240px;
+              padding: 0;
+              /* padding-top: 20px; */
+          }
+              }

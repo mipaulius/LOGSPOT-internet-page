@@ -49,7 +49,7 @@ class ForEmployersPage extends Component {
     return (
       <div className='hero-container'>
         <div>
-          <h1 className='for-employers-h1'>Grow your tech team with Logspot!</h1>
+          <div className='for-employers-h1'>Grow your tech team!</div>
           <div className='ForEmployerPageHeader'>
             Discover the power of Logspot's tech-savvy beavers, damming up the best IT talents for your company's growth
             and success.

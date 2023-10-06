@@ -48,7 +48,7 @@ const AboutPage = () => {
                     />
 
                 </div>
-                <div className="top-text-2">Your Bridge to IT Superstars!</div>
+                {/* <div className="top-text-2">Your Bridge to IT Superstars!</div> */}
             </div>
 
                     <div className="about-us-pointers">

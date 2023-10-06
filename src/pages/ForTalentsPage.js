@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios'; // Import Axios
-import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
+// import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
 import Beaver45 from '../images/beaver45.svg';
 import Beaver45Hover from '../images/beaver45-hover.svg';
 import MotivatedBeaver from '../images/success-notification-image.png';
@@ -148,12 +148,12 @@ function JobApplicationForm() {
       <div className="job-application-form-container">
       <div className='talents-header'>
   <div className='header-content'>
-    <div className='join-logspot-text'>Join Logspot</div>
-    <img
+    <div className='join-logspot-text'>Join Logspot!</div>
+    {/* <img
       src={LogspotLogoNew}
       className='LogspotLogoNew'
       alt='logo'
-    />
+    /> */}
   </div>
   <div className='centered-content'>
   Create your profile and let companies discover your skills and potential!
