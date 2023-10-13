@@ -1,5 +1,5 @@
 import React from 'react';
-import Logger from './jack.png'; // Use a relative path
+import Logger from '../images/logger.svg'; // Use a relative path
 import "./LoginPage.css"; 
 
 

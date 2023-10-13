@@ -58,15 +58,16 @@ function ContactForm({ isOpen, onClose }) {
         <button className="close-button" onClick={onClose}>
           ✖
         </button>
-        <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit} ref={modalRef}>
+        <div className="contact-us-form-header">Contact Us</div>
+        <form className="form-contact-us" onSubmit={handleSubmit} ref={modalRef}>
           <label>
-            Name:
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+            <div className="text-contact-us">Name:</div>
+            <input className="input-contact-us"type="text" value={name} onChange={(e) => setName(e.target.value)} required />
           </label>
           <label>
-            Phone:
+            <div className="text-contact-us">Phone:</div>
             <input
+              className="input-contact-us"
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -76,9 +77,10 @@ function ContactForm({ isOpen, onClose }) {
 
             />
           </label>
-          <label>
-            Email:
+          <label className="contact-form-label">
+          <div className="text-contact-us">Email:</div>
             <input
+              className="input-contact-us"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -86,7 +88,7 @@ function ContactForm({ isOpen, onClose }) {
               title="Please include a '@' in the email address"
             />
           </label>
-          <label>
+          <label className="contact-form-label">
             Message:
             <textarea
               rows="4"

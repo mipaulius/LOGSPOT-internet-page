@@ -119,13 +119,12 @@ font-size: large;
   padding: 10px;
 }
 
-/* .success-notification {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-} */
+.success-notification {
+  /* padding-left: 10px; */
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
 
 /* Responsive design max-width: 1212px */
 

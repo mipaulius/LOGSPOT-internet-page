@@ -29,21 +29,19 @@ class ForEmployersPage extends Component {
     const formData = this.state;
   
     Axios.post('http://localhost:3001/it-hiring', formData)
-      .then((response) => {
-        // Handle a successful response from the server
-        console.log('Form submitted successfully', response.data);
-        alert('Form submitted successfully. We will get back to you soon! :)'); // Display a popup message
-      })
+  .then((response) => {
+    // Handle a successful response from the server
+    console.log('Form submitted successfully', response.data);
+    alert('Form submitted successfully. 🚀 We will get back to you soon!'); // Display a popup message with the rocket and beaver emojis
+  })
+  .catch((error) => {
+    console.error('Error submitting form:', error);
+    alert('Error submitting form. Please try again later.');
+  });
+
   };
   
 
-  // handleMouseEnter = (e) => {
-  //   e.currentTarget.src = BeaverHeadHover;
-  // };
-
-  // handleMouseLeave = (e) => {
-  //   e.currentTarget.src = BeaverHead; 
-  // };
 
   render() {
     return (
@@ -121,6 +119,7 @@ class ForEmployersPage extends Component {
                     placeholder='Enter your message here'
                   ></textarea>
                 </label>
+                
                 <button type='submit'>Send us a message!</button>
               </form>
             </div>

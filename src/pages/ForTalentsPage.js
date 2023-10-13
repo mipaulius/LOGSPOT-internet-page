@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import Axios from 'axios'; // Import Axios
-// import LogspotLogoNew from '../images/Logspot-Logo-03-v9.png';
 import Beaver45 from '../images/beaver45.svg';
 import Beaver45Hover from '../images/beaver45-hover.svg';
-import MotivatedBeaver from '../images/success-notification-image.png';
 
 import './ForTalents.css'; 
 
 function JobApplicationForm() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [photo, setPhoto] = useState(null);
   const [dateOfBirth, setDateOfBirth] = useState('');
   const [mobilePhone, setMobilePhone] = useState('');
   const [email, setEmail] = useState('');
@@ -36,7 +33,8 @@ function JobApplicationForm() {
     // Check if the age is less than 16
     if (age < 16) {
       setErrorMessage('You must be at least 16 years old to apply.');
-      // Prevent form submission here by returning or other means.
+      
+     
     } else {
       // Age is valid, clear any previous error message
       setErrorMessage('');
@@ -60,77 +58,42 @@ function JobApplicationForm() {
 
 
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    // Check if there's an error message (i.e., age is below 16)
-  if (errorMessage) {
-    // Handle the error, e.g., display a message to the user
-    alert(errorMessage);
-    return; // Prevent form submission
-  } else {
-    // Age is valid, proceed with form submission
-    // ... your form submission logic ...
-  }
-
-    const formData = {
-      firstName,
-      lastName,
-      photo,
-      dateOfBirth,
-      mobilePhone,
-      email,
-      city,
-      remoteWork,
-      preferredPosition,
-      programmingLanguages,
-      workExperience,
-      education,
-      cvFile,
-      agreeToTerms,
-      subscribeToNewsletter,
-      showSuccessNotification,
-      showErrorNotification,
-
-      // .
-    };
-
-
-    Axios.post('http://localhost:3002/home', formData)
-    .then((response) => {
-      
-      console.log('Form submitted successfully', response.data);
-      setShowSuccessNotification(true);
-      alert('Form submitted successfully. We will get back to you soon! :)'); 
-     
-
-
-      {showSuccessNotification && (
-        <div className="success-notification">
-          {/* <p>Form submitted successfully! We will get back to you soon!</p> */}
-          <img
-            src={MotivatedBeaver}
-            className='success-notification-image' // Use a different class name here
-            alt='Success Image'
-          />
-        </div>
-      )}
-      
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
     
-
-
-
-      // Clear form inputs after submission (optional)
-      setFirstName('');
-      setLastName('');
-      // ... clear other inputs ...
-    })
-    .catch((error) => {
-      // Handle any errors from the server
-      console.error('Error submitting form', error);
-      setShowErrorNotification(true);
-    });
-};
+      const formData = new FormData();
+      formData.append('firstName', firstName);
+      formData.append('lastName', lastName);
+      formData.append('dateOfBirth', dateOfBirth);
+      formData.append('mobilePhone', mobilePhone);
+      formData.append('email', email);
+      formData.append('city', city);
+      formData.append('remoteWork', remoteWork);
+      formData.append('preferredPosition', JSON.stringify(preferredPosition));
+      formData.append('programmingLanguages', programmingLanguages);
+      formData.append('workExperience', workExperience);
+      formData.append('education', education);
+      formData.append('cvFile', cvFile);
+      formData.append('agreeToTerms', agreeToTerms);
+      formData.append('subscribeToNewsletter', subscribeToNewsletter);
+      formData.append('showSuccessNotification', showSuccessNotification);
+      formData.append('showErrorNotification', showErrorNotification);
+    
+      // Log the FormData to see if the file is correctly attached
+      console.log('Form data:', formData);
+    
+      Axios.post('http://localhost:3002/home', formData)
+        .then((response) => {
+          console.log('Form submitted successfully', response.data);
+          setShowSuccessNotification(true);
+          alert('Form submitted successfully. 🚀 We will get back to you soon!');
+          // ... rest of your code ...
+        })
+        .catch((error) => {
+          console.error('Error submitting form', error);
+          setShowErrorNotification(true);
+        });
+    };
 
 
 
@@ -389,20 +352,20 @@ function JobApplicationForm() {
 
       {showSuccessNotification && (
           <div className="success-notification">
-            Form submitted successfully! {/* You can style this as a pop-up */}
+            Form submitted successfully. 🚀 We will get back to you soon!
           </div>
         )}
 
         {showErrorNotification && (
-          <div className="error-notification">
+          <div className="error-notification"> 
             Error submitting form. Please try again. {/* You can style this as a pop-up */}
           </div>
         )}
       
       
-      <div className='login-talent-page'>
+      {/* <div className='login-talent-page'>
   Already have an account? <a href='http://localhost:3000/login' className='blue-link'>Log in</a>
-</div>
+</div> */}
 
 
     </div>

@@ -26,7 +26,7 @@ const App = () => {
       <Route path="/home" element={<ForTalentsPage/>}></Route>
       <Route path="/it-hiring" element={<ForEmployersPage/>}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
-      <Route path="/login" element={<LoginPage/>}></Route>
+      {/* <Route path="/login" element={<LoginPage/>}></Route> */}
       <Route path="/sign-Up" element={<SignUpPage/>}></Route>
       <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
 
@@ -41,7 +41,7 @@ const App = () => {
         <li><a href="http://localhost:3000/home">Get a job</a></li>
         <li><a href="http://localhost:3000/it-hiring">Hirring</a></li>
         <li><a href="http://localhost:3000/about">About</a></li>
-        <li><a href="http://localhost:3000/login">Login</a></li>
+        {/* <li><a href="http://localhost:3000/login">Login</a></li> */}
       </ul>
       </div>
 
@@ -81,9 +81,9 @@ const App = () => {
         </div>
 
         <div className='social-list-item'>     
-        <li><a href="https://twitter.com">
-        <img className='social-images' src={require('./images/twitter-NEW.svg').default} alt='twitter icon' />
-          <div className='social-text'>TWITTER</div>
+        <li><a href="https://www.instagram.com/logspot_mb/">
+        <img className='social-images' src={require('./images/instagram-NEW.svg').default} alt='instagram icon' />
+          <div className='social-text'>INSTAGRAM</div>
           </a></li>
         </div>
       </ul>

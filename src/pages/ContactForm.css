@@ -16,7 +16,7 @@
   
   /* Style for the modal content */
   .modal-content {
-    background-color: white;
+    background-color: #FFFDF1;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -28,12 +28,19 @@
   /* Style for form elements */
   .modal-content form label {
     display: block;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
     margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
   }
   
   /* Style for the textarea input */
   .modal-content form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -108,4 +115,12 @@
     color: black;
     cursor: pointer;
     background-color: white;
+}
+
+/* .text-contact-us {
+  padding-right: 5px;
+} */
+
+.contact-us-form-header {
+  font-size: x-large;
 }
