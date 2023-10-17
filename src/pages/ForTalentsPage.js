@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Axios from 'axios'; // Import Axios
-import Beaver45 from '../images/beaver45.svg';
-import Beaver45Hover from '../images/beaver45-hover.svg';
+import Beaver45 from '../images/beaver45new.svg';
+import Beaver45Hover from '../images/beaver45new-hover.svg';
+import Logger from '../images/logger.svg'
 
 import './ForTalents.css'; 
 
@@ -14,12 +15,13 @@ function JobApplicationForm() {
   const [city, setCity] = useState('');
   const [remoteWork, setRemoteWork] = useState(false);
   const [preferredPosition, setPreferredPosition] = useState([]);
+  const [Languages, setLanguages] = useState('');
   const [programmingLanguages, setProgrammingLanguages] = useState('');
   const [workExperience, setWorkExperience] = useState('');
   const [education, setEducation] = useState('');
   const [cvFile, setCvFile] = useState(null);
   const [agreeToTerms, setAgreeToTerms] = useState(false);
-  const [subscribeToNewsletter, setSubscribeToNewsletter] = useState(false);
+  // const [subscribeToNewsletter, setSubscribeToNewsletter] = useState(false);
   const [showSuccessNotification, setShowSuccessNotification] = useState(false);
   const [showErrorNotification, setShowErrorNotification] = useState(false);
   const [errorMessage, setErrorMessage] = useState(''); // Added this line for error message
@@ -70,21 +72,30 @@ function JobApplicationForm() {
       formData.append('city', city);
       formData.append('remoteWork', remoteWork);
       formData.append('preferredPosition', JSON.stringify(preferredPosition));
+      formData.append('Languages', Languages);
       formData.append('programmingLanguages', programmingLanguages);
       formData.append('workExperience', workExperience);
       formData.append('education', education);
-      formData.append('cvFile', cvFile);
+    
+      console.log('cvFile:', cvFile);
+      if (cvFile) {
+        formData.append('cvFile', cvFile, cvFile.name);
+        console.log('CV File added to FormData:', formData);
+      }
+    
+      console.log('CV File Info:', formData.get('cvFile'));  // Log the CV File Info
+    
       formData.append('agreeToTerms', agreeToTerms);
-      formData.append('subscribeToNewsletter', subscribeToNewsletter);
       formData.append('showSuccessNotification', showSuccessNotification);
       formData.append('showErrorNotification', showErrorNotification);
     
-      // Log the FormData to see if the file is correctly attached
       console.log('Form data:', formData);
+      console.log('Form data size:', formData.getAll('cvFile').length);
     
       Axios.post('http://localhost:3002/home', formData)
         .then((response) => {
           console.log('Form submitted successfully', response.data);
+          console.log('Response headers:', response.headers);
           setShowSuccessNotification(true);
           alert('Form submitted successfully. 🚀 We will get back to you soon!');
           // ... rest of your code ...
@@ -92,8 +103,12 @@ function JobApplicationForm() {
         .catch((error) => {
           console.error('Error submitting form', error);
           setShowErrorNotification(true);
+    
+          console.log('POST request data:', formData);
         });
     };
+    
+    
 
 
 
@@ -105,23 +120,23 @@ function JobApplicationForm() {
     e.currentTarget.src = Beaver45; // Change the image source on mouse leave
   };
 
+
+  
   return (
     <div className='hero-container'>
-    
-      <div className="job-application-form-container">
-      <div className='talents-header'>
+       <div className='talents-header'>
   <div className='header-content'>
-    <div className='join-logspot-text'>Join Logspot!</div>
-    {/* <img
-      src={LogspotLogoNew}
-      className='LogspotLogoNew'
-      alt='logo'
-    /> */}
+    <div className='join-logspot-text'>Log in to Logspot!</div>
   </div>
   <div className='centered-content'>
-  Create your profile and let companies discover your skills and potential!
+  Job offers not only for loggers! Create your profile and let companies discover your skills and potential.
   </div>
 </div>
+
+      <div className='for-talents-page-container'>
+    
+      <div className="job-application-form-container">
+     
 
 
       <form onSubmit={handleFormSubmit}>
@@ -195,7 +210,16 @@ function JobApplicationForm() {
             placeholder="Your City"
           />
         </div>
-
+        <div className="form-group">
+          <input
+            type="text"
+            id="Languages"
+            value={Languages}
+            onChange={(e) => setLanguages(e.target.value)}
+            required
+            placeholder="What languages do you speak?"
+          />
+        </div>
         <div className="form-group">
           <input
             type="text"
@@ -370,7 +394,16 @@ function JobApplicationForm() {
 
     </div>
 
-    <div>
+    <div className='logger-container'>
+
+    <img
+          src={Logger}
+          className='logger-image'
+          alt='beaver cutting trees'
+        />
+     
+
+   
         <img
           src={Beaver45}
           className='beaver45'
@@ -379,8 +412,7 @@ function JobApplicationForm() {
           onMouseLeave={handleMouseLeave}
         />
       </div>
-
-
+      </div>
     </div>
   );
 }

@@ -3,6 +3,8 @@ import BeaverHead from '../images/Grow-tech-team.svg';
 // import BeaverHeadHover from '../images/Grow-tech-team.svg';
 import Axios from 'axios'; // Import Axios
 import './ForEmployerPage.css'; // Import the CSS file
+import Beaver45 from '../images/beaver45new.svg';
+import Beaver45Hover from '../images/beaver45new-hover.svg';
 
 
 
@@ -42,8 +44,20 @@ class ForEmployersPage extends Component {
   };
   
 
+  
+
+
 
   render() {
+
+    const handleMouseEnter = (e) => {
+      e.currentTarget.src = Beaver45Hover; // Change the image source on hover
+    };
+  
+    const handleMouseLeave = (e) => {
+      e.currentTarget.src = Beaver45; // Change the image source on mouse leave
+    };
+
     return (
       <div className='hero-container'>
         <div>
@@ -125,12 +139,19 @@ class ForEmployersPage extends Component {
             </div>
 
             <div className='BeaverHead'>
+
+            <img
+          src={Beaver45}
+          className='beaver45'
+          alt='beaver watching from the side of the screen'
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+
               <img
                 src={BeaverHead}
                 className='beaver-head'
                 alt='images with beaver head smiling'
-                // onMouseEnter={this.handleMouseEnter}
-                // onMouseLeave={this.handleMouseLeave}
               />
             </div>
           </div>

@@ -1,3 +1,8 @@
+.for-talents-page-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .talents-header {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -13,20 +18,37 @@
 }
 
 .centered-content {
-  margin-top: 10px; /* Optional: Add some spacing between the header and the centered content */
+  margin-top: 10px;
   margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 .join-logspot-text {
-  font-size: xx-large;
-  font-weight: bold;
-  -webkit-text-stroke: 1px black;
+  padding-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
 }
 
-.LogspotLogoNew {
-  max-width: 50px;
-  padding-left: 5px;
-  }
+.logger-image {
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  
+}
+
+.logger-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Other styles for your container */
+}
 
 .job-application-form-container {
   max-width: 100%; /* Adjust the width as needed */
@@ -35,8 +57,8 @@
   /* border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   max-width: 600px;
-  padding-top: 20px;
-  padding-bottom: 20px;;
+  padding: 20px;
+
 }
 
 .job-application-form-container h1 {
@@ -136,6 +158,10 @@ max-width: 600px;
   .beaver45 {
     width: 150px;
   }
+
+  .logger-image {
+    max-width: 500px;
+  }
 }
 
 /* Responsive design max-width: 900px */
@@ -143,10 +169,11 @@ max-width: 600px;
 @media (max-width: 900px) {
   .beaver45 {
     width: 50px;
-  
   }
 
-
+  .for-talents-page-container {
+    display: block;
+}
 
 .job-application-form-container form {
   display: grid;
@@ -161,4 +188,16 @@ max-width: 600px;
 .LogspotLogoNew{
   max-width: 30px;
 }
+}
+
+@media (max-width: 500px) {
+  .logger-image {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logger-image {
+    max-width: 290px;
+  }
 }

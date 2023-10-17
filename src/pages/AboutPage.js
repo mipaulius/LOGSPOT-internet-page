@@ -5,8 +5,8 @@ import WhatsApp from '../images/whatsapp-NEW.svg';
 import Viber from '../images/viber-NEW.svg';
 import Email from '../images/email-NEW.svg';
 import Pointer from '../images/pointer-orange.svg';
-import LogspotName from '../images/logspot-recruitment.png';
-import OurOffice from '../images/our-office.svg'
+import LogspotName from '../images/our-story-orange.svg';
+import OurOffice from '../images/our-office-orange.svg'
 import './AboutPage.css';
 import './ContactForm.css';
 

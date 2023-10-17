@@ -13,7 +13,7 @@ import ItIdentity from '../images/It-identity.svg';
 import BeaverScreening from '../images/Beaver-screening.svg';
 import ShineInTechPond from '../images/Shine-in-tech-pond.svg';
 import WelcomeToTechColony from '../images/Welcome-to-tech-colony.svg';
-import SignUpProcess from '../images/Sign-up-process.svg';
+import SignUpProcess from '../images/Sign-up-process-orange.svg';
 import First from '../images/1.svg';
 import Second from '../images/2.svg';
 import Third from '../images/3.svg';

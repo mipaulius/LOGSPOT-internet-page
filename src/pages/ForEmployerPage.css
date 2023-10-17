@@ -75,7 +75,9 @@
   .beaver-head {
     max-width: 500px;
     display: flex;
-    margin:auto;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Other styles for your container */
     padding-left: 10px;
     padding-right: 10px;
     /* padding-top: 10px; */
