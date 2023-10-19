@@ -39,16 +39,13 @@ const AboutPage = () => {
                 <div className="about-us-info">
 
                 <div className="top-text">
-                <div className="top-text-1">
+                
 
                 <img
                         src={LogspotName}
-                        className='logspot-name'
+                        className='our-story'
                         alt='Check marks'
                     />
-
-                </div>
-                {/* <div className="top-text-2">Your Bridge to IT Superstars!</div> */}
             </div>
 
                     <div className="about-us-pointers">
