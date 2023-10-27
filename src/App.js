@@ -23,7 +23,7 @@ const App = () => {
 
     <Routes>
       <Route path="/" element={<IndexPage/>}></Route>
-      <Route path="/home" element={<ForTalentsPage/>}></Route>
+      <Route path="/join-us" element={<ForTalentsPage/>}></Route>
       <Route path="/it-hiring" element={<ForEmployersPage/>}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
       {/* <Route path="/login" element={<LoginPage/>}></Route> */}
@@ -38,7 +38,7 @@ const App = () => {
       <div className='footer-1'>
       <ul><div className='footer-headline'>LOGSPOT</div>
         <li><a href="http://localhost:3000/">Home</a></li>
-        <li><a href="http://localhost:3000/home">Get a job</a></li>
+        <li><a href="http://localhost:3000/join-us">Get a job</a></li>
         <li><a href="http://localhost:3000/it-hiring">Hirring</a></li>
         <li><a href="http://localhost:3000/about">About</a></li>
         {/* <li><a href="http://localhost:3000/login">Login</a></li> */}
@@ -50,7 +50,7 @@ const App = () => {
         <li>Vytauto g. 48B, 68288 Marijampolė</li>
         <li>+37062215882;</li>
         <li>+491786943025</li>
-        <li>info@logspot.lt</li>
+        <li><a href="mailto:info@logspot.net">info@logspot.net</a></li>
         
       </ul>
       </div>

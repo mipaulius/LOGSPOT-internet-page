@@ -1,67 +1,60 @@
-.main-window{
-    /* background-color:#fcbd2c; */
+.main-window {
   background-color: #FFFDF1;
+  height: 90vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  position: relative;
+  z-index: -1;
+}
 
-    height: 844px;
-  
-  }
-  
-  .logspot {
-    padding-top: 85px;
-    padding-bottom: 85px;
-    max-width: 1225px;
-    margin-right: auto; 
-    margin-left: auto;
-    display: block;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  
-  .beaver-image {
-    max-width: 470px;
-    margin-right: auto; 
-    margin-left: auto;
-    display: block;
-  }
-  
-  /* MOVING EYES */
-  
-  .moving-eyes-container {
+.beaver-image-scrolling-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align to the bottom */
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+
+.beaver-image {
+  max-width: 100%;
+  max-height: 130%; /* Ensure the image takes the full height of the container */
+}
+
+.beaver-image:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background: #000; /* Adjust the line color */
+}
+
+
+  .company-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 141px;
-    /* min-height: -10vh; */
-    grid-gap: 60px;
-    
-    
   }
+
   
-  .moving-eyes-container .eye {
-    position: relative;
-    width: 71px;
-    min-height: 71px;
+  .logspot {
+    max-width: 90%;
+    margin: auto;
     display: block;
-    background: rgb(255, 255, 255);
-    margin: 0 15px;
-    border-radius: 50%;
   }
+
+
   
-  .moving-eyes-container .eye::before {
-    content:'';
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    transform: translate(-50%,-50%);
-    width: 45px;
-    height: 45px;
-    background: black;
-    border-radius: 50%;
-  }
-  
+
   /* OUR PARTNERS WE ARE WORKING WITH */
 
+ 
   @keyframes slide {
     from {
       transform: translateX(0);
@@ -92,16 +85,6 @@
     content: "";
     z-index: 2;
   }
-  
-  /* .logos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  }
-  
-  .logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  } */
   
   .logos:hover .logos-slide {
     animation-play-state: paused;
@@ -172,20 +155,6 @@
     z-index: 2;
   }
   
-  /* .stripe1:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  }
-  
-  .stripe1:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  } */
-  
-  /* .stripe1:hover .stripe1-slide {
-    animation-play-state: paused;
-  } */
-  
   .stripe1-slide {
     display: inline-block;
     animation: 20s slide infinite linear;
@@ -197,7 +166,6 @@
 
   }
 
-   /* Stripes, Stripe2 */
 
    @keyframes slide {
     from {
@@ -228,21 +196,7 @@
     content: "";
     z-index: 2;
   }
-  
-  /* .stripe2:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  }
-  
-  .stripe2:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  } */
-  
-  /* .stripe2:hover .stripe2-slide {
-    animation-play-state: paused;
-  } */
-  
+
   .stripe2-slide {
     display: inline-block;
     animation: 20s slide infinite linear;
@@ -254,20 +208,6 @@
 
   }
 
-
-  
-/* @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .rotating-logo-black {
-  animation: rotate 5s linear infinite; 
-} */
 
   
   /* INTRODUCTION TEXT */
@@ -282,8 +222,8 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .introduction-text-image {
@@ -357,6 +297,7 @@
     top: 0;
     width: 100%;
     height: 100vh;   
+    
    
   }
 
@@ -397,65 +338,26 @@
 .sticky-container-image{
   max-width: 600px;
   padding: 10px;
-  /* align-items: center; */
-  /* align-content: center; */
-  /* align-self: center; */
-
 }
 
 .sticky-card-inner-text {
   padding: 10px;
 }
 
-
-
-@media (max-width: 1300px) {
-  .logspot {
-    padding-top: 85px;
-    padding-bottom: 85px;
-    max-width: 1000px;
-    margin-right: auto; 
-    margin-left: auto;
-    display: block;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .main-window{
-    height: 773px;
-  }
-
-
-
-
-  }
   
   
   @media (max-width: 1100px) {
-    .logspot {
-      padding-top: 85px;
-      padding-bottom: 85px;
-      max-width: 800px;
-      margin-right: auto; 
-      margin-left: auto;
-      display: block;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  
-    .main-window{
-      height: 709px;
-    }
   
   
+
     .introduction-container {
-      padding-top: 20px;
+      padding-top: 70px;
       height: fit-content;
     
     }
 
     .introduction-text-image {
-      content: url('../images/introduction-text-image-mobile.png');
+      content: url('../images/introduction-text-image-mobile.svg');
       max-width: 90%;
       height: auto;
       margin: auto;
@@ -470,30 +372,14 @@
   .sticky-container-number {
     grid-template-columns: 10% 90%;
     font-size: xx-large;
-    
 }
 
-/* .number {
-  max-width: 60px;
-} */
+
 
     }
     
     @media (max-width: 900px) {
-      .logspot {
-        padding-top: 85px;
-        padding-bottom: 85px;
-        max-width: 600px;
-        margin-right: auto; 
-        margin-left: auto;
-        display: block;
-        padding-left: 40px;
-        padding-right: 40px;
-      }
-    
-      .main-window{
-        height: 645px;
-      }
+     
 
       
     
@@ -542,20 +428,8 @@
       }
 
       @media (max-width: 690px) {
-        .logspot {
-          padding-top: 85px;
-          padding-bottom: 85px;
-          max-width: 500px;
-          margin-right: auto; 
-          margin-left: auto;
-          display: block;
-          padding-left: 40px;
-          padding-right: 40px;
-        }
-      
-        .main-window{
-          height: 614px;
-        }
+   
+
 
         .stripe1 {
           overflow: hidden;
@@ -583,67 +457,21 @@
           height: 390px;
         }
 
-
+        .introduction-text {
+          font-size: 16px;
+          color: #000000;
+        }
         }
 
         @media (max-width: 580px) {
+    
+          .company-logo-container {
+            align-items:flex-end;
+          }
+          
           .logspot {
-            padding-top: 85px;
-            padding-bottom: 85px;
-            max-width: 400px;
-            margin-right: auto; 
-            margin-left: auto;
-            display: block;
-            padding-left: 40px;
-            padding-right: 40px;
-          }
-        
-          .main-window{
-            height: 521px;
-          }
-        
-     
-
-          .beaver-image {
-            max-width: 370px;
-            margin-right: auto; 
-            margin-left: auto;
-            display: block;
-          }
-          
-          
-          .moving-eyes-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            bottom: 113px;
-            grid-gap: 38px;
-            
-            
-          }
-          
-          .moving-eyes-container .eye {
-            position: relative;
-            width: 59px;
-            min-height: 59px;
-            display: block;
-            background: rgb(255, 255, 255);
-            margin: 0 15px;
-            border-radius: 50%;
-          }
-          
-          .moving-eyes-container .eye::before {
-            content:'';
-            position: absolute;
-            top: 50%;
-            left: 25px;
-            transform: translate(-50%,-50%);
-            width: 35px;
-            height: 35px;
-            background: black;
-            border-radius: 50%;
-          }
+            margin-bottom: 50px;
+        }
           
           .sticky-container-number {
             padding: 0px;
@@ -665,65 +493,10 @@
           }
 
           @media (max-width: 480px) {
-            .logspot {
-              padding-top: 115px;
-              padding-bottom: 115px;
-              width: 300px;
-              padding-left: 5px;
-              padding-right: 5px;
-              display: block;
-              margin: auto;
-            }
-          
-            .main-window{
-              height: 507px;
-            }
-          
-        
-  
-            .beaver-image {
-              max-width: 300px;
-              margin-right: auto; 
-              margin-left: auto;
-              display: block;
-            }
             
-            
-            .moving-eyes-container {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: relative;
-              bottom: 92px;
-              grid-gap: 26px;
-              
-            }
-            
-            .moving-eyes-container .eye {
-              position: relative;
-              width: 47px;
-              min-height: 47px;
-              display: block;
-              background: rgb(255, 255, 255);
-              margin: 0 15px;
-              border-radius: 50%;
-            }
-            
-            .moving-eyes-container .eye::before {
-              content:'';
-              position: absolute;
-              top: 50%;
-              left: 25px;
-              transform: translate(-50%,-50%);
-              width: 28px;
-              height: 28px;
-              background: black;
-              border-radius: 50%;
-            }
             
             .introduction-text {
               font-size: large;
-              padding-top: 60px;
               max-width: 100%;
             }
 
@@ -797,6 +570,8 @@
              margin: 0 20px;
              margin-top: 5px;
           }
+
+          
              }
 
              @media (max-width: 324px) {
@@ -812,4 +587,39 @@
               padding: 0;
               /* padding-top: 20px; */
           }
+
               }
+
+
+
+              @media (max-height: 500px) {
+                .sticky-container-image {
+                  display: none;
+                }
+                  
+                .sticky-card-container .section:nth-child(1),
+                .sticky-card-container .section:nth-child(2),
+                .sticky-card-container .section:nth-child(3),
+                .sticky-card-container .section:nth-child(4){
+                  background-size: cover;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+                  .sticky-card-inner-container-1,
+                  .sticky-card-inner-container-2,
+                  .sticky-card-inner-container-3,
+                  .sticky-card-inner-container-4{
+                    max-width: 1600px;
+                    height: 280px;
+                    display: block;
+                    align-content: center;
+                    font-size:x-large;
+                    align-items: center;
+                  }
+              }
+            }
+
+              
+              
+              

@@ -107,11 +107,16 @@ const AboutPage = () => {
                     <img
                         src={Rammstein}
                         className='my-picture'
-                        alt='some random dude standing with a beer in a Rammstein concert'
+                        alt='CEO Paulius Miliauskas'
                        
                     />
-                    <div className="my-name-tag">Paulius Miliauskas</div>
-                    <div className="my-position-tag">CEO</div>
+                    <div className="my-name-tag">
+    <b>Paulius Miliauskas</b>
+    <br />
+    CEO
+</div>
+
+                  
 
                     
                     <div className="contact-details">

@@ -1,8 +1,6 @@
 import React from 'react';
-// import Logspot from '../images/logspot-recruitment.svg';
+import { useState, useEffect } from 'react';
 import Logspot from '../images/logspot-recruitment.png';
-
-import BeaverImage from '../images/beaver-is-watching.svg';
 import LogspotLogo from '../images/company-logspot.svg';
 import CodeAcademyLogo from '../images/company-code-academy.png';
 import RhenusLogo from '../images/company-rhenus.png';
@@ -20,33 +18,35 @@ import Third from '../images/3.svg';
 import Four from '../images/4.svg';
 import JoinLogspot from '../images/join-logspot.svg';
 import ItRecruitment from '../images/it-recruitment.svg';
-
 import LogspotLogoBlack from '../images/logspot-black.svg';
-
+import beaver1 from '../images/beaver1.svg';
+import beaver2 from '../images/beaver2.svg';
+import beaver3 from '../images/beaver3.svg';
+import beaver4 from '../images/beaver4.svg';
+import beaver5 from '../images/beaver5.svg';
+import beaver6 from '../images/beaver6.svg';
+import beaver7 from '../images/beaver7.svg';
 
 import './IndexPage.css';
 
 
 
-
-document.querySelector('body').addEventListener('mousemove', eyeball);
-
-function eyeball(event) { // Pass the event parameter here
-    var eye = document.querySelectorAll('.eye');
-    eye.forEach(function(eye) {
-        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-        let radian = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = (radian * (180 / Math.PI) * -1) + 270;
-        eye.style.transform = "rotate(" + rot + "deg)";
-    });
-}
-
-
-
-
-
 const IndexPage = () => {
+
+
+  const images = [beaver1, beaver2, beaver3, beaver4, beaver5, beaver6, beaver7];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(timer); // Clean up the timer on unmount
+  }, []);
+
+
+  
     return (
         <div>
             <div className='main-window'>
@@ -56,18 +56,14 @@ const IndexPage = () => {
           className='logspot'
           alt="company logo"/>
               </div>
+              
 
-              <div className='beaver-image-container'>
-              <img
-          src={BeaverImage}
-          className='beaver-image'
-          alt="beaver image with moving eyes"/>
+             <div className='beaver-image-scrolling-container'>
 
-          <div className='moving-eyes-container'>
-            <div className='eye'></div>
-            <div className='eye'></div>
+
+ <img src={images[currentIndex]} alt="Beaver" className="beaver-image" />
+        
           </div>
-          </div>     
               </div>
            
 
@@ -308,7 +304,9 @@ const IndexPage = () => {
           <div className='header-card-container-image'><img src={SignUpProcess} 
           className='sign-up-process' 
           alt='images with "sign up" text'/></div>
-          <div className='header-card-container-text'>Join the Logspot beaver crew and set sail on a tech-tastic voyage! We connect IT enthusiasts with companies that see their potential. Together, we build the future of tech!</div>
+          <div className='header-card-container-text'>Join the Logspot beaver crew and set sail on a tech-tastic voyage! We connect IT enthusiasts with companies that see their potential. Together, we build the future of tech! </div>
+          
+
 
 
 </div>
@@ -326,7 +324,17 @@ const IndexPage = () => {
           className='number' 
           alt='images with number'/>
             <div className='number-text'>Create Your IT Identity</div></div>
-            <div className='sticky-card-inner-text-container'> Welcome to our tech-tastic world! The first step to unleashing your IT brilliance is to create your very own digital identity. Think of it as a tech resume with a twist! Add your superpowers, skills, and achievements – our beaver scouts love digging through IT awesomeness!</div>
+            <div className='sticky-card-inner-text-container'>
+  Welcome to our tech-tastic world! The first step to unleashing your IT brilliance is to create your very own digital identity &#128073;
+  <a href="http://localhost:3000/join-us" style={{ textDecoration: 'underline' }}>
+    <span style={{ fontWeight: 'bold' }}>click here</span>
+  </a>. 
+  Think of it as a tech resume with a twist! Add your superpowers, skills, and achievements – our beaver scouts love digging through IT awesomeness!
+</div>
+
+
+
+            
         </div>
         <div className='sticky-card-inner-container-image'><img src={ItIdentity} 
             className='sticky-container-image' 

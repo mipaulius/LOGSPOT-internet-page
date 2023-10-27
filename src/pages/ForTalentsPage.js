@@ -92,7 +92,7 @@ function JobApplicationForm() {
       console.log('Form data:', formData);
       console.log('Form data size:', formData.getAll('cvFile').length);
     
-      Axios.post('http://localhost:3002/home', formData)
+      Axios.post('http://localhost:3002/join-us', formData)
         .then((response) => {
           console.log('Form submitted successfully', response.data);
           console.log('Response headers:', response.headers);
@@ -263,64 +263,71 @@ function JobApplicationForm() {
             required
           >
            
-  <option value="Application_security_administrator">Application security administrator</option>
-  <option value="Artificial_intelligence_security_specialist">Artificial intelligence security specialist</option>
-  <option value="Back-end_developer">Back-end developer</option>
-  <option value="Big_data_engineer/architect">Big data engineer/architect</option>
-  <option value="Business_intelligence_specialist/analyst">Business intelligence specialist/analyst</option>
-  <option value="Business_systems_analyst">Business systems analyst</option>
-  <option value="Cloud/security_specialist">Cloud/security specialist</option>
-  <option value="Cloud/software_architect">Cloud/software architect</option>
-  <option value="Cloud/software_applications_engineer">Cloud/software applications engineer</option>
-  <option value="Cloud/system_administrator">Cloud system administrator</option>
-  <option value="Cloud/system_engineer">Cloud system engineer</option>
-  <option value="Computer_systems_manager">Computer systems manager</option>
+    
+  <option value="Application security administrator">Application security administrator</option>
+  <option value="Artificial intelligence security specialist">Artificial intelligence security specialist</option>
+  <option value="Back-end developer">Back-end developer</option>
+  <option value="Big data engineer/architect">Big data engineer/architect</option>
+  <option value="Blockchain developer">Blockchain developer</option>
+  <option value="Business intelligence specialist/analyst">Business intelligence specialist/analyst</option>
+  <option value="Business systems analyst">Business systems analyst</option>
+  <option value="Cloud solutions architect">Cloud solutions architect</option>
+  <option value="Cloud/security specialist">Cloud/security specialist</option>
+  <option value="Cloud/software architect">Cloud/software architect</option>
+  <option value="Cloud/software applications engineer">Cloud/software applications engineer</option>
+  <option value="Cloud/system administrator">Cloud system administrator</option>
+  <option value="Cloud/system engineer">Cloud system engineer</option>
+  <option value="Computer systems manager">Computer systems manager</option>
   <option value="Cryptographer">Cryptographer</option>
-  <option value="Customer_service_representative">Customer service representative</option>
-  <option value="Cyberintelligence_specialist">Cyberintelligence specialist</option>
-  <option value="Cybersecurity_hardware_engineer">Cybersecurity hardware engineer</option>
-  <option value="Data_analyst">Data analyst</option>
-  <option value="Data_analytics_developer">Data analytics developer</option>
-  <option value="Data_modeling_analyst">Data modeling analyst</option>
-  <option value="Data_privacy_officer">Data privacy officer</option>
-  <option value="Data_quality_manager">Data quality manager</option>
-  <option value="Database_administrator">Database administrator</option>
-  <option value="Database_analyst">Database analyst</option>
-  <option value="Database_report_writer">Database report writer</option>
-  <option value="DevOps_engineer">DevOps engineer</option>
-  <option value="Digital_forensics_analyst">Digital forensics analyst</option>
-  <option value="Front-end_developer">Front-end developer</option>
-  <option value="Full-stack_developer">Full-stack developer</option>
-  <option value="Help_desk_support_specialist">Help desk support specialist</option>
-  <option value="HTML_CSS__developer">HTML/CSS developer</option>
-  <option value="IT_coordinator">IT coordinator</option>
-  <option value="IT_security_engineer">IT security engineer</option>
-  <option value="IT_support_specialist">IT support specialist</option>
-  <option value="Information_assurance_analyst">Information assurance analyst</option>
-  <option value="Intelligence_specialist">Intelligence specialist</option>
-  <option value="Java_developer">Java developer</option>
-  <option value="Network_administrator">Network administrator</option>
-  <option value="Network_architect">Network architect</option>
-  <option value="Network_engineer">Network engineer</option>
-  <option value="Portfolio_manager">Portfolio manager</option>
-  <option value="Product_manager">Product manager</option>
-  <option value="Program_manager">Program manager</option>
-  <option value="Project_manager">Project manager</option>
-  <option value="React_developer">React developer</option>
-  <option value="Reliability_engineer">Reliability engineer</option>
-  <option value="Security_systems_administrator">Security systems administrator</option>
-  <option value="Service_desk_analyst">Service desk analyst</option>
-  <option value="Software_engineer">Software engineer</option>
-  <option value="Software_quality_assurance_analyst">Software quality assurance analyst</option>
-  <option value="System_administrator">System administrator</option>
-  <option value="Systems_analyst">Systems analyst</option>
-  <option value="Technical_product_manager">Technical product manager</option>
-  <option value="UI_(user_interface)_designer">UI designer</option>
-  <option value="UX_(user_experience)_designer">UX designer</option>
-  <option value="Web_developer">Web developer</option>
-  <option value="Wireless_network_engineer">Wireless network engineer</option>
+  <option value="Customer service representative">Customer service representative</option>
+  <option value="Cyberintelligence specialist">Cyberintelligence specialist</option>
+  <option value="Cybersecurity hardware engineer">Cybersecurity hardware engineer</option>
+  <option value="Data analyst">Data analyst</option>
+  <option value="Data analytics developer">Data analytics developer</option>
+  <option value="Data model analyst">Data model analyst</option>
+  <option value="Data privacy officer">Data privacy officer</option>
+  <option value="Data quality manager">Data quality manager</option>
+  <option value="Data scientist">Data scientist</option>
+  <option value="Database administrator">Database administrator</option>
+  <option value="Database analyst">Database analyst</option>
+  <option value="Database report writer">Database report writer</option>
+  <option value="DevOps engineer">DevOps engineer</option>
+  <option value="Digital forensics analyst">Digital forensics analyst</option>
+  <option value="Full-stack developer">Full-stack developer</option>
+  <option value="Front-end developer">Front-end developer</option>
+  <option value="Help desk support specialist">Help desk support specialist</option>
+  <option value="HTML/CSS developer">HTML/CSS developer</option>
+  <option value="Information assurance analyst">Information assurance analyst</option>
+  <option value="IT coordinator">IT coordinator</option>
+  <option value="IT security engineer">IT security engineer</option>
+  <option value="IT support specialist">IT support specialist</option>
+  <option value="Java developer">Java developer</option>
+  <option value="Machine learning engineer">Machine learning engineer</option>
+  <option value="Network administrator">Network administrator</option>
+  <option value="Network architect">Network architect</option>
+  <option value="Network engineer">Network engineer</option>
+  <option value="Portfolio manager">Portfolio manager</option>
+  <option value="Product manager">Product manager</option>
+  <option value="Program manager">Program manager</option>
+  <option value="Project manager">Project manager</option>
+  <option value="React developer">React developer</option>
+  <option value="Reliability engineer">Reliability engineer</option>
+  <option value="Security systems administrator">Security systems administrator</option>
+  <option value="Software architect">Software architect</option>
+  <option value="Software engineer">Software engineer</option>
+  <option value="Software quality assurance analyst">Software quality assurance analyst</option>
+  <option value="Systems engineer">Systems engineer</option>
+  <option value="Systems analyst">Systems analyst</option>
+  <option value="Technical product manager">Technical product manager</option>
+  <option value="Test automation engineer">Test automation engineer</option>
+  <option value="UI designer">UI designer</option>
+  <option value="UX designer">UX designer</option>
+  <option value="Virtual reality developer">Virtual reality developer</option>
+  <option value="Web developer">Web developer</option>
+  <option value="Wireless network engineer">Wireless network engineer</option>
 
-          </select>
+
+</select>
           <span className="hint">Hold Ctrl (or Cmd) to select multiple positions</span>
         </div>
 
