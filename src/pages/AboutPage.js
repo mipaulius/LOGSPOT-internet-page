@@ -147,7 +147,7 @@ const AboutPage = () => {
                 <img
                         src={OurOffice}
                         className='our-office-pic'
-                        alt='some random dude standing with a beer in a Rammstein concert'
+                        alt='Paulius Miliauskas, CEO'
                        
                     />
 

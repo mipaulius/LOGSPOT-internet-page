@@ -326,7 +326,7 @@ const IndexPage = () => {
             <div className='number-text'>Create Your IT Identity</div></div>
             <div className='sticky-card-inner-text-container'>
   Welcome to our tech-tastic world! The first step to unleashing your IT brilliance is to create your very own digital identity &#128073;
-  <a href="http://localhost:3000/join-us" style={{ textDecoration: 'underline' }}>
+  <a href="/join-us" style={{ textDecoration: 'underline' }}>
     <span style={{ fontWeight: 'bold' }}>click here</span>
   </a>. 
   Think of it as a tech resume with a twist! Add your superpowers, skills, and achievements – our beaver scouts love digging through IT awesomeness!

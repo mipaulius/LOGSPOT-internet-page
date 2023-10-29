@@ -56,13 +56,20 @@
 
  
   @keyframes slide {
-    from {
+    0%, 100% {
       transform: translateX(0);
     }
-    to {
+    25% {
       transform: translateX(-100%);
     }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
   }
+  
   
   .logos {
     overflow: hidden;
@@ -86,9 +93,9 @@
     z-index: 2;
   }
   
-  .logos:hover .logos-slide {
+  /* .logos:hover .logos-slide {
     animation-play-state: paused;
-  }
+  } */
   
   .logos-slide {
     display: inline-block;

@@ -30,7 +30,7 @@ class ForEmployersPage extends Component {
     e.preventDefault(); // Prevent default form submission behavior
     const formData = this.state;
   
-    Axios.post('http://localhost:3001/it-hiring', formData)
+    Axios.post('/it-hiring', formData)
   .then((response) => {
     // Handle a successful response from the server
     console.log('Form submitted successfully', response.data);

@@ -15,7 +15,7 @@ function ContactForm({ isOpen, onClose }) {
 
     try {
       // Simulate sending the form data to an email (replace with actual email sending logic)
-      const response = await fetch("http://localhost:3003/api/send-email", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

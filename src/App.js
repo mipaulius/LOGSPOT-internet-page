@@ -36,13 +36,13 @@ const App = () => {
     <div className='footer'>
 
       <div className='footer-1'>
-      <ul><div className='footer-headline'>LOGSPOT</div>
-        <li><a href="http://localhost:3000/">Home</a></li>
-        <li><a href="http://localhost:3000/join-us">Get a job</a></li>
-        <li><a href="http://localhost:3000/it-hiring">Hirring</a></li>
-        <li><a href="http://localhost:3000/about">About</a></li>
-        {/* <li><a href="http://localhost:3000/login">Login</a></li> */}
-      </ul>
+      <ul>
+  <div className='footer-headline'>LOGSPOT</div>
+  <li><a href="/">Home</a></li>
+  <li><a href="/join-us">Get a job</a></li>
+  <li><a href="/it-hiring">Hiring</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
       </div>
 
       <div className='footer-2'>
@@ -58,7 +58,7 @@ const App = () => {
       <div className='footer-3'>
       <ul>
        <div className='footer-headline'>PRIVACY</div>
-        <li><a href="http://localhost:3000/privacy-policy">Client privacy policy</a></li>
+        <li><a href="/privacy-policy">Client privacy policy</a></li>
       </ul>
       </div>
 

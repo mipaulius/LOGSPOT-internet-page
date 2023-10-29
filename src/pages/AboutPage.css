@@ -40,7 +40,7 @@
   
   .rammstein {
       display: grid;
-      grid-template-rows: 2fr 0.5fr 3fr;
+      grid-template-rows: 2fr 0.5fr 2fr;
       align-items: top;
       justify-items: center;
   }
@@ -103,12 +103,13 @@
   
   .contact-item-text {
     font-size: x-large;
+    
   }
   
   .about-us-button-container {
       display: grid;
       justify-items: start;
-      padding-top: 50px;
+      padding-top: 17px;
       padding-left: 15px;
       padding-right: 15px;
   

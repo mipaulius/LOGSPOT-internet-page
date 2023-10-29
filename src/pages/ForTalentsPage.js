@@ -92,7 +92,7 @@ function JobApplicationForm() {
       console.log('Form data:', formData);
       console.log('Form data size:', formData.getAll('cvFile').length);
     
-      Axios.post('http://localhost:3002/join-us', formData)
+      Axios.post('/join-us', formData)
         .then((response) => {
           console.log('Form submitted successfully', response.data);
           console.log('Response headers:', response.headers);
@@ -374,7 +374,7 @@ function JobApplicationForm() {
               onChange={() => setAgreeToTerms(!agreeToTerms)}
               required
             />
-            By signing up you agree to the Terms of Service and the <a href="http://localhost:3000/privacy-policy" className='blue-link'>Privacy Policy</a>
+            By signing up you agree to the Terms of Service and the <a href="/privacy-policy" className='blue-link'>Privacy Policy</a>
           </label>
         </div>
 
@@ -393,10 +393,6 @@ function JobApplicationForm() {
           </div>
         )}
       
-      
-      {/* <div className='login-talent-page'>
-  Already have an account? <a href='http://localhost:3000/login' className='blue-link'>Log in</a>
-</div> */}
 
 
     </div>
